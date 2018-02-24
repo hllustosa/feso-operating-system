@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Código-Fonte de Irq.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_cbd7f246bdf7dc0a50281a272327e6ed.html">kernel</a></li><li class="navelem"><a class="el" href="dir_1083f99974d515180cb874b65de1a4c1.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Irq.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Irq_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*   This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*    it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*    the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*    (at your option) any later version.</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*    This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*    GNU General Public License for more details.</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*    You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _IRQ</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _IRQ</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Idt_8h.html">Idt.h</a>&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classIrq.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIrq.html">Irq</a></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">public</span> :</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="comment">//Prot�tipos </span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classIrq.html#a38c395805bcc50f22de4701f42f63eba">Irq</a>(<span class="keywordtype">void</span>);      </div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classIrq.html#aa536287d161f951b847c853f2b1b8d6e">inicializar</a>(<a class="code" href="classIdt.html">Idt</a>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classIrq.html#a3107c726525645eea449fd746f2215d1">remapear_irqs</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classIrq.html#a44716a763ac9f73e7f11ea46479d429f">instalar_funcao</a>(<span class="keywordtype">int</span> , <span class="keywordtype">void</span> (*handler)(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r));</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classIrq.html#aa1c9e6e640b9137373b1b34d19c9a2d1">desinstalar_funcao</a>(<span class="keywordtype">int</span>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  </div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <a class="code" href="classIrq.html">Irq</a> <a class="code" href="Irq_8h.html#a9b58493e624f4d44066d7c9cb5aa021b">irq</a>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classIrq_html_a3107c726525645eea449fd746f2215d1"><div class="ttname"><a href="classIrq.html#a3107c726525645eea449fd746f2215d1">Irq::remapear_irqs</a></div><div class="ttdeci">void remapear_irqs(void)</div><div class="ttdef"><b>Definition:</b> Irq.cpp:90</div></div>
+<div class="ttc" id="classIrq_html_a38c395805bcc50f22de4701f42f63eba"><div class="ttname"><a href="classIrq.html#a38c395805bcc50f22de4701f42f63eba">Irq::Irq</a></div><div class="ttdeci">Irq(void)</div><div class="ttdef"><b>Definition:</b> Irq.cpp:47</div></div>
+<div class="ttc" id="classIrq_html_aa1c9e6e640b9137373b1b34d19c9a2d1"><div class="ttname"><a href="classIrq.html#aa1c9e6e640b9137373b1b34d19c9a2d1">Irq::desinstalar_funcao</a></div><div class="ttdeci">void desinstalar_funcao(int)</div><div class="ttdef"><b>Definition:</b> Irq.cpp:85</div></div>
+<div class="ttc" id="classIrq_html_aa536287d161f951b847c853f2b1b8d6e"><div class="ttname"><a href="classIrq.html#aa536287d161f951b847c853f2b1b8d6e">Irq::inicializar</a></div><div class="ttdeci">void inicializar(Idt)</div><div class="ttdef"><b>Definition:</b> Irq.cpp:53</div></div>
+<div class="ttc" id="classIdt_html"><div class="ttname"><a href="classIdt.html">Idt</a></div><div class="ttdef"><b>Definition:</b> Idt.h:55</div></div>
+<div class="ttc" id="Idt_8h_html"><div class="ttname"><a href="Idt_8h.html">Idt.h</a></div></div>
+<div class="ttc" id="structREGS_html"><div class="ttname"><a href="structREGS.html">REGS</a></div><div class="ttdef"><b>Definition:</b> Idt.h:43</div></div>
+<div class="ttc" id="classIrq_html"><div class="ttname"><a href="classIrq.html">Irq</a></div><div class="ttdef"><b>Definition:</b> Irq.h:22</div></div>
+<div class="ttc" id="classIrq_html_a44716a763ac9f73e7f11ea46479d429f"><div class="ttname"><a href="classIrq.html#a44716a763ac9f73e7f11ea46479d429f">Irq::instalar_funcao</a></div><div class="ttdeci">void instalar_funcao(int, void(*handler)(struct REGS *r))</div><div class="ttdef"><b>Definition:</b> Irq.cpp:79</div></div>
+<div class="ttc" id="Irq_8h_html_a9b58493e624f4d44066d7c9cb5aa021b"><div class="ttname"><a href="Irq_8h.html#a9b58493e624f4d44066d7c9cb5aa021b">irq</a></div><div class="ttdeci">Irq irq</div><div class="ttdef"><b>Definition:</b> Irq.cpp:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

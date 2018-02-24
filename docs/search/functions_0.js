@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['_5f_5fattribute_5f_5f',['__attribute__',['../Gdt_8h.html#ab98ffd2963cb7af16de84ae6a65b67cd',1,'__attribute__((packed)):&#160;Gdt.h'],['../Idt_8h.html#a452906efbafa1cf8c6775bc538afdda0',1,'__attribute__((packed)):&#160;Idt.h'],['../Loader_8h.html#a09aaf37b4a76198e41f5d2ec6bc34f81',1,'__attribute__((packed)):&#160;Loader.h'],['../Multiprocessamento_8h.html#a2e9535621edfc465e45ac431667e15cf',1,'__attribute__((packed)):&#160;Multiprocessamento.h'],['../Vfs_8h.html#aa9461e891a8fdded066d4bf562d484e0',1,'__attribute__((packed)):&#160;Vfs.h'],['../Memoria_8cpp.html#a28f7151c1c16f1e420342cb002b5818e',1,'__attribute__((aligned(4096))):&#160;Memoria.cpp'],['../Memoria_8cpp.html#af2df1a9183b94360e6e0fe7d0b922d01',1,'__attribute__((packed)):&#160;Memoria.cpp'],['../Console_8cpp.html#a6853b6995af01d6ead86c83ba2476e4a',1,'__attribute__((packed)):&#160;Console.cpp'],['../Sistema_8h.html#a9b02b087aee67c65556d0030b5ff5894',1,'__attribute__((packed)):&#160;Sistema.h']]],
+  ['_5fabrir',['_abrir',['../classVfs.html#a41d7348344d9bdc37718a8913110a1ca',1,'Vfs::_abrir()'],['../Sistema_8h.html#ab0a18cc0a475f3fe933305b9ee693a41',1,'_abrir():&#160;Sistema.h']]],
+  ['_5fadicionar_5fno',['_adicionar_no',['../Sistema_8h.html#ab03b1d9170b43dc9317dc4fd50010ef7',1,'Sistema.h']]],
+  ['_5fbuscar',['_buscar',['../Sistema_8h.html#a2c1f7c63b4dc728fcf7c50b70fe7e9dc',1,'Sistema.h']]],
+  ['_5fdown',['_down',['../kernel_2include_2Util_8h.html#a72d9d577486419f2728830e6da110ee2',1,'Util.h']]],
+  ['_5fescrever',['_escrever',['../Sistema_8h.html#a916e4235484c94eafa5385a79b0e4d68',1,'Sistema.h']]],
+  ['_5fexcluir',['_excluir',['../Sistema_8h.html#a457db32842abe475291e22933ef66843',1,'Sistema.h']]],
+  ['_5fexecutar',['_executar',['../Sistema_8h.html#acf8987cef938da47613b7d711d948570',1,'Sistema.h']]],
+  ['_5ffechar',['_fechar',['../Sistema_8h.html#ae1929056e2a3ab019a5b1d290a7a6562',1,'Sistema.h']]],
+  ['_5ffree',['_free',['../Memoria_8cpp.html#a1c58466385ab62f0b98e9fedf7a4f91c',1,'Memoria.cpp']]],
+  ['_5fler',['_ler',['../Sistema_8h.html#aa1f40c99c212eb5042552d6879401b97',1,'Sistema.h']]],
+  ['_5fmontar_5fno',['_montar_no',['../Sistema_8h.html#a9a8dcf3ce0b2ee20e0549b79e32476de',1,'Sistema.h']]],
+  ['_5fobter_5finfo_5farq',['_obter_info_arq',['../Sistema_8h.html#a1364a3b550d253e20614b01abeb3781a',1,'Sistema.h']]],
+  ['_5fobter_5fpid',['_obter_pid',['../Sistema_8h.html#a558774122631f4e2218771b229c044dc',1,'Sistema.h']]],
+  ['_5fremover_5fno',['_remover_no',['../Sistema_8h.html#a3e2acfa746d760db3cc4dac3e28cb338',1,'Sistema.h']]],
+  ['_5fup',['_up',['../kernel_2include_2Util_8h.html#a6934ea8e85a35e820cc68d6d131c7c67',1,'Util.h']]]
+];

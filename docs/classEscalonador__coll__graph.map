@@ -1,0 +1,15 @@
+<map id="Escalonador" name="Escalonador">
+<area shape="rect" id="node2" href="$classRecurso.html" title="Recurso" alt="" coords="571,96,641,123"/>
+<area shape="rect" id="node3" href="$classArvore.html" title="Arvore\&lt; Thread \&gt;" alt="" coords="541,520,665,547"/>
+<area shape="rect" id="node5" href="$classThread.html" title="Thread" alt="" coords="483,308,545,335"/>
+<area shape="rect" id="node6" href="$classLista.html" title="Lista\&lt; Mensagem \&gt;" alt="" coords="430,203,569,229"/>
+<area shape="rect" id="node10" href="$classLista.html" title="Lista\&lt; unsigned int \&gt;" alt="" coords="87,308,231,335"/>
+<area shape="rect" id="node12" href="$classArvore.html" title="Arvore\&lt; Processo \&gt;" alt="" coords="417,611,555,637"/>
+<area shape="rect" id="node14" href="$classProcesso.html" title="Processo" alt="" coords="314,428,391,455"/>
+<area shape="rect" id="node4" href="$classAvl.html" title="Avl\&lt; Thread \&gt;" alt="" coords="533,428,639,455"/>
+<area shape="rect" id="node7" href="$structItem.html" title="Item\&lt; Mensagem \&gt;" alt="" coords="9,96,145,123"/>
+<area shape="rect" id="node8" href="$structMensagem.html" title="Mensagem" alt="" coords="33,5,120,32"/>
+<area shape="rect" id="node9" href="$structREGS.html" title="REGS" alt="" coords="345,203,405,229"/>
+<area shape="rect" id="node11" href="$structItem.html" title="Item\&lt; unsigned int \&gt;" alt="" coords="5,203,148,229"/>
+<area shape="rect" id="node13" href="$classAvl.html" title="Avl\&lt; Processo \&gt;" alt="" coords="293,520,413,547"/>
+</map>

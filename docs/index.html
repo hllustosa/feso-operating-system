@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Página Principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">feSO Documentação</div>  </div>
+</div><!--header-->
+
+
+<style media="screen" type="text/css">
+ #wrapper {
+   background-color: auto; /* for vizualization purposes */
+   
+ }
+
+ #subdiv {
+   width: 70%; 
+   margin: 0 auto
+ }
+
+ .headline {
+   font-family: Calibri, "Helvetica", san-serif;
+   line-height: 1.5em;
+   color: black;
+   font-size: 30px;
+ }
+
+ h2:after
+ {
+    content:' ';
+    display:block;
+    border:2px solid black;
+ }
+
+ .codebox {
+        border:1px solid black;
+        background-color:#EEEEFF;
+        white-space: pre-line;
+	width: 100%; 
+        padding:5px;
+        font-size:0.9em;
+        display: inline-block;
+ }
+ 
+</style>
+
+<div class="contents" id="wrapper">
+  <div class="contents" id="subdiv">
+
+	<h2><span class="headline">Introdução</span></h2>
+	
+	O sistema operacional feSO (Feso é um Sistema Operacional) foi desenvolvido para servir como uma ferramenta de aprendizado de sistemas operacionais. Esta página apresenta
+	a documentação do código fonte do sistema. Para um visão geral do funcionamento do sistema, consultar a <a class="el" href="feso-mono.pdf" target="_self">monografia dos autores</a>.
+
+	
+	<h2><span class="headline">Compilando e Executando</span></h2>
+
+	Para compilar o feSO no sistema UBUNTU, primeiramente é necessário instalar os seguintes pacotes:
+
+	<code class="codebox">sudo apt-get install git	
+			      sudo apt-get install mkisofs
+			      sudo apt-get install nasm
+    	</code>	
+	
+	<br> <br> Após a instalação das dependências, é preciso clonar o repositório:
+
+	<br> <code class="codebox"> git clone https://github.com/hllustosa/feso </code>	
+
+	<br> <br> Então, entre no repositório e execute
+
+	<br><code class="codebox"> cd feSO
+				   chmod +x ./build.sh
+				   chmod +x ./install_cross.sh
+				   sudo ./install_cross.sh
+				   ./build.sh
+	</code>	
+
+	<br><br>Após a compilação, verifique se o arquivo feso.iso foi gerado no diretório feso/bin-image. Este é a imagem iso do sistema feSO, que pode ser usada para dar boot em um hypervisor, ou
+	pode ser gravada em um CD, DVD ou pen-drive para a inicialização de um computador.
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['_5f_5fattribute_5f_5f',['__attribute__',['../Gdt_8h.html#af06adce7d9e6b8ed1ad804ebc7b193a4',1,'__attribute__():&#160;Gdt.h'],['../Idt_8h.html#aae50c62b17eed62d56b531f690dd0fc5',1,'__attribute__():&#160;Idt.h'],['../Loader_8h.html#aa2ded75d3f6c2b3dafe57d1fc9987224',1,'__attribute__():&#160;Loader.h'],['../Multiprocessamento_8h.html#a03a94869a692d010ec82201754687237',1,'__attribute__():&#160;Multiprocessamento.h'],['../Vfs_8h.html#a5e139ad4aeec08fd5572bab6716a8164',1,'__attribute__():&#160;Vfs.h'],['../Console_8cpp.html#acbdafac5dce7d4ec95682b0b976231e5',1,'__attribute__():&#160;Console.cpp'],['../Sistema_8h.html#ad6b7504f262a61da9ac7110cf30863a2',1,'__attribute__():&#160;Sistema.h'],['../Gdt_8h.html#ab98ffd2963cb7af16de84ae6a65b67cd',1,'__attribute__((packed)):&#160;Gdt.h'],['../Idt_8h.html#a452906efbafa1cf8c6775bc538afdda0',1,'__attribute__((packed)):&#160;Idt.h'],['../Loader_8h.html#a09aaf37b4a76198e41f5d2ec6bc34f81',1,'__attribute__((packed)):&#160;Loader.h'],['../Multiprocessamento_8h.html#a2e9535621edfc465e45ac431667e15cf',1,'__attribute__((packed)):&#160;Multiprocessamento.h'],['../Vfs_8h.html#aa9461e891a8fdded066d4bf562d484e0',1,'__attribute__((packed)):&#160;Vfs.h'],['../Memoria_8cpp.html#a28f7151c1c16f1e420342cb002b5818e',1,'__attribute__((aligned(4096))):&#160;Memoria.cpp'],['../Memoria_8cpp.html#af2df1a9183b94360e6e0fe7d0b922d01',1,'__attribute__((packed)):&#160;Memoria.cpp'],['../Console_8cpp.html#a6853b6995af01d6ead86c83ba2476e4a',1,'__attribute__((packed)):&#160;Console.cpp'],['../Sistema_8h.html#a9b02b087aee67c65556d0030b5ff5894',1,'__attribute__((packed)):&#160;Sistema.h']]],
+  ['_5f_5fneeds_5fround',['__NEEDS_ROUND',['../kernel_2include_2Stdarg_8h.html#a4fb6178700c0e14f0e01c85a4fab634b',1,'Stdarg.h']]],
+  ['_5f_5fva_5fargsiz',['__va_argsiz',['../lib_2include_2Stdarg_8h.html#a5afddf91bec14da530be77e7f9be98bf',1,'Stdarg.h']]],
+  ['_5fabrir',['_abrir',['../classVfs.html#a41d7348344d9bdc37718a8913110a1ca',1,'Vfs::_abrir()'],['../Sistema_8h.html#ab0a18cc0a475f3fe933305b9ee693a41',1,'_abrir():&#160;Sistema.h']]],
+  ['_5fadicionar_5fno',['_adicionar_no',['../Sistema_8h.html#ab03b1d9170b43dc9317dc4fd50010ef7',1,'Sistema.h']]],
+  ['_5fbuscar',['_buscar',['../Sistema_8h.html#a2c1f7c63b4dc728fcf7c50b70fe7e9dc',1,'Sistema.h']]],
+  ['_5fdown',['_down',['../kernel_2include_2Util_8h.html#a72d9d577486419f2728830e6da110ee2',1,'Util.h']]],
+  ['_5fescrever',['_escrever',['../Sistema_8h.html#a916e4235484c94eafa5385a79b0e4d68',1,'Sistema.h']]],
+  ['_5fexcluir',['_excluir',['../Sistema_8h.html#a457db32842abe475291e22933ef66843',1,'Sistema.h']]],
+  ['_5fexecutar',['_executar',['../Sistema_8h.html#acf8987cef938da47613b7d711d948570',1,'Sistema.h']]],
+  ['_5ffechar',['_fechar',['../Sistema_8h.html#ae1929056e2a3ab019a5b1d290a7a6562',1,'Sistema.h']]],
+  ['_5ffree',['_free',['../Memoria_8cpp.html#a1c58466385ab62f0b98e9fedf7a4f91c',1,'Memoria.cpp']]],
+  ['_5fintsizeof',['_INTSIZEOF',['../kernel_2include_2Stdarg_8h.html#a376e13838181a2011d684b7efac99c8a',1,'Stdarg.h']]],
+  ['_5fler',['_ler',['../Sistema_8h.html#aa1f40c99c212eb5042552d6879401b97',1,'Sistema.h']]],
+  ['_5fmontar_5fno',['_montar_no',['../Sistema_8h.html#a9a8dcf3ce0b2ee20e0549b79e32476de',1,'Sistema.h']]],
+  ['_5fobter_5finfo_5farq',['_obter_info_arq',['../Sistema_8h.html#a1364a3b550d253e20614b01abeb3781a',1,'Sistema.h']]],
+  ['_5fobter_5fpid',['_obter_pid',['../Sistema_8h.html#a558774122631f4e2218771b229c044dc',1,'Sistema.h']]],
+  ['_5fremover_5fno',['_remover_no',['../Sistema_8h.html#a3e2acfa746d760db3cc4dac3e28cb338',1,'Sistema.h']]],
+  ['_5ftamanho',['_tamanho',['../classLista.html#aec323ebdb575c72318d76c0cc3963f08',1,'Lista']]],
+  ['_5fup',['_up',['../kernel_2include_2Util_8h.html#a6934ea8e85a35e820cc68d6d131c7c67',1,'Util.h']]],
+  ['_5fva_5flist',['_VA_LIST',['../lib_2include_2Stdarg_8h.html#a8988b1f4b3f4ffef267962f5811f6031',1,'Stdarg.h']]],
+  ['_5fva_5flist_5fdefined',['_VA_LIST_DEFINED',['../kernel_2include_2Stdarg_8h.html#a6d3cf7d75f7f669c331e76f27212d54a',1,'_VA_LIST_DEFINED():&#160;Stdarg.h'],['../lib_2include_2Stdarg_8h.html#a6d3cf7d75f7f669c331e76f27212d54a',1,'_VA_LIST_DEFINED():&#160;Stdarg.h']]]
+];

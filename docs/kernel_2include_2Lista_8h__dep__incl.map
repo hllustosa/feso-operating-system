@@ -1,0 +1,20 @@
+<map id="Lista.h" name="Lista.h">
+<area shape="rect" id="node2" href="$Loader_8h.html" title="Loader.h" alt="" coords="900,80,972,107"/>
+<area shape="rect" id="node4" href="$Processo_8h.html" title="Processo.h" alt="" coords="260,229,348,256"/>
+<area shape="rect" id="node17" href="$Mensagem_8h.html" title="Mensagem.h" alt="" coords="339,155,436,181"/>
+<area shape="rect" id="node18" href="$Vfs_8h.html" title="Vfs.h" alt="" coords="753,229,806,256"/>
+<area shape="rect" id="node3" href="$Multiprocessamento_8h.html" title="Multiprocessamento.h" alt="" coords="550,155,700,181"/>
+<area shape="rect" id="node6" href="$Main_8cpp.html" title="Main.cpp" alt="" coords="408,379,482,405"/>
+<area shape="rect" id="node11" href="$Processo_8cpp.html" title="Processo.cpp" alt="" coords="974,304,1076,331"/>
+<area shape="rect" id="node16" href="$Loader_8cpp.html" title="Loader.cpp" alt="" coords="892,155,979,181"/>
+<area shape="rect" id="node8" href="$Idt_8cpp.html" title="Idt.cpp" alt="" coords="36,304,99,331"/>
+<area shape="rect" id="node9" href="$Mensagem_8cpp.html" title="Mensagem.cpp" alt="" coords="478,304,588,331"/>
+<area shape="rect" id="node10" href="$Multiprocessamento_8cpp.html" title="Multiprocessamento.cpp" alt="" coords="786,304,950,331"/>
+<area shape="rect" id="node12" href="$Syscall_8cpp.html" title="Syscall.cpp" alt="" coords="362,304,453,331"/>
+<area shape="rect" id="node14" href="$Irq_8cpp.html" title="Irq.cpp" alt="" coords="474,229,536,256"/>
+<area shape="rect" id="node15" href="$Util_8cpp.html" title="Util.cpp" alt="" coords="662,229,729,256"/>
+<area shape="rect" id="node5" href="$Testes_8h.html" title="Testes.h" alt="" coords="123,304,196,331"/>
+<area shape="rect" id="node13" href="$Vfs_8cpp.html" title="Vfs.cpp" alt="" coords="272,304,338,331"/>
+<area shape="rect" id="node7" href="$Testes_8cpp.html" title="Testes.cpp" alt="" coords="116,379,203,405"/>
+<area shape="rect" id="node19" href="$Memoria_8cpp.html" title="Memoria.cpp" alt="" coords="664,304,762,331"/>
+</map>

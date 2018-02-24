@@ -1,0 +1,59 @@
+[bits 16]; primeira parte do código roda em 16 bits (real mode)
+
+section .text
+global ini;
+
+ini:
+	
+	;Aponta para nova área da Pilha
+	mov esp, _sys_stack 
+   	
+    ;calculando tamanho da GDT
+    mov ax, gdt_end
+	sub ax, gdt_dados
+	dec ax
+	mov [gdt], ax
+	
+	;calculando posição dos dados da GDT
+	mov  eax, gdt_dados    
+	mov  [gdt+2], eax
+	
+	;carregando GDT
+	lgdt [gdt]
+	
+	;mudando para o protected mode
+	mov eax, cr0		;salvando valor de cro em eax
+    or al, 1			;setando bit para mudança de modo
+	mov cr0, eax		;colocando novo valor em EAX
+	
+	;far jump para código em modo protegido
+	jmp 0x08:pmode
+
+	
+; segunda parte do código roda em 32 bits (protected mode)
+[bits 32]
+	
+pmode:
+	 mov ax, 0x10	;apontando para o seletor 0x10 da GDT
+	 mov ds, eax	;configurando registradores de segmento
+	 mov es, eax
+	 mov fs, eax
+	 mov gs, eax
+	 mov ss, eax
+	 jmp [0x7D000]	;pulando para o começo do código trampolim em C
+
+gdt:
+	dw gdt_end - gdt_dados - 1 ; tam da GDT (2 bytes, 16 bits)
+	dd gdt_dados			   ; 4 bytes (32bits)	
+
+gdt_dados:
+	dd 0, 0							                    ;entrada nula
+	db 0xFF, 0xFF, 0, 0, 0, 10011010b, 11001111b, 0x00	; code selector 0x08: base 0x40000000, limite 0xFFFFFFFF, tipo 0x9A(anel 0, código), granularidade 0xCF
+	db 0xFF, 0xFF, 0, 0, 0, 10010010b, 11001111b, 0x00	; data selector 0x10: base 0x40000000, limite 0xFFFFFFFF, tipo 0x92(anel 0, data), granularidade 0x
+gdt_end:		
+	
+
+	 
+SECTION .bss
+resb 8192               ; Reservar 8kb de memória para a piha
+_sys_stack:

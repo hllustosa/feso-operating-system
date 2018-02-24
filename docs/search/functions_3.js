@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['calcular_5fsetor_5fabsoluto',['calcular_setor_absoluto',['../Fataux_8cpp.html#af9b7c85ec51fd8720ccb31db848235e2',1,'Fataux.cpp']]],
+  ['carregar_5fcodigo_5ftrampolim',['carregar_codigo_trampolim',['../classMultiproc.html#a913a0c5a39ec21ad4299898a5f78bc97',1,'Multiproc']]],
+  ['carregar_5fdiretorio_5fraiz',['carregar_diretorio_raiz',['../Fataux_8cpp.html#aa4db0c0b61f2f3b9353b87531a7b150f',1,'Fataux.cpp']]],
+  ['carregar_5ffat32',['carregar_fat32',['../Fataux_8cpp.html#aeea4bb57dc1aac79c965a2d783faa3e2',1,'Fataux.cpp']]],
+  ['carregar_5fgdt',['carregar_gdt',['../Gdt_8h.html#acb15284ac3f3e21f85543ae31bd1b90e',1,'Gdt.h']]],
+  ['carregar_5fidt',['carregar_idt',['../Idt_8h.html#ac8698fa83ca3df5dabb1414eb75eda39',1,'Idt.h']]],
+  ['carregar_5fpage_5fdirectory',['carregar_page_directory',['../classMemoriaVirtual.html#a7525f70b119bfad6078c8da630294497',1,'MemoriaVirtual']]],
+  ['chamar_5fsystemcall',['chamar_systemcall',['../classSyscall.html#ae83189ab344d2d7b27549cce4f54c19e',1,'Syscall']]],
+  ['clock',['clock',['../Video_8cpp.html#a91c4a467078baf29eb254476f50fa310',1,'Video.cpp']]],
+  ['cls',['cls',['../Io_8h.html#a4826277cc150ddc0f4de4bd464a34909',1,'Io.h']]],
+  ['colocar_5fthread_5fatual_5fem_5fespera',['colocar_thread_atual_em_espera',['../classEscalonador.html#a849f3b78bdafd135955cc6edbcb8980b',1,'Escalonador']]],
+  ['config_5fcursor',['config_cursor',['../Io_8h.html#a8b8bc95c76b8c045d64c388ada9e3138',1,'Io.h']]],
+  ['criar_5farquivo',['criar_arquivo',['../classVfs.html#a358792d4729c76f03149947f38984774',1,'Vfs']]],
+  ['criar_5fespaco_5fenderecamento',['criar_espaco_enderecamento',['../classProcesso.html#a004331e5303f13662e60e255db679bef',1,'Processo']]],
+  ['criar_5fprocesso',['criar_processo',['../classProcesso.html#a9e998a42aa280eb28a851fff9464bce9',1,'Processo']]],
+  ['criar_5fthread',['criar_thread',['../classProcesso.html#ab65d32e47f82a623a224e20c16c4e5d8',1,'Processo::criar_thread()'],['../classSyscall.html#a29ba689784ecd773ddfbd37387a5a047',1,'Syscall::criar_thread()'],['../Sistema_8h.html#af477b4351065bbe18ab05a984ba49ea7',1,'criar_thread():&#160;Sistema.h']]]
+];

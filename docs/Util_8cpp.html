@@ -1,0 +1,914 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Referência do Arquivo Util.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_cbd7f246bdf7dc0a50281a272327e6ed.html">kernel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo Util.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="kernel_2include_2Util_8h_source.html">include/Util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Multiprocessamento_8h_source.html">include/Multiprocessamento.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para Util.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="Util_8cpp__incl.png" border="0" usemap="#Util_8cpp" alt=""/></div>
+<map name="Util_8cpp" id="Util_8cpp">
+<area shape="rect" id="node2" href="kernel_2include_2Util_8h.html" title="include/Util.h" alt="" coords="20,379,119,405"/>
+<area shape="rect" id="node3" href="Multiprocessamento_8h.html" title="include/Multiprocessamento.h" alt="" coords="49,80,244,107"/>
+<area shape="rect" id="node4" href="Memoria_8h.html" title="Memoria.h" alt="" coords="152,304,235,331"/>
+<area shape="rect" id="node6" href="Loader_8h.html" title="Loader.h" alt="" coords="44,155,116,181"/>
+<area shape="rect" id="node8" href="kernel_2include_2Avl_8h.html" title="Avl.h" alt="" coords="129,229,181,256"/>
+<area shape="rect" id="node5" href="Multiboot_8h.html" title="Multiboot.h" alt="" coords="150,379,237,405"/>
+<area shape="rect" id="node7" href="kernel_2include_2Lista_8h.html" title="Lista.h" alt="" coords="43,229,104,256"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a070d2ce7b6bb7e5c05602aa8c308d0c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a070d2ce7b6bb7e5c05602aa8c308d0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51e57479919fd1978d19ccbb3e5b167"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ab51e57479919fd1978d19ccbb3e5b167">DBL_DIG</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:ab51e57479919fd1978d19ccbb3e5b167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab701824136346377b44fc3adb8050b29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ab701824136346377b44fc3adb8050b29">DBL_EPSILON</a>&#160;&#160;&#160;2.2204460492503131e-016</td></tr>
+<tr class="separator:ab701824136346377b44fc3adb8050b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb343417fe0051b641fc7921022c7b0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#aeb343417fe0051b641fc7921022c7b0d">DBL_MANT_DIG</a>&#160;&#160;&#160;53</td></tr>
+<tr class="separator:aeb343417fe0051b641fc7921022c7b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af78670ee54c1203d613f8fb0e022d214"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#af78670ee54c1203d613f8fb0e022d214">DBL_MAX</a>&#160;&#160;&#160;1.7976931348623158e+308</td></tr>
+<tr class="separator:af78670ee54c1203d613f8fb0e022d214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75425646ce3c79cbc0a8e9613f3d9c17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a75425646ce3c79cbc0a8e9613f3d9c17">DBL_MAX_10_EXP</a>&#160;&#160;&#160;308</td></tr>
+<tr class="separator:a75425646ce3c79cbc0a8e9613f3d9c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539f2dd258b96fac8f4dc9bc139d75c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a539f2dd258b96fac8f4dc9bc139d75c9">DBL_MAX_EXP</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="separator:a539f2dd258b96fac8f4dc9bc139d75c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f2d2630bc132bca0a4c9733164e91a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ab5f2d2630bc132bca0a4c9733164e91a">DBL_MIN</a>&#160;&#160;&#160;2.2250738585072014e-308</td></tr>
+<tr class="separator:ab5f2d2630bc132bca0a4c9733164e91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b731624df926496f4fc19001447d3e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a5b731624df926496f4fc19001447d3e7">DBL_MIN_10_EXP</a>&#160;&#160;&#160;(-307)</td></tr>
+<tr class="separator:a5b731624df926496f4fc19001447d3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7be8bc5288d5fe9f56aae3a8684167"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a0a7be8bc5288d5fe9f56aae3a8684167">DBL_MIN_EXP</a>&#160;&#160;&#160;(-1021)</td></tr>
+<tr class="separator:a0a7be8bc5288d5fe9f56aae3a8684167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ab344c7546b8bbb441be70047edebf204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ab344c7546b8bbb441be70047edebf204">imprimir</a> (int n, int pos)</td></tr>
+<tr class="separator:ab344c7546b8bbb441be70047edebf204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc4da82a742758a04ac4b3559fbf834"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#aecc4da82a742758a04ac4b3559fbf834">MAIOR</a> (int a, int b)</td></tr>
+<tr class="separator:aecc4da82a742758a04ac4b3559fbf834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bde00602e834bce19dccdf75a1c2445"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a7bde00602e834bce19dccdf75a1c2445">memcpy</a> (unsigned char *dest, unsigned char *src, int count)</td></tr>
+<tr class="separator:a7bde00602e834bce19dccdf75a1c2445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11bd144d7d44914099a3aeddf1c8567d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a11bd144d7d44914099a3aeddf1c8567d">strcmp</a> (const char *s1, const char *s2)</td></tr>
+<tr class="separator:a11bd144d7d44914099a3aeddf1c8567d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad50621205c78cd590710cdc3e00290"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a0ad50621205c78cd590710cdc3e00290">memset</a> (unsigned char *dest, unsigned char val, int count)</td></tr>
+<tr class="separator:a0ad50621205c78cd590710cdc3e00290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9418dbcf5e7fefa54ae3c37e089abae0"><td class="memItemLeft" align="right" valign="top">unsigned short *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a9418dbcf5e7fefa54ae3c37e089abae0">memsetw</a> (unsigned short *dest, unsigned short val, int count)</td></tr>
+<tr class="separator:a9418dbcf5e7fefa54ae3c37e089abae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c8de953239811a34eeeab09458e55e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ae6c8de953239811a34eeeab09458e55e">strlen</a> (const char *str)</td></tr>
+<tr class="separator:ae6c8de953239811a34eeeab09458e55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f8fb5a529dbd4b3efb2575764d850e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a80f8fb5a529dbd4b3efb2575764d850e">strtok</a> (char *<a class="el" href="Memoria_8cpp.html#ac83dcbf8edb01e4e7850a3643defb3fd">s</a>, const char *delim)</td></tr>
+<tr class="separator:a80f8fb5a529dbd4b3efb2575764d850e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81383881e8c2d3a4107ce4eb2ac7652f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a81383881e8c2d3a4107ce4eb2ac7652f">strcat</a> (char *dest, char *src)</td></tr>
+<tr class="separator:a81383881e8c2d3a4107ce4eb2ac7652f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4914dd4a4c659b8d67bf5972d1947e"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a9b4914dd4a4c659b8d67bf5972d1947e">inportb</a> (unsigned short _port)</td></tr>
+<tr class="separator:a9b4914dd4a4c659b8d67bf5972d1947e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c50b97fe37eb9c2236112176924ebdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a0c50b97fe37eb9c2236112176924ebdf">outportb</a> (unsigned short _port, unsigned char _data)</td></tr>
+<tr class="separator:a0c50b97fe37eb9c2236112176924ebdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a060a10f38b9d5daedb7f109c95718770"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a060a10f38b9d5daedb7f109c95718770">outportw</a> (unsigned short port, unsigned short val)</td></tr>
+<tr class="separator:a060a10f38b9d5daedb7f109c95718770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ac27b23d94c3106e36f2868359ae6e"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ad1ac27b23d94c3106e36f2868359ae6e">inportw</a> (unsigned short port)</td></tr>
+<tr class="separator:ad1ac27b23d94c3106e36f2868359ae6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2229e7777411153713a9744b0f251b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a2e2229e7777411153713a9744b0f251b">outportsw</a> (unsigned short port, const void *addr, int cnt)</td></tr>
+<tr class="separator:a2e2229e7777411153713a9744b0f251b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12d403e579bdfa84cc6d6e19781ad88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#af12d403e579bdfa84cc6d6e19781ad88">inportsw</a> (unsigned short port, void *addr, int cnt)</td></tr>
+<tr class="separator:af12d403e579bdfa84cc6d6e19781ad88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6490d3a2bd188997a8d367be0d92c3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ac6490d3a2bd188997a8d367be0d92c3e">isdigit</a> (char c)</td></tr>
+<tr class="separator:ac6490d3a2bd188997a8d367be0d92c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35cccd3bf024c062e3df84143b924eb"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ac35cccd3bf024c062e3df84143b924eb">itoa</a> (int val, int <a class="el" href="Idt_8h.html#a2e013c2c6e8010c8116c6f56813df57b">base</a>)</td></tr>
+<tr class="separator:ac35cccd3bf024c062e3df84143b924eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a3b0f31c06cf978d8ecb88e5438407"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ac8a3b0f31c06cf978d8ecb88e5438407">itoa2</a> (int val, int <a class="el" href="Idt_8h.html#a2e013c2c6e8010c8116c6f56813df57b">base</a>, char *<a class="el" href="Fat_8cpp.html#aa9d04f2a07ea7900ead79a4bcf6bce48">buf</a>)</td></tr>
+<tr class="separator:ac8a3b0f31c06cf978d8ecb88e5438407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72dfe178069c427454ca78e053c63a30"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a72dfe178069c427454ca78e053c63a30">ftoa</a> (double valor)</td></tr>
+<tr class="separator:a72dfe178069c427454ca78e053c63a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab017280f95ea769b9422688105f02653"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ab017280f95ea769b9422688105f02653">strtod</a> (const char *str, char **endptr)</td></tr>
+<tr class="separator:ab017280f95ea769b9422688105f02653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab578f2ac5d7ed024af73180f7187aacb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ab578f2ac5d7ed024af73180f7187aacb">atoi</a> (const char *c)</td></tr>
+<tr class="separator:ab578f2ac5d7ed024af73180f7187aacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06179b27e27484ceb43d2a0486b3c328"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#a06179b27e27484ceb43d2a0486b3c328">obter_estado_bit</a> (unsigned char bloco, short index)</td></tr>
+<tr class="separator:a06179b27e27484ceb43d2a0486b3c328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a8d549dd494351e623011ede378d3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Util_8cpp.html#ab4a8d549dd494351e623011ede378d3d">setar_byte</a> (unsigned char *bloco, short index, short val)</td></tr>
+<tr class="separator:ab4a8d549dd494351e623011ede378d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições e macros</h2>
+<a class="anchor" id="ab51e57479919fd1978d19ccbb3e5b167"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBL_DIG&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab701824136346377b44fc3adb8050b29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBL_EPSILON&#160;&#160;&#160;2.2204460492503131e-016</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb343417fe0051b641fc7921022c7b0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBL_MANT_DIG&#160;&#160;&#160;53</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af78670ee54c1203d613f8fb0e022d214"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBL_MAX&#160;&#160;&#160;1.7976931348623158e+308</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a75425646ce3c79cbc0a8e9613f3d9c17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBL_MAX_10_EXP&#160;&#160;&#160;308</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a539f2dd258b96fac8f4dc9bc139d75c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBL_MAX_EXP&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab5f2d2630bc132bca0a4c9733164e91a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBL_MIN&#160;&#160;&#160;2.2250738585072014e-308</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b731624df926496f4fc19001447d3e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBL_MIN_10_EXP&#160;&#160;&#160;(-307)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a7be8bc5288d5fe9f56aae3a8684167"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBL_MIN_EXP&#160;&#160;&#160;(-1021)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a070d2ce7b6bb7e5c05602aa8c308d0c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NULL&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="ab578f2ac5d7ed024af73180f7187aacb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int atoi </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função atoi da biblioteca padrão. </p>
+
+</div>
+</div>
+<a class="anchor" id="a72dfe178069c427454ca78e053c63a30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* ftoa </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>valor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função ftoa da biblioteca padrão. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab344c7546b8bbb441be70047edebf204"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imprimir </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b4914dd4a4c659b8d67bf5972d1947e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char inportb </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>short</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encapsulamento da função inb em assembly x86. </p>
+
+</div>
+</div>
+<a class="anchor" id="af12d403e579bdfa84cc6d6e19781ad88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inportsw </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encapsulamento da função insw em assembly x86. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad1ac27b23d94c3106e36f2868359ae6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short inportw </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encapsulamento da função inw em assembly x86. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac6490d3a2bd188997a8d367be0d92c3e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isdigit </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac35cccd3bf024c062e3df84143b924eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* itoa </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função itoa da biblioteca padrão. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac8a3b0f31c06cf978d8ecb88e5438407"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* itoa2 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função itoa da biblioteca padrão. </p>
+
+</div>
+</div>
+<a class="anchor" id="aecc4da82a742758a04ac4b3559fbf834"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MAIOR </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retorna o valor maior entre a e b. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7bde00602e834bce19dccdf75a1c2445"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char* memcpy </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função memcpy da biblioteca padrão. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0ad50621205c78cd590710cdc3e00290"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char* memset </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>char</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função memset da biblioteca padrão. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9418dbcf5e7fefa54ae3c37e089abae0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short* memsetw </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>short</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função memsetw da biblioteca padrão. </p>
+
+</div>
+</div>
+<a class="anchor" id="a06179b27e27484ceb43d2a0486b3c328"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int obter_estado_bit </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>bloco</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtém o valor do bit em uma posição específica. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0c50b97fe37eb9c2236112176924ebdf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void outportb </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>short</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>char</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encapsulamento da função outb em assembly x86. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e2229e7777411153713a9744b0f251b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void outportsw </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encapsulamento da função outsw em assembly x86. </p>
+
+</div>
+</div>
+<a class="anchor" id="a060a10f38b9d5daedb7f109c95718770"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void outportw </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encapsulamento da função outw em assembly x86. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab4a8d549dd494351e623011ede378d3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setar_byte </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>bloco</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Seta o valor do bit em uma posição específica. </p>
+
+</div>
+</div>
+<a class="anchor" id="a81383881e8c2d3a4107ce4eb2ac7652f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* strcat </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função strcat da biblioteca padrão. </p>
+
+</div>
+</div>
+<a class="anchor" id="a11bd144d7d44914099a3aeddf1c8567d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int strcmp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função strcmp da biblioteca padrão. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae6c8de953239811a34eeeab09458e55e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int strlen </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função strlen da biblioteca padrão. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab017280f95ea769b9422688105f02653"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double strtod </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>endptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função strtod da biblioteca padrão. </p>
+
+</div>
+</div>
+<a class="anchor" id="a80f8fb5a529dbd4b3efb2575764d850e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* strtok </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>delim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função strtok da biblioteca padrão. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

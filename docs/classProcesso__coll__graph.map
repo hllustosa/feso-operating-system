@@ -1,0 +1,10 @@
+<map id="Processo" name="Processo">
+<area shape="rect" id="node2" href="$classRecurso.html" title="Recurso" alt="" coords="371,96,442,123"/>
+<area shape="rect" id="node3" href="$classLista.html" title="Lista\&lt; unsigned int \&gt;" alt="" coords="585,201,729,228"/>
+<area shape="rect" id="node5" href="$classThread.html" title="Thread" alt="" coords="266,299,329,326"/>
+<area shape="rect" id="node6" href="$classLista.html" title="Lista\&lt; Mensagem \&gt;" alt="" coords="111,201,249,228"/>
+<area shape="rect" id="node4" href="$structItem.html" title="Item\&lt; unsigned int \&gt;" alt="" coords="586,96,729,123"/>
+<area shape="rect" id="node7" href="$structItem.html" title="Item\&lt; Mensagem \&gt;" alt="" coords="5,96,141,123"/>
+<area shape="rect" id="node8" href="$structMensagem.html" title="Mensagem" alt="" coords="30,5,117,32"/>
+<area shape="rect" id="node9" href="$structREGS.html" title="REGS" alt="" coords="363,201,423,228"/>
+</map>

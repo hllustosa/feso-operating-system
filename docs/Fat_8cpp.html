@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Referência do Arquivo Fat.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_79aff18505430beab4d731f694f82366.html">dev</a></li><li class="navelem"><a class="el" href="dir_60b78150957253fae0c5bbaf10c5a60b.html">Fat</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo Fat.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;include/Sistema.h&quot;</code><br />
+<code>#include &quot;include/Util.h&quot;</code><br />
+<code>#include &quot;include/Lista.h&quot;</code><br />
+<code>#include &quot;include/Avl.h&quot;</code><br />
+<code>#include &quot;include/Io.h&quot;</code><br />
+<code>#include &quot;include/Ide.h&quot;</code><br />
+<code>#include &quot;include/Sistimer.h&quot;</code><br />
+<code>#include &quot;include/Fat.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para Fat.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="Fat_8cpp__incl.png" border="0" usemap="#Fat_8cpp" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a7c8a7f98a98d8cb125dd57a66720ab30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a7c8a7f98a98d8cb125dd57a66720ab30">PORTA</a>&#160;&#160;&#160;91</td></tr>
+<tr class="separator:a7c8a7f98a98d8cb125dd57a66720ab30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:aa326da94b7dbcf0c2cc34b0a152a803c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#aa326da94b7dbcf0c2cc34b0a152a803c">fat_ler_setor</a> (unsigned char *<a class="el" href="Fat_8cpp.html#a0aa5f75dd49eb77a60e5bfd62098cc34">dados</a>, unsigned int setor_lba)</td></tr>
+<tr class="separator:aa326da94b7dbcf0c2cc34b0a152a803c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1752f14410a5f7853775870e1b373e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a3a1752f14410a5f7853775870e1b373e">fat_escrever_setor</a> (unsigned char *<a class="el" href="Fat_8cpp.html#a0aa5f75dd49eb77a60e5bfd62098cc34">dados</a>, unsigned int setor_lba)</td></tr>
+<tr class="separator:a3a1752f14410a5f7853775870e1b373e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae532e0c47187a52d4ddf81f4522fa95d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#ae532e0c47187a52d4ddf81f4522fa95d">fat_identificar</a> (unsigned char *<a class="el" href="Fat_8cpp.html#a0aa5f75dd49eb77a60e5bfd62098cc34">dados</a>, unsigned int <a class="el" href="Multiprocessamento_8h.html#a5669dd1ba6f87ba324e85496866f8d3c">bus</a>, unsigned int drive, unsigned int <a class="el" href="Sistema_8h.html#adcce25c6f99885ff24e50b9091a7d6dc">tipo</a>)</td></tr>
+<tr class="separator:ae532e0c47187a52d4ddf81f4522fa95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618f203a3dbe4190d3f43d63a6033458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a618f203a3dbe4190d3f43d63a6033458">abrir_arquivo</a> (char *<a class="el" href="Sistema_8h.html#aa08092e34eb18bae49b6b1de8aa36449">nome</a>, char *nome_vfs)</td></tr>
+<tr class="separator:a618f203a3dbe4190d3f43d63a6033458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52838e2ae059a54e1f4bb815ad4cce1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a52838e2ae059a54e1f4bb815ad4cce1f">apagar_arquivo</a> (char *<a class="el" href="Sistema_8h.html#aa08092e34eb18bae49b6b1de8aa36449">nome</a>)</td></tr>
+<tr class="separator:a52838e2ae059a54e1f4bb815ad4cce1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998659f0a532f5feebbe05c43fd392f1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a998659f0a532f5feebbe05c43fd392f1">salvar_arquivo</a> (char *<a class="el" href="Sistema_8h.html#aa08092e34eb18bae49b6b1de8aa36449">nome</a>, char *nome_vfs)</td></tr>
+<tr class="separator:a998659f0a532f5feebbe05c43fd392f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d41d6dfd7fae0027080bc037ccab7a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a0d41d6dfd7fae0027080bc037ccab7a8">fat_inicializar</a> ()</td></tr>
+<tr class="separator:a0d41d6dfd7fae0027080bc037ccab7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e9b091b33e8494d8168c9958844ed1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a83e9b091b33e8494d8168c9958844ed1">fat_tratar_solicitacoes</a> (char *<a class="el" href="Iso9660_8cpp.html#a92135cb52beac46a9b94be4a1273f1a1">msg</a>)</td></tr>
+<tr class="separator:a83e9b091b33e8494d8168c9958844ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d952f60539143bb330b7b6571a3136"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a01d952f60539143bb330b7b6571a3136">main</a> (int argc, char *args[])</td></tr>
+<tr class="separator:a01d952f60539143bb330b7b6571a3136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:aa9c0b4c31d7062b8093b1857c9f24cef"><td class="memItemLeft" align="right" valign="top">fat_BS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#aa9c0b4c31d7062b8093b1857c9f24cef">bs</a></td></tr>
+<tr class="separator:aa9c0b4c31d7062b8093b1857c9f24cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad74d9cadd2f44b62798b2b483345f16"><td class="memItemLeft" align="right" valign="top">fat_extBS_32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#aad74d9cadd2f44b62798b2b483345f16">ex</a></td></tr>
+<tr class="separator:aad74d9cadd2f44b62798b2b483345f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af737168866a742f088d23c02d7cb7108"><td class="memItemLeft" align="right" valign="top">fat_info_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#af737168866a742f088d23c02d7cb7108">fat_info</a></td></tr>
+<tr class="separator:af737168866a742f088d23c02d7cb7108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98c1a19dbfab6bb4b0c10a06e18760f"><td class="memItemLeft" align="right" valign="top">entrada_diretorio_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#ac98c1a19dbfab6bb4b0c10a06e18760f">dir_final</a></td></tr>
+<tr class="separator:ac98c1a19dbfab6bb4b0c10a06e18760f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa5f75dd49eb77a60e5bfd62098cc34"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a0aa5f75dd49eb77a60e5bfd62098cc34">dados</a> [TAM_CLUSTER]</td></tr>
+<tr class="separator:a0aa5f75dd49eb77a60e5bfd62098cc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc3fb48235910cb361f9d09e70bc030"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a3bc3fb48235910cb361f9d09e70bc030">setor_boot</a> [TAM_CLUSTER]</td></tr>
+<tr class="separator:a3bc3fb48235910cb361f9d09e70bc030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d04f2a07ea7900ead79a4bcf6bce48"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#aa9d04f2a07ea7900ead79a4bcf6bce48">buf</a> [TAM_CLUSTER]</td></tr>
+<tr class="separator:aa9d04f2a07ea7900ead79a4bcf6bce48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3d77f203416326a2b459c1d8ccf7cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; entrada_diretorio &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a0d3d77f203416326a2b459c1d8ccf7cb">diretorio_raiz</a></td></tr>
+<tr class="separator:a0d3d77f203416326a2b459c1d8ccf7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5fb15fd540f2f205df1de9c73e934a"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a7f5fb15fd540f2f205df1de9c73e934a">info_identificar</a> [1024]</td></tr>
+<tr class="separator:a7f5fb15fd540f2f205df1de9c73e934a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d27df0759541e9ae86268f34baa6775"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a9d27df0759541e9ae86268f34baa6775">primeiro_setor_dados</a></td></tr>
+<tr class="separator:a9d27df0759541e9ae86268f34baa6775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab335ae3bc61c200f3202d173099a68c8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#ab335ae3bc61c200f3202d173099a68c8">primeiro_setor_fat</a></td></tr>
+<tr class="separator:ab335ae3bc61c200f3202d173099a68c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5087148661fd0de1a03d69558cd43965"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a5087148661fd0de1a03d69558cd43965">num_total_setores_dados</a></td></tr>
+<tr class="separator:a5087148661fd0de1a03d69558cd43965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf36ac16e50b886b87e3c7a29422c9f0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#abf36ac16e50b886b87e3c7a29422c9f0">num_total_clusters</a></td></tr>
+<tr class="separator:abf36ac16e50b886b87e3c7a29422c9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da086f6dda235a35f3fe079d6d49c8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArvore.html">Arvore</a>&lt; No &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a9da086f6dda235a35f3fe079d6d49c8d">arquivos</a></td></tr>
+<tr class="separator:a9da086f6dda235a35f3fe079d6d49c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6d9f8f602e5f6d0953eb7fdc1a775c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#adc6d9f8f602e5f6d0953eb7fdc1a775c">data</a> [1024]</td></tr>
+<tr class="separator:adc6d9f8f602e5f6d0953eb7fdc1a775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833629ab33485bd0de26e6e9766b0353"><td class="memItemLeft" align="right" valign="top">No&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a833629ab33485bd0de26e6e9766b0353">no</a></td></tr>
+<tr class="separator:a833629ab33485bd0de26e6e9766b0353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92135cb52beac46a9b94be4a1273f1a1"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fat_8cpp.html#a92135cb52beac46a9b94be4a1273f1a1">msg</a> [100]</td></tr>
+<tr class="separator:a92135cb52beac46a9b94be4a1273f1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições e macros</h2>
+<a class="anchor" id="a7c8a7f98a98d8cb125dd57a66720ab30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORTA&#160;&#160;&#160;91</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="a618f203a3dbe4190d3f43d63a6033458"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void abrir_arquivo </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nome</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nome_vfs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a52838e2ae059a54e1f4bb815ad4cce1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apagar_arquivo </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nome</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a1752f14410a5f7853775870e1b373e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fat_escrever_setor </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>dados</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>setor_lba</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae532e0c47187a52d4ddf81f4522fa95d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fat_identificar </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>dados</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>drive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>tipo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d41d6dfd7fae0027080bc037ccab7a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fat_inicializar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa326da94b7dbcf0c2cc34b0a152a803c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fat_ler_setor </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>dados</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>setor_lba</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a83e9b091b33e8494d8168c9958844ed1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fat_tratar_solicitacoes </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a01d952f60539143bb330b7b6571a3136"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>args</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a998659f0a532f5feebbe05c43fd392f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int salvar_arquivo </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nome</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nome_vfs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a class="anchor" id="a9da086f6dda235a35f3fe079d6d49c8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArvore.html">Arvore</a>&lt;No&gt; arquivos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa9c0b4c31d7062b8093b1857c9f24cef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fat_BS bs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa9d04f2a07ea7900ead79a4bcf6bce48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char buf[TAM_CLUSTER]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0aa5f75dd49eb77a60e5bfd62098cc34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char dados[TAM_CLUSTER]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc6d9f8f602e5f6d0953eb7fdc1a775c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char data[1024]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac98c1a19dbfab6bb4b0c10a06e18760f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entrada_diretorio_t dir_final</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d3d77f203416326a2b459c1d8ccf7cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLista.html">Lista</a>&lt;entrada_diretorio&gt; diretorio_raiz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad74d9cadd2f44b62798b2b483345f16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fat_extBS_32_t ex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af737168866a742f088d23c02d7cb7108"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fat_info_t fat_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f5fb15fd540f2f205df1de9c73e934a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short info_identificar[1024]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a92135cb52beac46a9b94be4a1273f1a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char msg[100]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a833629ab33485bd0de26e6e9766b0353"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">No no</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf36ac16e50b886b87e3c7a29422c9f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int num_total_clusters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5087148661fd0de1a03d69558cd43965"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int num_total_setores_dados</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d27df0759541e9ae86268f34baa6775"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int primeiro_setor_dados</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab335ae3bc61c200f3202d173099a68c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int primeiro_setor_fat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3bc3fb48235910cb361f9d09e70bc030"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char setor_boot[TAM_CLUSTER]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

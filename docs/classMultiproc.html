@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Referência da Classe Multiproc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;Componentes</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;dos&#160;Componentes</span></a></li>
+      <li><a href="inherits.html"><span>Hierarquia&#160;de&#160;Classes</span></a></li>
+      <li><a href="functions.html"><span>Componentes&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="classMultiproc-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe Multiproc</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Multiprocessamento_8h_source.html">Multiprocessamento.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para Multiproc:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMultiproc__coll__graph.png" border="0" usemap="#Multiproc_coll__map" alt="Collaboration graph"/></div>
+<map name="Multiproc_coll__map" id="Multiproc_coll__map">
+<area shape="rect" id="node2" href="classLista.html" title="Lista\&lt; MP_CONFIG_TABLE\l_IOAPIC \&gt;" alt="" coords="753,214,944,255"/>
+<area shape="rect" id="node3" href="classRecurso.html" title="Recurso" alt="" coords="368,239,439,265"/>
+<area shape="rect" id="node6" href="classArvore.html" title="Arvore\&lt; int \&gt;" alt="" coords="799,163,898,189"/>
+<area shape="rect" id="node8" href="classLista.html" title="Lista\&lt; MP_CONFIG_INTERRUPT \&gt;" alt="" coords="729,345,968,372"/>
+<area shape="rect" id="node11" href="classLista.html" title="Lista\&lt; MP_CONFIG_TABLE\l_PROC \&gt;" alt="" coords="753,279,944,321"/>
+<area shape="rect" id="node4" href="structItem.html" title="Item\&lt; MP_CONFIG_TABLE\l_IOAPIC \&gt;" alt="" coords="309,163,497,205"/>
+<area shape="rect" id="node5" href="structMP__CONFIG__TABLE__IOAPIC.html" title="MP_CONFIG_TABLE_IOAPIC" alt="" coords="5,171,208,197"/>
+<area shape="rect" id="node7" href="classAvl.html" title="Avl\&lt; int \&gt;" alt="" coords="364,59,443,85"/>
+<area shape="rect" id="node9" href="structItem.html" title="Item\&lt; MP_CONFIG_INTERRUPT \&gt;" alt="" coords="285,464,521,491"/>
+<area shape="rect" id="node10" href="structMP__CONFIG__INTERRUPT.html" title="MP_CONFIG_INTERRUPT" alt="" coords="13,464,200,491"/>
+<area shape="rect" id="node12" href="structItem.html" title="Item\&lt; MP_CONFIG_TABLE\l_PROC \&gt;" alt="" coords="309,345,497,386"/>
+<area shape="rect" id="node13" href="structMP__CONFIG__TABLE__PROC.html" title="MP_CONFIG_TABLE_PROC" alt="" coords="9,352,205,379"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:ab4fc78f066edee0aac83a28403202c15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#ab4fc78f066edee0aac83a28403202c15">inicializar</a> ()</td></tr>
+<tr class="separator:ab4fc78f066edee0aac83a28403202c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce22488f36e396be5be6d4e0a1a0059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#abce22488f36e396be5be6d4e0a1a0059">inicializar_ioapic</a> ()</td></tr>
+<tr class="separator:abce22488f36e396be5be6d4e0a1a0059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5961d7aa4f532236fdfba2728b017277"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a5961d7aa4f532236fdfba2728b017277">habilitar_apic</a> ()</td></tr>
+<tr class="separator:a5961d7aa4f532236fdfba2728b017277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30a44ba460f5ccfcbb5e68713a0f5ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#af30a44ba460f5ccfcbb5e68713a0f5ef">habilitar_apic_timer</a> ()</td></tr>
+<tr class="separator:af30a44ba460f5ccfcbb5e68713a0f5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bdc862d6e33edf774d4275b6a2f2e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a5bdc862d6e33edf774d4275b6a2f2e3f">inicializar_ioapic2</a> ()</td></tr>
+<tr class="separator:a5bdc862d6e33edf774d4275b6a2f2e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e60431b7b0dee861f65582d80801692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a4e60431b7b0dee861f65582d80801692">analisar_madt</a> (unsigned int *end)</td></tr>
+<tr class="separator:a4e60431b7b0dee861f65582d80801692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a913a0c5a39ec21ad4299898a5f78bc97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a913a0c5a39ec21ad4299898a5f78bc97">carregar_codigo_trampolim</a> (char *<a class="el" href="Iso9660_8cpp.html#ace82388e5a8e2ed9f09a1c0eda232528">imagem</a>)</td></tr>
+<tr class="separator:a913a0c5a39ec21ad4299898a5f78bc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50b41d3e47f534e97c4095c46b7a1da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#ae50b41d3e47f534e97c4095c46b7a1da">analisar_MPConfigTable</a> (char *<a class="el" href="Memoria_8cpp.html#a0e84d7fb56aa45d0a3eb7083a5ff1b63">ptr</a>)</td></tr>
+<tr class="separator:ae50b41d3e47f534e97c4095c46b7a1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce581be663618835fd2d5a47c2b7f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#abce581be663618835fd2d5a47c2b7f38">escrever_reg_apic</a> (int reg, int dado)</td></tr>
+<tr class="separator:abce581be663618835fd2d5a47c2b7f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a34b770eadded68c18b5911bea8385"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#ae8a34b770eadded68c18b5911bea8385">escrever_reg_ioapic</a> (int reg, int dado)</td></tr>
+<tr class="separator:ae8a34b770eadded68c18b5911bea8385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1842b04c72907b929f50cb7407d530e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#af1842b04c72907b929f50cb7407d530e">enviar_eoi_apic</a> ()</td></tr>
+<tr class="separator:af1842b04c72907b929f50cb7407d530e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac75625eca39f86da0c8ac3e96509e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a3ac75625eca39f86da0c8ac3e96509e1">buscar_floating_point_struc</a> (<a class="el" href="structMP__FLOAT__POINT.html">MP_FLOAT_POINT</a> *mpfloatpoint)</td></tr>
+<tr class="separator:a3ac75625eca39f86da0c8ac3e96509e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5895b82d103bebb980aea7af5cc073a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a5895b82d103bebb980aea7af5cc073a3">buscar_rsdt</a> ()</td></tr>
+<tr class="separator:a5895b82d103bebb980aea7af5cc073a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b661f5819b9c6fa5a5f919b3db5a5cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a7b661f5819b9c6fa5a5f919b3db5a5cf">obter_apicid</a> ()</td></tr>
+<tr class="separator:a7b661f5819b9c6fa5a5f919b3db5a5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846690be95d5194edc26ea4005a7a9cb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a846690be95d5194edc26ea4005a7a9cb">ler_reg_apic</a> (int reg)</td></tr>
+<tr class="separator:a846690be95d5194edc26ea4005a7a9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11874b0bb17c3d3c3cdbfeb1f322eed6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a11874b0bb17c3d3c3cdbfeb1f322eed6">ler_reg_ioapic</a> (int reg)</td></tr>
+<tr class="separator:a11874b0bb17c3d3c3cdbfeb1f322eed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a0a8113ba416c6182405825149edee962"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a0a8113ba416c6182405825149edee962">processadores_iniciados</a></td></tr>
+<tr class="separator:a0a8113ba416c6182405825149edee962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a92b5d907ba7c5ac5b3bad34d6b8deeb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="structMP__CONFIG__TABLE__IOAPIC.html">MP_CONFIG_TABLE_IOAPIC</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a92b5d907ba7c5ac5b3bad34d6b8deeb3">ioapics</a></td></tr>
+<tr class="separator:a92b5d907ba7c5ac5b3bad34d6b8deeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba42e6a7d5e36fb15c9f923c663ba83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="structMP__CONFIG__TABLE__PROC.html">MP_CONFIG_TABLE_PROC</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a6ba42e6a7d5e36fb15c9f923c663ba83">processadores</a></td></tr>
+<tr class="separator:a6ba42e6a7d5e36fb15c9f923c663ba83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac422a9d90138c110280d1c8f02e87f63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="structMP__CONFIG__INTERRUPT.html">MP_CONFIG_INTERRUPT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#ac422a9d90138c110280d1c8f02e87f63">interrupcoes</a></td></tr>
+<tr class="separator:ac422a9d90138c110280d1c8f02e87f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad9136853426338b8850c0a98e3a4b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArvore.html">Arvore</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a3ad9136853426338b8850c0a98e3a4b6">apics</a></td></tr>
+<tr class="separator:a3ad9136853426338b8850c0a98e3a4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ebe4ad2a8f0b5bc5ed08adc8fdc673"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a86ebe4ad2a8f0b5bc5ed08adc8fdc673">multiproc_habilitado</a></td></tr>
+<tr class="separator:a86ebe4ad2a8f0b5bc5ed08adc8fdc673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811dd8a9b17f79ea6e3acfa15a3dfb2f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a811dd8a9b17f79ea6e3acfa15a3dfb2f">apic</a></td></tr>
+<tr class="separator:a811dd8a9b17f79ea6e3acfa15a3dfb2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14464cec3caf9837ba8f316550ebaa0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#ac14464cec3caf9837ba8f316550ebaa0">ioapic</a></td></tr>
+<tr class="separator:ac14464cec3caf9837ba8f316550ebaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84177b0e60c5b58cba16a3a535f19673"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiproc.html#a84177b0e60c5b58cba16a3a535f19673">entrada</a></td></tr>
+<tr class="separator:a84177b0e60c5b58cba16a3a535f19673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>Esta classe é responsável por detectar e inicializar múltiplos processadores. </p>
+</div><h2 class="groupheader">Métodos</h2>
+<a class="anchor" id="a4e60431b7b0dee861f65582d80801692"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiproc::analisar_madt </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>end</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae50b41d3e47f534e97c4095c46b7a1da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiproc::analisar_MPConfigTable </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3ac75625eca39f86da0c8ac3e96509e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Multiproc::buscar_floating_point_struc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMP__FLOAT__POINT.html">MP_FLOAT_POINT</a> *&#160;</td>
+          <td class="paramname"><em>mpfloatpoint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5895b82d103bebb980aea7af5cc073a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Multiproc::buscar_rsdt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a913a0c5a39ec21ad4299898a5f78bc97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiproc::carregar_codigo_trampolim </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>imagem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af1842b04c72907b929f50cb7407d530e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiproc::enviar_eoi_apic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abce581be663618835fd2d5a47c2b7f38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiproc::escrever_reg_apic </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dado</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8a34b770eadded68c18b5911bea8385"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiproc::escrever_reg_ioapic </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dado</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5961d7aa4f532236fdfba2728b017277"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiproc::habilitar_apic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af30a44ba460f5ccfcbb5e68713a0f5ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiproc::habilitar_apic_timer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab4fc78f066edee0aac83a28403202c15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiproc::inicializar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abce22488f36e396be5be6d4e0a1a0059"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiproc::inicializar_ioapic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5bdc862d6e33edf774d4275b6a2f2e3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiproc::inicializar_ioapic2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a846690be95d5194edc26ea4005a7a9cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Multiproc::ler_reg_apic </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a11874b0bb17c3d3c3cdbfeb1f322eed6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Multiproc::ler_reg_ioapic </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7b661f5819b9c6fa5a5f919b3db5a5cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Multiproc::obter_apicid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a class="anchor" id="a811dd8a9b17f79ea6e3acfa15a3dfb2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Multiproc::apic</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3ad9136853426338b8850c0a98e3a4b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArvore.html">Arvore</a>&lt;int&gt; Multiproc::apics</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a84177b0e60c5b58cba16a3a535f19673"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Multiproc::entrada</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac422a9d90138c110280d1c8f02e87f63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLista.html">Lista</a>&lt;<a class="el" href="structMP__CONFIG__INTERRUPT.html">MP_CONFIG_INTERRUPT</a>&gt; Multiproc::interrupcoes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac14464cec3caf9837ba8f316550ebaa0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Multiproc::ioapic</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a92b5d907ba7c5ac5b3bad34d6b8deeb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLista.html">Lista</a>&lt;<a class="el" href="structMP__CONFIG__TABLE__IOAPIC.html">MP_CONFIG_TABLE_IOAPIC</a>&gt; Multiproc::ioapics</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86ebe4ad2a8f0b5bc5ed08adc8fdc673"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Multiproc::multiproc_habilitado</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ba42e6a7d5e36fb15c9f923c663ba83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLista.html">Lista</a>&lt;<a class="el" href="structMP__CONFIG__TABLE__PROC.html">MP_CONFIG_TABLE_PROC</a>&gt; Multiproc::processadores</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a8113ba416c6182405825149edee962"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int Multiproc::processadores_iniciados</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes arquivos:<ul>
+<li><a class="el" href="Multiprocessamento_8h_source.html">Multiprocessamento.h</a></li>
+<li><a class="el" href="Multiprocessamento_8cpp.html">Multiprocessamento.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

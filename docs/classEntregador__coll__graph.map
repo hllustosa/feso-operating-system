@@ -1,0 +1,8 @@
+<map id="Entregador" name="Entregador">
+<area shape="rect" id="node2" href="$classRecurso.html" title="Recurso" alt="" coords="171,96,242,123"/>
+<area shape="rect" id="node3" href="$classLista.html" title="Lista\&lt; int \&gt;" alt="" coords="244,201,332,228"/>
+<area shape="rect" id="node5" href="$classArvore.html" title="Arvore\&lt; Porta \&gt;" alt="" coords="55,201,169,228"/>
+<area shape="rect" id="node4" href="$structItem.html" title="Item\&lt; int \&gt;" alt="" coords="266,96,353,123"/>
+<area shape="rect" id="node6" href="$classAvl.html" title="Avl\&lt; Porta \&gt;" alt="" coords="5,96,101,123"/>
+<area shape="rect" id="node7" href="$structPorta.html" title="Porta" alt="" coords="27,5,80,32"/>
+</map>

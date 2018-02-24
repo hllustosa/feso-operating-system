@@ -1,0 +1,20 @@
+default=0
+timeout=0
+title feSO
+foreground bbbbbb
+background 000000
+wildcard /*
+kernel /boot/kernel.bin root=/dev/hda2 
+module /drivers/timer.o -DRIVER
+module /drivers/ide.o -DRIVER
+module /drivers/hdd.o -DRIVER
+module /drivers/console.o -DRIVER
+module /drivers/iso9660.o -DRIVER
+module /app/editor.o -APP
+module /app/doc.txt -APP
+module /app/shell.o -APP_INI
+module /app/idle.o -IDLE
+module /app/tetris.o -APP
+module /drivers/tramp.o -TRAMP
+module /drivers/tramp.o -TRAMP
+

@@ -1,0 +1,4 @@
+<map id="MADT" name="MADT">
+<area shape="rect" id="node2" href="$structMADT__HEADER.html" title="MADT_HEADER" alt="" coords="5,95,129,121"/>
+<area shape="rect" id="node3" href="$structRSDT__HEADER.html" title="RSDT_HEADER" alt="" coords="6,5,129,32"/>
+</map>

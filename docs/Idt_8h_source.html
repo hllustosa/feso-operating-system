@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Código-Fonte de Idt.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_cbd7f246bdf7dc0a50281a272327e6ed.html">kernel</a></li><li class="navelem"><a class="el" href="dir_1083f99974d515180cb874b65de1a4c1.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Idt.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Idt_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*   This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*    it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*    the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*    (at your option) any later version.</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*    This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*    GNU General Public License for more details.</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*    You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _IDT</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _IDT</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structREGISTRO__IDT.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structREGISTRO__IDT.html">REGISTRO_IDT</a></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structREGISTRO__IDT.html#a48337fad128a81688e2b4d3e3c254c8a">   22</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="structREGISTRO__IDT.html#a48337fad128a81688e2b4d3e3c254c8a">base_low</a>;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structREGISTRO__IDT.html#a6ac6bc0e3a6552a5c413517f0326dbbb">   23</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="structREGISTRO__IDT.html#a6ac6bc0e3a6552a5c413517f0326dbbb">seg</a>;             </div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structREGISTRO__IDT.html#a5a818b7471949d074efd9ec767b6acd2">   24</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  <a class="code" href="structREGISTRO__IDT.html#a5a818b7471949d074efd9ec767b6acd2">sempre_zero</a>;     </div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structREGISTRO__IDT.html#a5baff7766df8c2804552ed003ec558a8">   25</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  <a class="code" href="structREGISTRO__IDT.html#a5baff7766df8c2804552ed003ec558a8">flags</a>;           </div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structREGISTRO__IDT.html#a5c1d7f5cfb1819db4a4bb2ffc46d4ab4">   26</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="structREGISTRO__IDT.html#a5c1d7f5cfb1819db4a4bb2ffc46d4ab4">base_high</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <a class="code" href="Idt_8h.html#aae50c62b17eed62d56b531f690dd0fc5">__attribute__</a>((packed));</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structIDT__PTR.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structIDT__PTR.html">IDT_PTR</a></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structIDT__PTR.html#aa12080973d07fec7f8b1ff96beddaffa">   35</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="structIDT__PTR.html#aa12080973d07fec7f8b1ff96beddaffa">limite</a>;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structIDT__PTR.html#ad74953b6de8ea23bbe4da0ce6d6b652a">   36</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structIDT__PTR.html#ad74953b6de8ea23bbe4da0ce6d6b652a">base</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <a class="code" href="Idt_8h.html#aae50c62b17eed62d56b531f690dd0fc5">__attribute__</a>((packed));</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structREGS.html">   43</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structREGS.html">REGS</a></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structREGS.html#a0bf8bb70304e66f22949818f9245b7b5">   45</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structREGS.html#a0bf8bb70304e66f22949818f9245b7b5">gs</a>, <a class="code" href="Idt_8h.html#a88d3d1b872b301364b825176981daf14">fs</a>, <a class="code" href="Idt_8h.html#a4305a24abee1f4912083d877c499fcad">es</a>, <a class="code" href="Idt_8h.html#a41d22b14f5b54c8488f5969c012000d7">ds</a>;                           </div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structREGS.html#ae4b9680cc0d097cfdcfb84768d676a7d">   46</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="Idt_8h.html#a21967b2580b9725a17075b898ff3abc3">edi</a>, <a class="code" href="Idt_8h.html#ae508f942b3572ab3ab749fdc35a763da">esi</a>, <a class="code" href="Idt_8h.html#a680481bf6e093a04d619216bef02a2b2">ebp</a>, <a class="code" href="structREGS.html#ae4b9680cc0d097cfdcfb84768d676a7d">esp</a>, <a class="code" href="Idt_8h.html#a8996da18df84dface49e6d219a6fbde0">ebx</a>, <a class="code" href="Idt_8h.html#a033ca834eb49bc602eb0e0b358a9a4f1">edx</a>, <a class="code" href="Idt_8h.html#a0ea7fea7f82c9647381548939843feaf">ecx</a>, <a class="code" href="Idt_8h.html#aa35a8540d25648fda11e3cccd6e4e10c">eax</a>;   </div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structREGS.html#ac49a9b0061ced1a59e62d47e0ee9377a">   47</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structREGS.html#ac49a9b0061ced1a59e62d47e0ee9377a">int_no</a>, <a class="code" href="Idt_8h.html#aa49bd5fbbbf89d957dd3ac1ce217f738">err_code</a>;                         </div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structREGS.html#a6a4b366395494b49996caedd9279dca0">   48</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="Idt_8h.html#a39deae339e1220f3a094c493fbf468e7">eip</a>, <a class="code" href="Idt_8h.html#a62ed1336fc8e1441c0b7604555ef2a6b">cs</a>, <a class="code" href="Idt_8h.html#a3a999c5a8c36bfad83716f3cb5560912">eflags</a>, <a class="code" href="structREGS.html#a6a4b366395494b49996caedd9279dca0">useresp</a>, <a class="code" href="Idt_8h.html#a0ed2c935d809c29ae771d1a8350a272f">ss</a>;             </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}<a class="code" href="Idt_8h.html#aae50c62b17eed62d56b531f690dd0fc5">__attribute__</a>((packed));</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classIdt.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIdt.html">Idt</a></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//Prótotipos    </span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> adicionar_registro(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> inicializar();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> instalar_isrs();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//Definido externamente em  start.asm</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span>  <a class="code" href="Idt_8h.html#ac8698fa83ca3df5dabb1414eb75eda39">carregar_idt</a>();</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> <a class="code" href="classIdt.html">Idt</a> <a class="code" href="Idt_8h.html#a93695694bfbfcc676755a9bc5d3f408e">idt</a>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="Idt_8h_html_ae508f942b3572ab3ab749fdc35a763da"><div class="ttname"><a href="Idt_8h.html#ae508f942b3572ab3ab749fdc35a763da">esi</a></div><div class="ttdeci">unsigned int esi</div><div class="ttdef"><b>Definition:</b> Idt.h:116</div></div>
+<div class="ttc" id="Idt_8h_html_a41d22b14f5b54c8488f5969c012000d7"><div class="ttname"><a href="Idt_8h.html#a41d22b14f5b54c8488f5969c012000d7">ds</a></div><div class="ttdeci">unsigned int ds</div><div class="ttdef"><b>Definition:</b> Idt.h:115</div></div>
+<div class="ttc" id="Idt_8h_html_a21967b2580b9725a17075b898ff3abc3"><div class="ttname"><a href="Idt_8h.html#a21967b2580b9725a17075b898ff3abc3">edi</a></div><div class="ttdeci">unsigned int edi</div><div class="ttdef"><b>Definition:</b> Idt.h:116</div></div>
+<div class="ttc" id="Idt_8h_html_a62ed1336fc8e1441c0b7604555ef2a6b"><div class="ttname"><a href="Idt_8h.html#a62ed1336fc8e1441c0b7604555ef2a6b">cs</a></div><div class="ttdeci">unsigned int cs</div><div class="ttdef"><b>Definition:</b> Idt.h:118</div></div>
+<div class="ttc" id="structIDT__PTR_html_aa12080973d07fec7f8b1ff96beddaffa"><div class="ttname"><a href="structIDT__PTR.html#aa12080973d07fec7f8b1ff96beddaffa">IDT_PTR::limite</a></div><div class="ttdeci">unsigned short limite</div><div class="ttdef"><b>Definition:</b> Idt.h:35</div></div>
+<div class="ttc" id="Idt_8h_html_a3a999c5a8c36bfad83716f3cb5560912"><div class="ttname"><a href="Idt_8h.html#a3a999c5a8c36bfad83716f3cb5560912">eflags</a></div><div class="ttdeci">unsigned int eflags</div><div class="ttdef"><b>Definition:</b> Idt.h:118</div></div>
+<div class="ttc" id="Idt_8h_html_a0ea7fea7f82c9647381548939843feaf"><div class="ttname"><a href="Idt_8h.html#a0ea7fea7f82c9647381548939843feaf">ecx</a></div><div class="ttdeci">unsigned int ecx</div><div class="ttdef"><b>Definition:</b> Idt.h:116</div></div>
+<div class="ttc" id="structIDT__PTR_html_ad74953b6de8ea23bbe4da0ce6d6b652a"><div class="ttname"><a href="structIDT__PTR.html#ad74953b6de8ea23bbe4da0ce6d6b652a">IDT_PTR::base</a></div><div class="ttdeci">unsigned int base</div><div class="ttdef"><b>Definition:</b> Idt.h:36</div></div>
+<div class="ttc" id="Idt_8h_html_aae50c62b17eed62d56b531f690dd0fc5"><div class="ttname"><a href="Idt_8h.html#aae50c62b17eed62d56b531f690dd0fc5">__attribute__</a></div><div class="ttdeci">class Idt __attribute__</div></div>
+<div class="ttc" id="Idt_8h_html_a0ed2c935d809c29ae771d1a8350a272f"><div class="ttname"><a href="Idt_8h.html#a0ed2c935d809c29ae771d1a8350a272f">ss</a></div><div class="ttdeci">unsigned int ss</div><div class="ttdef"><b>Definition:</b> Idt.h:118</div></div>
+<div class="ttc" id="structREGISTRO__IDT_html_a48337fad128a81688e2b4d3e3c254c8a"><div class="ttname"><a href="structREGISTRO__IDT.html#a48337fad128a81688e2b4d3e3c254c8a">REGISTRO_IDT::base_low</a></div><div class="ttdeci">unsigned short base_low</div><div class="ttdef"><b>Definition:</b> Idt.h:22</div></div>
+<div class="ttc" id="Idt_8h_html_a033ca834eb49bc602eb0e0b358a9a4f1"><div class="ttname"><a href="Idt_8h.html#a033ca834eb49bc602eb0e0b358a9a4f1">edx</a></div><div class="ttdeci">unsigned int edx</div><div class="ttdef"><b>Definition:</b> Idt.h:116</div></div>
+<div class="ttc" id="structIDT__PTR_html"><div class="ttname"><a href="structIDT__PTR.html">IDT_PTR</a></div><div class="ttdef"><b>Definition:</b> Idt.h:33</div></div>
+<div class="ttc" id="classIdt_html"><div class="ttname"><a href="classIdt.html">Idt</a></div><div class="ttdef"><b>Definition:</b> Idt.h:55</div></div>
+<div class="ttc" id="Idt_8h_html_a39deae339e1220f3a094c493fbf468e7"><div class="ttname"><a href="Idt_8h.html#a39deae339e1220f3a094c493fbf468e7">eip</a></div><div class="ttdeci">unsigned int eip</div><div class="ttdef"><b>Definition:</b> Idt.h:118</div></div>
+<div class="ttc" id="structREGISTRO__IDT_html_a5baff7766df8c2804552ed003ec558a8"><div class="ttname"><a href="structREGISTRO__IDT.html#a5baff7766df8c2804552ed003ec558a8">REGISTRO_IDT::flags</a></div><div class="ttdeci">unsigned char flags</div><div class="ttdef"><b>Definition:</b> Idt.h:25</div></div>
+<div class="ttc" id="structREGISTRO__IDT_html_a6ac6bc0e3a6552a5c413517f0326dbbb"><div class="ttname"><a href="structREGISTRO__IDT.html#a6ac6bc0e3a6552a5c413517f0326dbbb">REGISTRO_IDT::seg</a></div><div class="ttdeci">unsigned short seg</div><div class="ttdef"><b>Definition:</b> Idt.h:23</div></div>
+<div class="ttc" id="Idt_8h_html_ac8698fa83ca3df5dabb1414eb75eda39"><div class="ttname"><a href="Idt_8h.html#ac8698fa83ca3df5dabb1414eb75eda39">carregar_idt</a></div><div class="ttdeci">void carregar_idt()</div></div>
+<div class="ttc" id="Idt_8h_html_a680481bf6e093a04d619216bef02a2b2"><div class="ttname"><a href="Idt_8h.html#a680481bf6e093a04d619216bef02a2b2">ebp</a></div><div class="ttdeci">unsigned int ebp</div><div class="ttdef"><b>Definition:</b> Idt.h:116</div></div>
+<div class="ttc" id="structREGS_html"><div class="ttname"><a href="structREGS.html">REGS</a></div><div class="ttdef"><b>Definition:</b> Idt.h:43</div></div>
+<div class="ttc" id="structREGISTRO__IDT_html_a5c1d7f5cfb1819db4a4bb2ffc46d4ab4"><div class="ttname"><a href="structREGISTRO__IDT.html#a5c1d7f5cfb1819db4a4bb2ffc46d4ab4">REGISTRO_IDT::base_high</a></div><div class="ttdeci">unsigned short base_high</div><div class="ttdef"><b>Definition:</b> Idt.h:26</div></div>
+<div class="ttc" id="structREGISTRO__IDT_html"><div class="ttname"><a href="structREGISTRO__IDT.html">REGISTRO_IDT</a></div><div class="ttdef"><b>Definition:</b> Idt.h:20</div></div>
+<div class="ttc" id="structREGS_html_a6a4b366395494b49996caedd9279dca0"><div class="ttname"><a href="structREGS.html#a6a4b366395494b49996caedd9279dca0">REGS::useresp</a></div><div class="ttdeci">unsigned int useresp</div><div class="ttdef"><b>Definition:</b> Idt.h:48</div></div>
+<div class="ttc" id="Idt_8h_html_a8996da18df84dface49e6d219a6fbde0"><div class="ttname"><a href="Idt_8h.html#a8996da18df84dface49e6d219a6fbde0">ebx</a></div><div class="ttdeci">unsigned int ebx</div><div class="ttdef"><b>Definition:</b> Idt.h:116</div></div>
+<div class="ttc" id="Idt_8h_html_aa35a8540d25648fda11e3cccd6e4e10c"><div class="ttname"><a href="Idt_8h.html#aa35a8540d25648fda11e3cccd6e4e10c">eax</a></div><div class="ttdeci">unsigned int eax</div><div class="ttdef"><b>Definition:</b> Idt.h:116</div></div>
+<div class="ttc" id="Idt_8h_html_a88d3d1b872b301364b825176981daf14"><div class="ttname"><a href="Idt_8h.html#a88d3d1b872b301364b825176981daf14">fs</a></div><div class="ttdeci">unsigned int fs</div><div class="ttdef"><b>Definition:</b> Idt.h:115</div></div>
+<div class="ttc" id="structREGS_html_ac49a9b0061ced1a59e62d47e0ee9377a"><div class="ttname"><a href="structREGS.html#ac49a9b0061ced1a59e62d47e0ee9377a">REGS::int_no</a></div><div class="ttdeci">unsigned int int_no</div><div class="ttdef"><b>Definition:</b> Idt.h:47</div></div>
+<div class="ttc" id="structREGS_html_ae4b9680cc0d097cfdcfb84768d676a7d"><div class="ttname"><a href="structREGS.html#ae4b9680cc0d097cfdcfb84768d676a7d">REGS::esp</a></div><div class="ttdeci">unsigned int esp</div><div class="ttdef"><b>Definition:</b> Idt.h:46</div></div>
+<div class="ttc" id="Idt_8h_html_a93695694bfbfcc676755a9bc5d3f408e"><div class="ttname"><a href="Idt_8h.html#a93695694bfbfcc676755a9bc5d3f408e">idt</a></div><div class="ttdeci">Idt idt</div><div class="ttdef"><b>Definition:</b> Idt.cpp:24</div></div>
+<div class="ttc" id="structREGISTRO__IDT_html_a5a818b7471949d074efd9ec767b6acd2"><div class="ttname"><a href="structREGISTRO__IDT.html#a5a818b7471949d074efd9ec767b6acd2">REGISTRO_IDT::sempre_zero</a></div><div class="ttdeci">unsigned char sempre_zero</div><div class="ttdef"><b>Definition:</b> Idt.h:24</div></div>
+<div class="ttc" id="Idt_8h_html_aa49bd5fbbbf89d957dd3ac1ce217f738"><div class="ttname"><a href="Idt_8h.html#aa49bd5fbbbf89d957dd3ac1ce217f738">err_code</a></div><div class="ttdeci">unsigned int err_code</div><div class="ttdef"><b>Definition:</b> Idt.h:117</div></div>
+<div class="ttc" id="Idt_8h_html_a4305a24abee1f4912083d877c499fcad"><div class="ttname"><a href="Idt_8h.html#a4305a24abee1f4912083d877c499fcad">es</a></div><div class="ttdeci">unsigned int es</div><div class="ttdef"><b>Definition:</b> Idt.h:115</div></div>
+<div class="ttc" id="structREGS_html_a0bf8bb70304e66f22949818f9245b7b5"><div class="ttname"><a href="structREGS.html#a0bf8bb70304e66f22949818f9245b7b5">REGS::gs</a></div><div class="ttdeci">unsigned int gs</div><div class="ttdef"><b>Definition:</b> Idt.h:45</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

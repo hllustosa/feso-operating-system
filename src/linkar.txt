@@ -1,0 +1,13 @@
+kernel/bin/start.o
+kernel/bin/loader.o 
+kernel/bin/processo.o 
+kernel/bin/irq.o 
+kernel/bin/idt.o
+kernel/bin/sys.o
+kernel/bin/util.o 
+kernel/bin/gdt.o 
+kernel/bin/mem.o 
+kernel/bin/vfs.o 
+kernel/bin/main.o
+kernel/bin/msg.o 
+kernel/bin/multiproc.o

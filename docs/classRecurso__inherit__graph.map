@@ -1,0 +1,24 @@
+<map id="Recurso" name="Recurso">
+<area shape="rect" id="node2" href="$classArquivo.html" title="Arquivo" alt="" coords="210,5,277,32"/>
+<area shape="rect" id="node3" href="$classArvore.html" title="Arvore\&lt; T \&gt;" alt="" coords="197,56,289,83"/>
+<area shape="rect" id="node4" href="$classArvore.html" title="Arvore\&lt; Arquivo \&gt;" alt="" coords="179,107,307,133"/>
+<area shape="rect" id="node5" href="$classArvore.html" title="Arvore\&lt; int \&gt;" alt="" coords="194,157,293,184"/>
+<area shape="rect" id="node6" href="$classArvore.html" title="Arvore\&lt; Porta \&gt;" alt="" coords="186,208,301,235"/>
+<area shape="rect" id="node7" href="$classArvore.html" title="Arvore\&lt; Processo \&gt;" alt="" coords="174,259,313,285"/>
+<area shape="rect" id="node8" href="$classArvore.html" title="Arvore\&lt; Thread \&gt;" alt="" coords="181,309,305,336"/>
+<area shape="rect" id="node9" href="$classEntregador.html" title="Entregador" alt="" coords="201,360,286,387"/>
+<area shape="rect" id="node10" href="$classEscalonador.html" title="Escalonador" alt="" coords="196,411,291,437"/>
+<area shape="rect" id="node11" href="$classLista.html" title="Lista\&lt; T \&gt;" alt="" coords="202,461,285,488"/>
+<area shape="rect" id="node12" href="$classLista.html" title="Lista\&lt; Bloco \&gt;" alt="" coords="190,512,297,539"/>
+<area shape="rect" id="node13" href="$classLista.html" title="Lista\&lt; int \&gt;" alt="" coords="199,563,287,589"/>
+<area shape="rect" id="node14" href="$classLista.html" title="Lista\&lt; Mensagem \&gt;" alt="" coords="174,613,313,640"/>
+<area shape="rect" id="node15" href="$classLista.html" title="Lista\&lt; MP_CONFIG_INTERRUPT \&gt;" alt="" coords="124,664,363,691"/>
+<area shape="rect" id="node16" href="$classLista.html" title="Lista\&lt; MP_CONFIG_TABLE\l_IOAPIC \&gt;" alt="" coords="148,715,339,757"/>
+<area shape="rect" id="node17" href="$classLista.html" title="Lista\&lt; MP_CONFIG_TABLE\l_PROC \&gt;" alt="" coords="148,781,339,822"/>
+<area shape="rect" id="node18" href="$classLista.html" title="Lista\&lt; unsigned int \&gt;" alt="" coords="171,847,315,873"/>
+<area shape="rect" id="node19" href="$classMemoriaFisica.html" title="MemoriaFisica" alt="" coords="190,897,297,924"/>
+<area shape="rect" id="node20" href="$classMemoriaVirtual.html" title="MemoriaVirtual" alt="" coords="189,948,298,975"/>
+<area shape="rect" id="node21" href="$classProcesso.html" title="Processo" alt="" coords="205,999,282,1025"/>
+<area shape="rect" id="node22" href="$classThread.html" title="Thread" alt="" coords="212,1049,275,1076"/>
+<area shape="rect" id="node23" href="$classVfs.html" title="Vfs" alt="" coords="222,1100,265,1127"/>
+</map>

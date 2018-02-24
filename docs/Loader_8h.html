@@ -1,0 +1,710 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Referência do Arquivo Loader.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_cbd7f246bdf7dc0a50281a272327e6ed.html">kernel</a></li><li class="navelem"><a class="el" href="dir_1083f99974d515180cb874b65de1a4c1.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#typedef-members">Definições de Tipos</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo Loader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="kernel_2include_2Lista_8h_source.html">Lista.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para Loader.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="Loader_8h__incl.png" border="0" usemap="#Loader_8h" alt=""/></div>
+<map name="Loader_8h" id="Loader_8h">
+<area shape="rect" id="node2" href="kernel_2include_2Lista_8h.html" title="Lista.h" alt="" coords="73,80,134,107"/>
+<area shape="rect" id="node3" href="Memoria_8h.html" title="Memoria.h" alt="" coords="23,155,106,181"/>
+<area shape="rect" id="node5" href="kernel_2include_2Util_8h.html" title="Util.h" alt="" coords="117,229,170,256"/>
+<area shape="rect" id="node4" href="Multiboot_8h.html" title="Multiboot.h" alt="" coords="5,229,92,256"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Este grafo mostra quais arquivos estão direta ou indiretamente relacionados com este arquivo:</div>
+<div class="dyncontent">
+<div class="center"><img src="Loader_8h__dep__incl.png" border="0" usemap="#Loader_8hdep" alt=""/></div>
+<map name="Loader_8hdep" id="Loader_8hdep">
+<area shape="rect" id="node2" href="Multiprocessamento_8h.html" title="Multiprocessamento.h" alt="" coords="440,80,590,107"/>
+<area shape="rect" id="node5" href="Main_8cpp.html" title="Main.cpp" alt="" coords="146,304,220,331"/>
+<area shape="rect" id="node10" href="Processo_8cpp.html" title="Processo.cpp" alt="" coords="800,229,902,256"/>
+<area shape="rect" id="node15" href="Loader_8cpp.html" title="Loader.cpp" alt="" coords="833,80,920,107"/>
+<area shape="rect" id="node3" href="Processo_8h.html" title="Processo.h" alt="" coords="390,155,478,181"/>
+<area shape="rect" id="node7" href="Idt_8cpp.html" title="Idt.cpp" alt="" coords="713,229,776,256"/>
+<area shape="rect" id="node8" href="Mensagem_8cpp.html" title="Mensagem.cpp" alt="" coords="34,229,145,256"/>
+<area shape="rect" id="node9" href="Multiprocessamento_8cpp.html" title="Multiprocessamento.cpp" alt="" coords="169,229,333,256"/>
+<area shape="rect" id="node11" href="Syscall_8cpp.html" title="Syscall.cpp" alt="" coords="598,229,688,256"/>
+<area shape="rect" id="node13" href="Irq_8cpp.html" title="Irq.cpp" alt="" coords="553,155,616,181"/>
+<area shape="rect" id="node14" href="Util_8cpp.html" title="Util.cpp" alt="" coords="640,155,707,181"/>
+<area shape="rect" id="node4" href="Testes_8h.html" title="Testes.h" alt="" coords="500,229,573,256"/>
+<area shape="rect" id="node12" href="Vfs_8cpp.html" title="Vfs.cpp" alt="" coords="408,229,475,256"/>
+<area shape="rect" id="node6" href="Testes_8cpp.html" title="Testes.cpp" alt="" coords="493,304,580,331"/>
+</map>
+</div>
+</div>
+<p><a href="Loader_8h_source.html">Vá para o código-fonte deste arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structELF__FILE.html">ELF_FILE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structELF__SEG.html">ELF_SEG</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structELF32__SHDR__S.html">ELF32_SHDR_S</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a7fe5bf23f1820f76e0ba8bb532b95065"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a7fe5bf23f1820f76e0ba8bb532b95065">SF_ZERO</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:a7fe5bf23f1820f76e0ba8bb532b95065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1448c3254845dd3d52688b64221241e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a1448c3254845dd3d52688b64221241e9">SF_LOAD</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="separator:a1448c3254845dd3d52688b64221241e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f6ae2be23142f20a361f41333bcb43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a80f6ae2be23142f20a361f41333bcb43">SF_READ</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:a80f6ae2be23142f20a361f41333bcb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8218cf420595952d6c63d9b22b935b0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a8218cf420595952d6c63d9b22b935b0f">SF_WRITE</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:a8218cf420595952d6c63d9b22b935b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40173ba2d53d26f96d63b82db91abd5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a40173ba2d53d26f96d63b82db91abd5d">SF_EXEC</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:a40173ba2d53d26f96d63b82db91abd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b326a98ffe195c5027afd6b7bd20c26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a0b326a98ffe195c5027afd6b7bd20c26">SF_BSS</a>&#160;&#160;&#160;(<a class="el" href="Loader_8h.html#a7fe5bf23f1820f76e0ba8bb532b95065">SF_ZERO</a> | <a class="el" href="Loader_8h.html#a80f6ae2be23142f20a361f41333bcb43">SF_READ</a> | <a class="el" href="Loader_8h.html#a8218cf420595952d6c63d9b22b935b0f">SF_WRITE</a>)</td></tr>
+<tr class="separator:a0b326a98ffe195c5027afd6b7bd20c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Definições de Tipos</h2></td></tr>
+<tr class="memitem:a1a93d53436a1e36ab9058cf3bb5b0b10"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structELF__FILE.html">ELF_FILE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a1a93d53436a1e36ab9058cf3bb5b0b10">ELF_FILE_T</a></td></tr>
+<tr class="separator:a1a93d53436a1e36ab9058cf3bb5b0b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f4cf616a85e5b94cd7d412f52afd33"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structELF__SEG.html">ELF_SEG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#ab6f4cf616a85e5b94cd7d412f52afd33">ELF_SEG_T</a></td></tr>
+<tr class="separator:ab6f4cf616a85e5b94cd7d412f52afd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a094026da24463868d0ffb0e1849d825c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structELF32__SHDR__S.html">ELF32_SHDR_S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a094026da24463868d0ffb0e1849d825c">ELF32_SHDR</a></td></tr>
+<tr class="separator:a094026da24463868d0ffb0e1849d825c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a09aaf37b4a76198e41f5d2ec6bc34f81"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structELF__FILE.html">ELF_FILE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a09aaf37b4a76198e41f5d2ec6bc34f81">__attribute__</a> ((packed))</td></tr>
+<tr class="separator:a09aaf37b4a76198e41f5d2ec6bc34f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6156151b5190fbd13fd3efa7980ff5b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="Loader_8h.html#ab6f4cf616a85e5b94cd7d412f52afd33">ELF_SEG_T</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a6156151b5190fbd13fd3efa7980ff5b8">load_elf_exec</a> (unsigned char *<a class="el" href="Iso9660_8cpp.html#ace82388e5a8e2ed9f09a1c0eda232528">imagem</a>, unsigned int *ponto_entrada, <a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="Loader_8h.html#ab6f4cf616a85e5b94cd7d412f52afd33">ELF_SEG_T</a> &gt; secoes)</td></tr>
+<tr class="separator:a6156151b5190fbd13fd3efa7980ff5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:acbb53de2885048033f442b7e5e553833"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#acbb53de2885048033f442b7e5e553833">magic</a> [4]</td></tr>
+<tr class="separator:acbb53de2885048033f442b7e5e553833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893e35af33cbf2f1e0c98a3929f98622"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a893e35af33cbf2f1e0c98a3929f98622">bitness</a></td></tr>
+<tr class="separator:a893e35af33cbf2f1e0c98a3929f98622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e24367101045fc8644dc0728a39f5fe"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a4e24367101045fc8644dc0728a39f5fe">endian</a></td></tr>
+<tr class="separator:a4e24367101045fc8644dc0728a39f5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aba5855fa6e2b5b383ada06e3aa125a"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a7aba5855fa6e2b5b383ada06e3aa125a">ver_1</a></td></tr>
+<tr class="separator:a7aba5855fa6e2b5b383ada06e3aa125a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb822c0b969c11794ee5cf109a11a262"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#adb822c0b969c11794ee5cf109a11a262">res</a> [9]</td></tr>
+<tr class="separator:adb822c0b969c11794ee5cf109a11a262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd31d047cd421b55d4d52cf9e40559d"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#aebd31d047cd421b55d4d52cf9e40559d">file_type</a></td></tr>
+<tr class="separator:aebd31d047cd421b55d4d52cf9e40559d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c958350934c4319fde6a7165783aaf"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a13c958350934c4319fde6a7165783aaf">machine</a></td></tr>
+<tr class="separator:a13c958350934c4319fde6a7165783aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e3b028aa385b0214834acf2fbfe344"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#ac0e3b028aa385b0214834acf2fbfe344">ver_2</a></td></tr>
+<tr class="separator:ac0e3b028aa385b0214834acf2fbfe344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd77462c0a6a72f327690ed0d920a989"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#acd77462c0a6a72f327690ed0d920a989">entry</a></td></tr>
+<tr class="separator:acd77462c0a6a72f327690ed0d920a989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae191f24c9c5b22c58828956e53a66a50"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#ae191f24c9c5b22c58828956e53a66a50">phtab_offset</a></td></tr>
+<tr class="separator:ae191f24c9c5b22c58828956e53a66a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33234880c582828e8ba25e9240b742b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#ad33234880c582828e8ba25e9240b742b">shtab_offset</a></td></tr>
+<tr class="separator:ad33234880c582828e8ba25e9240b742b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92588540e8c1d014a08cd8a45462b19"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#ac92588540e8c1d014a08cd8a45462b19">flags</a></td></tr>
+<tr class="separator:ac92588540e8c1d014a08cd8a45462b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89c8763d486c0bcffd3470145243666"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#af89c8763d486c0bcffd3470145243666">file_hdr_size</a></td></tr>
+<tr class="separator:af89c8763d486c0bcffd3470145243666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa08769f6dcf90ad1aa1ef9f36404221a"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#aa08769f6dcf90ad1aa1ef9f36404221a">phtab_ent_size</a></td></tr>
+<tr class="separator:aa08769f6dcf90ad1aa1ef9f36404221a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c28edb65ec03c61f70d0842479b4527"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a3c28edb65ec03c61f70d0842479b4527">num_phs</a></td></tr>
+<tr class="separator:a3c28edb65ec03c61f70d0842479b4527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d49e064bca89097d50714994769b08f"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a5d49e064bca89097d50714994769b08f">shtab_ent_size</a></td></tr>
+<tr class="separator:a5d49e064bca89097d50714994769b08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1529e747795c87ec93e2702ce4d2c83"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#ab1529e747795c87ec93e2702ce4d2c83">num_shs</a></td></tr>
+<tr class="separator:ab1529e747795c87ec93e2702ce4d2c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96997d84d71c10d20a59170d7dddfe5f"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a96997d84d71c10d20a59170d7dddfe5f">shstrtab_index</a></td></tr>
+<tr class="separator:a96997d84d71c10d20a59170d7dddfe5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfea42429249a1f65204f0c0f34704a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a4bfea42429249a1f65204f0c0f34704a">type</a></td></tr>
+<tr class="separator:a4bfea42429249a1f65204f0c0f34704a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b5297d3393519050e3126c4cb07c1c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a29b5297d3393519050e3126c4cb07c1c">offset</a></td></tr>
+<tr class="separator:a29b5297d3393519050e3126c4cb07c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd008c46ad25e8276cbdc50bfcad67f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a5cd008c46ad25e8276cbdc50bfcad67f">virt_adr</a></td></tr>
+<tr class="separator:a5cd008c46ad25e8276cbdc50bfcad67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b2b0b93109e480bbd0d25888ea5cc7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#ac6b2b0b93109e480bbd0d25888ea5cc7">phys_adr</a></td></tr>
+<tr class="separator:ac6b2b0b93109e480bbd0d25888ea5cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc71a694b86e7fd53643be5f473e65eb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#acc71a694b86e7fd53643be5f473e65eb">disk_size</a></td></tr>
+<tr class="separator:acc71a694b86e7fd53643be5f473e65eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fde73c7c6c82b6dbe7a8784df57ceda"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a8fde73c7c6c82b6dbe7a8784df57ceda">mem_size</a></td></tr>
+<tr class="separator:a8fde73c7c6c82b6dbe7a8784df57ceda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa3603cc833d240552a47e59a4f852b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#a2fa3603cc833d240552a47e59a4f852b">align</a></td></tr>
+<tr class="separator:a2fa3603cc833d240552a47e59a4f852b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ded75d3f6c2b3dafe57d1fc9987224"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structELF32__SHDR__S.html">ELF32_SHDR_S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Loader_8h.html#aa2ded75d3f6c2b3dafe57d1fc9987224">__attribute__</a></td></tr>
+<tr class="separator:aa2ded75d3f6c2b3dafe57d1fc9987224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições e macros</h2>
+<a class="anchor" id="a0b326a98ffe195c5027afd6b7bd20c26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SF_BSS&#160;&#160;&#160;(<a class="el" href="Loader_8h.html#a7fe5bf23f1820f76e0ba8bb532b95065">SF_ZERO</a> | <a class="el" href="Loader_8h.html#a80f6ae2be23142f20a361f41333bcb43">SF_READ</a> | <a class="el" href="Loader_8h.html#a8218cf420595952d6c63d9b22b935b0f">SF_WRITE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a40173ba2d53d26f96d63b82db91abd5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SF_EXEC&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1448c3254845dd3d52688b64221241e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SF_LOAD&#160;&#160;&#160;0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a80f6ae2be23142f20a361f41333bcb43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SF_READ&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8218cf420595952d6c63d9b22b935b0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SF_WRITE&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7fe5bf23f1820f76e0ba8bb532b95065"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SF_ZERO&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Definições dos tipos</h2>
+<a class="anchor" id="a094026da24463868d0ffb0e1849d825c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structELF32__SHDR__S.html">ELF32_SHDR_S</a> <a class="el" href="Loader_8h.html#a094026da24463868d0ffb0e1849d825c">ELF32_SHDR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a93d53436a1e36ab9058cf3bb5b0b10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structELF__FILE.html">ELF_FILE</a> <a class="el" href="Loader_8h.html#a1a93d53436a1e36ab9058cf3bb5b0b10">ELF_FILE_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6f4cf616a85e5b94cd7d412f52afd33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structELF__SEG.html">ELF_SEG</a> <a class="el" href="Loader_8h.html#ab6f4cf616a85e5b94cd7d412f52afd33">ELF_SEG_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="a09aaf37b4a76198e41f5d2ec6bc34f81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structELF__FILE.html">ELF_FILE</a> __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(packed)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estrutura do cabeçalho do arquivo ELF. Valores especficados em: <a href="https://wiki.osdev.org/ELF">https://wiki.osdev.org/ELF</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a6156151b5190fbd13fd3efa7980ff5b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLista.html">Lista</a>&lt;<a class="el" href="Loader_8h.html#ab6f4cf616a85e5b94cd7d412f52afd33">ELF_SEG_T</a>&gt; load_elf_exec </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>imagem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>ponto_entrada</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLista.html">Lista</a>&lt; <a class="el" href="Loader_8h.html#ab6f4cf616a85e5b94cd7d412f52afd33">ELF_SEG_T</a> &gt;&#160;</td>
+          <td class="paramname"><em>secoes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função para carregamento de arquivos elf. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a class="anchor" id="aa2ded75d3f6c2b3dafe57d1fc9987224"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structELF32__SHDR__S.html">ELF32_SHDR_S</a>   __attribute__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2fa3603cc833d240552a47e59a4f852b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int align</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a893e35af33cbf2f1e0c98a3929f98622"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char bitness</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc71a694b86e7fd53643be5f473e65eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int disk_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e24367101045fc8644dc0728a39f5fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char endian</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd77462c0a6a72f327690ed0d920a989"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int entry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af89c8763d486c0bcffd3470145243666"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short file_hdr_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aebd31d047cd421b55d4d52cf9e40559d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short file_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac92588540e8c1d014a08cd8a45462b19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a13c958350934c4319fde6a7165783aaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short machine</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acbb53de2885048033f442b7e5e553833"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char magic[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8fde73c7c6c82b6dbe7a8784df57ceda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int mem_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c28edb65ec03c61f70d0842479b4527"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short num_phs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab1529e747795c87ec93e2702ce4d2c83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short num_shs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29b5297d3393519050e3126c4cb07c1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa08769f6dcf90ad1aa1ef9f36404221a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short phtab_ent_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae191f24c9c5b22c58828956e53a66a50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int phtab_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac6b2b0b93109e480bbd0d25888ea5cc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int phys_adr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb822c0b969c11794ee5cf109a11a262"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char res[9]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a96997d84d71c10d20a59170d7dddfe5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short shstrtab_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5d49e064bca89097d50714994769b08f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short shtab_ent_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad33234880c582828e8ba25e9240b742b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int shtab_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4bfea42429249a1f65204f0c0f34704a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7aba5855fa6e2b5b383ada06e3aa125a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char ver_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac0e3b028aa385b0214834acf2fbfe344"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ver_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5cd008c46ad25e8276cbdc50bfcad67f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int virt_adr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

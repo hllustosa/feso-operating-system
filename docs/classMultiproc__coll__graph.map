@@ -1,0 +1,14 @@
+<map id="Multiproc" name="Multiproc">
+<area shape="rect" id="node2" href="$classLista.html" title="Lista\&lt; MP_CONFIG_TABLE\l_IOAPIC \&gt;" alt="" coords="753,214,944,255"/>
+<area shape="rect" id="node3" href="$classRecurso.html" title="Recurso" alt="" coords="368,239,439,265"/>
+<area shape="rect" id="node6" href="$classArvore.html" title="Arvore\&lt; int \&gt;" alt="" coords="799,163,898,189"/>
+<area shape="rect" id="node8" href="$classLista.html" title="Lista\&lt; MP_CONFIG_INTERRUPT \&gt;" alt="" coords="729,345,968,372"/>
+<area shape="rect" id="node11" href="$classLista.html" title="Lista\&lt; MP_CONFIG_TABLE\l_PROC \&gt;" alt="" coords="753,279,944,321"/>
+<area shape="rect" id="node4" href="$structItem.html" title="Item\&lt; MP_CONFIG_TABLE\l_IOAPIC \&gt;" alt="" coords="309,163,497,205"/>
+<area shape="rect" id="node5" href="$structMP__CONFIG__TABLE__IOAPIC.html" title="MP_CONFIG_TABLE_IOAPIC" alt="" coords="5,171,208,197"/>
+<area shape="rect" id="node7" href="$classAvl.html" title="Avl\&lt; int \&gt;" alt="" coords="364,59,443,85"/>
+<area shape="rect" id="node9" href="$structItem.html" title="Item\&lt; MP_CONFIG_INTERRUPT \&gt;" alt="" coords="285,464,521,491"/>
+<area shape="rect" id="node10" href="$structMP__CONFIG__INTERRUPT.html" title="MP_CONFIG_INTERRUPT" alt="" coords="13,464,200,491"/>
+<area shape="rect" id="node12" href="$structItem.html" title="Item\&lt; MP_CONFIG_TABLE\l_PROC \&gt;" alt="" coords="309,345,497,386"/>
+<area shape="rect" id="node13" href="$structMP__CONFIG__TABLE__PROC.html" title="MP_CONFIG_TABLE_PROC" alt="" coords="9,352,205,379"/>
+</map>

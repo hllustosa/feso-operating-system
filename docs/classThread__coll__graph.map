@@ -1,0 +1,7 @@
+<map id="Thread" name="Thread">
+<area shape="rect" id="node2" href="$classRecurso.html" title="Recurso" alt="" coords="5,96,76,123"/>
+<area shape="rect" id="node3" href="$classLista.html" title="Lista\&lt; Mensagem \&gt;" alt="" coords="78,201,217,228"/>
+<area shape="rect" id="node4" href="$structItem.html" title="Item\&lt; Mensagem \&gt;" alt="" coords="99,96,235,123"/>
+<area shape="rect" id="node5" href="$structMensagem.html" title="Mensagem" alt="" coords="124,5,211,32"/>
+<area shape="rect" id="node6" href="$structREGS.html" title="REGS" alt="" coords="241,201,301,228"/>
+</map>

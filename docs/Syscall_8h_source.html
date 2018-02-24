@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Código-Fonte de Syscall.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_cbd7f246bdf7dc0a50281a272327e6ed.html">kernel</a></li><li class="navelem"><a class="el" href="dir_1083f99974d515180cb874b65de1a4c1.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Syscall.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Syscall_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*   This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*    it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*    the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*    (at your option) any later version.</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*    This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*    GNU General Public License for more details.</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*    You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _SYSCALL</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _SYSCALL</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Idt_8h.html">Idt.h</a>&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="Syscall_8h.html#a594431cede894baa3b72ce3bb92bf58e">   19</a></span>&#160;<span class="preprocessor">#define INFO_PROCESSOS  1</span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="Syscall_8h.html#ada4fac2d36883dc6919edab84673a6fe">   20</a></span>&#160;<span class="preprocessor">#define INFO_MENSAGENS  2</span></div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="Syscall_8h.html#a773428decb16bc90db0f1dc75f6606d3">   21</a></span>&#160;<span class="preprocessor">#define INFO_MEMORIA    3</span></div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="Syscall_8h.html#ad54d015bbef4ba447b3ad7ca04c9f07c">   22</a></span>&#160;<span class="preprocessor">#define INFO_VFS    4</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classSyscall.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSyscall.html">Syscall</a></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;   <span class="keyword">public</span> :</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;   </div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classSyscall.html#a1d05ba4c1bf5a581947060dad6da8a9c">   57</a></span>&#160;   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classSyscall.html#a1d05ba4c1bf5a581947060dad6da8a9c">num</a>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a9d9270a5abd454bf3fc56106e9395e38">inicializar</a>(<a class="code" href="classIdt.html">Idt</a> <a class="code" href="Idt_8h.html#a93695694bfbfcc676755a9bc5d3f408e">idt</a>);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#ae83189ab344d2d7b27549cce4f54c19e">chamar_systemcall</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a08f0f2af891ee4e88b0bab8af6e8c27b">sbrk</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a554ddfdce1f2d0c718177a01496f40b5">obter_info_kernel</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a667e2292279d930d6d276e0baa2f435c">enviar_msg</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#abff79937cd0c2fec2f7a25d447d07884">enviar_msg_pid</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#af9d16bd27486f82bbe7f6edc07e1c071">receber_msg</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a7e26d952b2ce3abf63adabf37df06264">escutar_porta</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a48d4d5e4931f26ac46ff33121ce665b4">abrir_arquivo</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a850fc66205fd4914e795d9982e69b2ae">ler_arquivo</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a33df3c75884b88d36eb5b6b69eee9013">escrever_arquivo</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a9fa680968c593ddbdbac372b6aa12de6">buscar_arquivo</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a98fbfdd6d01e60f390702454efd7e6da">excluir_arquivo</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a30d5a6ca37fa0ee64c1944345fc0ef73">fechar_arquivo</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a74cb4d52b235789f33685793d21ea1bc">executar</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a36a986953d2b8e5ab894473f744fb360">sair</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#af38beb12c05bcc23933d5afe2cbf70db">finalizar_proceso</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a29ba689784ecd773ddfbd37387a5a047">criar_thread</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a93fd4a791ee8b2c21a966e85cb8164b4">obter_pid</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a192c98980deced78f12a49ccdfa5571d">obter_info_arquivo</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#ae1fa1afba00a0ed4e3068d5dbcee2a1f">adicionar_no</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#aa6f9c1c0c7585cf5ec1aed1974c8dc1f">montar_no</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classSyscall.html#a029a296868169b502cdc1414d0fdc7e3">remover_no</a>(<span class="keyword">struct</span> <a class="code" href="structREGS.html">REGS</a> *r);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">extern</span> <a class="code" href="classSyscall.html">Syscall</a> <a class="code" href="Syscall_8h.html#a45ca1b3a26a7e380e545973ccc29e8d7">syscall</a>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classSyscall_html_af38beb12c05bcc23933d5afe2cbf70db"><div class="ttname"><a href="classSyscall.html#af38beb12c05bcc23933d5afe2cbf70db">Syscall::finalizar_proceso</a></div><div class="ttdeci">void finalizar_proceso(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:420</div></div>
+<div class="ttc" id="classSyscall_html_aa6f9c1c0c7585cf5ec1aed1974c8dc1f"><div class="ttname"><a href="classSyscall.html#aa6f9c1c0c7585cf5ec1aed1974c8dc1f">Syscall::montar_no</a></div><div class="ttdeci">void montar_no(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:296</div></div>
+<div class="ttc" id="classSyscall_html_a9fa680968c593ddbdbac372b6aa12de6"><div class="ttname"><a href="classSyscall.html#a9fa680968c593ddbdbac372b6aa12de6">Syscall::buscar_arquivo</a></div><div class="ttdeci">void buscar_arquivo(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:243</div></div>
+<div class="ttc" id="classSyscall_html_a48d4d5e4931f26ac46ff33121ce665b4"><div class="ttname"><a href="classSyscall.html#a48d4d5e4931f26ac46ff33121ce665b4">Syscall::abrir_arquivo</a></div><div class="ttdeci">void abrir_arquivo(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:177</div></div>
+<div class="ttc" id="classSyscall_html_a192c98980deced78f12a49ccdfa5571d"><div class="ttname"><a href="classSyscall.html#a192c98980deced78f12a49ccdfa5571d">Syscall::obter_info_arquivo</a></div><div class="ttdeci">void obter_info_arquivo(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:267</div></div>
+<div class="ttc" id="classSyscall_html_a1d05ba4c1bf5a581947060dad6da8a9c"><div class="ttname"><a href="classSyscall.html#a1d05ba4c1bf5a581947060dad6da8a9c">Syscall::num</a></div><div class="ttdeci">unsigned int num</div><div class="ttdef"><b>Definition:</b> Syscall.h:57</div></div>
+<div class="ttc" id="classSyscall_html_a93fd4a791ee8b2c21a966e85cb8164b4"><div class="ttname"><a href="classSyscall.html#a93fd4a791ee8b2c21a966e85cb8164b4">Syscall::obter_pid</a></div><div class="ttdeci">void obter_pid(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:403</div></div>
+<div class="ttc" id="Syscall_8h_html_a45ca1b3a26a7e380e545973ccc29e8d7"><div class="ttname"><a href="Syscall_8h.html#a45ca1b3a26a7e380e545973ccc29e8d7">syscall</a></div><div class="ttdeci">Syscall syscall</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:27</div></div>
+<div class="ttc" id="classSyscall_html_ae83189ab344d2d7b27549cce4f54c19e"><div class="ttname"><a href="classSyscall.html#ae83189ab344d2d7b27549cce4f54c19e">Syscall::chamar_systemcall</a></div><div class="ttdeci">void chamar_systemcall(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:39</div></div>
+<div class="ttc" id="classSyscall_html_abff79937cd0c2fec2f7a25d447d07884"><div class="ttname"><a href="classSyscall.html#abff79937cd0c2fec2f7a25d447d07884">Syscall::enviar_msg_pid</a></div><div class="ttdeci">void enviar_msg_pid(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:128</div></div>
+<div class="ttc" id="classSyscall_html_a08f0f2af891ee4e88b0bab8af6e8c27b"><div class="ttname"><a href="classSyscall.html#a08f0f2af891ee4e88b0bab8af6e8c27b">Syscall::sbrk</a></div><div class="ttdeci">void sbrk(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:72</div></div>
+<div class="ttc" id="classSyscall_html_a30d5a6ca37fa0ee64c1944345fc0ef73"><div class="ttname"><a href="classSyscall.html#a30d5a6ca37fa0ee64c1944345fc0ef73">Syscall::fechar_arquivo</a></div><div class="ttdeci">void fechar_arquivo(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:259</div></div>
+<div class="ttc" id="classSyscall_html_a33df3c75884b88d36eb5b6b69eee9013"><div class="ttname"><a href="classSyscall.html#a33df3c75884b88d36eb5b6b69eee9013">Syscall::escrever_arquivo</a></div><div class="ttdeci">void escrever_arquivo(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:224</div></div>
+<div class="ttc" id="classSyscall_html_ae1fa1afba00a0ed4e3068d5dbcee2a1f"><div class="ttname"><a href="classSyscall.html#ae1fa1afba00a0ed4e3068d5dbcee2a1f">Syscall::adicionar_no</a></div><div class="ttdeci">void adicionar_no(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:275</div></div>
+<div class="ttc" id="classSyscall_html_a36a986953d2b8e5ab894473f744fb360"><div class="ttname"><a href="classSyscall.html#a36a986953d2b8e5ab894473f744fb360">Syscall::sair</a></div><div class="ttdeci">void sair(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:377</div></div>
+<div class="ttc" id="classSyscall_html"><div class="ttname"><a href="classSyscall.html">Syscall</a></div><div class="ttdef"><b>Definition:</b> Syscall.h:52</div></div>
+<div class="ttc" id="classIdt_html"><div class="ttname"><a href="classIdt.html">Idt</a></div><div class="ttdef"><b>Definition:</b> Idt.h:55</div></div>
+<div class="ttc" id="classSyscall_html_a74cb4d52b235789f33685793d21ea1bc"><div class="ttname"><a href="classSyscall.html#a74cb4d52b235789f33685793d21ea1bc">Syscall::executar</a></div><div class="ttdeci">void executar(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:323</div></div>
+<div class="ttc" id="Idt_8h_html"><div class="ttname"><a href="Idt_8h.html">Idt.h</a></div></div>
+<div class="ttc" id="structREGS_html"><div class="ttname"><a href="structREGS.html">REGS</a></div><div class="ttdef"><b>Definition:</b> Idt.h:43</div></div>
+<div class="ttc" id="classSyscall_html_a7e26d952b2ce3abf63adabf37df06264"><div class="ttname"><a href="classSyscall.html#a7e26d952b2ce3abf63adabf37df06264">Syscall::escutar_porta</a></div><div class="ttdeci">void escutar_porta(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:158</div></div>
+<div class="ttc" id="classSyscall_html_a850fc66205fd4914e795d9982e69b2ae"><div class="ttname"><a href="classSyscall.html#a850fc66205fd4914e795d9982e69b2ae">Syscall::ler_arquivo</a></div><div class="ttdeci">void ler_arquivo(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:203</div></div>
+<div class="ttc" id="classSyscall_html_a9d9270a5abd454bf3fc56106e9395e38"><div class="ttname"><a href="classSyscall.html#a9d9270a5abd454bf3fc56106e9395e38">Syscall::inicializar</a></div><div class="ttdeci">void inicializar(Idt idt)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:30</div></div>
+<div class="ttc" id="classSyscall_html_af9d16bd27486f82bbe7f6edc07e1c071"><div class="ttname"><a href="classSyscall.html#af9d16bd27486f82bbe7f6edc07e1c071">Syscall::receber_msg</a></div><div class="ttdeci">void receber_msg(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:145</div></div>
+<div class="ttc" id="classSyscall_html_a029a296868169b502cdc1414d0fdc7e3"><div class="ttname"><a href="classSyscall.html#a029a296868169b502cdc1414d0fdc7e3">Syscall::remover_no</a></div><div class="ttdeci">void remover_no(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:309</div></div>
+<div class="ttc" id="classSyscall_html_a98fbfdd6d01e60f390702454efd7e6da"><div class="ttname"><a href="classSyscall.html#a98fbfdd6d01e60f390702454efd7e6da">Syscall::excluir_arquivo</a></div><div class="ttdeci">void excluir_arquivo(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:251</div></div>
+<div class="ttc" id="classSyscall_html_a29ba689784ecd773ddfbd37387a5a047"><div class="ttname"><a href="classSyscall.html#a29ba689784ecd773ddfbd37387a5a047">Syscall::criar_thread</a></div><div class="ttdeci">void criar_thread(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:439</div></div>
+<div class="ttc" id="classSyscall_html_a667e2292279d930d6d276e0baa2f435c"><div class="ttname"><a href="classSyscall.html#a667e2292279d930d6d276e0baa2f435c">Syscall::enviar_msg</a></div><div class="ttdeci">void enviar_msg(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:110</div></div>
+<div class="ttc" id="Idt_8h_html_a93695694bfbfcc676755a9bc5d3f408e"><div class="ttname"><a href="Idt_8h.html#a93695694bfbfcc676755a9bc5d3f408e">idt</a></div><div class="ttdeci">Idt idt</div><div class="ttdef"><b>Definition:</b> Idt.cpp:24</div></div>
+<div class="ttc" id="classSyscall_html_a554ddfdce1f2d0c718177a01496f40b5"><div class="ttname"><a href="classSyscall.html#a554ddfdce1f2d0c718177a01496f40b5">Syscall::obter_info_kernel</a></div><div class="ttdeci">void obter_info_kernel(struct REGS *r)</div><div class="ttdef"><b>Definition:</b> Syscall.cpp:91</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,180 @@
+#include "include/Sistema.h"
+#include "include/Util.h"
+#include "include/Lista.h"
+#include "include/Io.h"
+#include "include/Sistimer.h"
+#include "include/Ide.h"
+
+const int TAM = 32;
+const int QUANT_THREADS = 4;
+float a[32][33];
+float x[32];
+float m;
+int teste;
+int aux;
+float s;
+
+void paralelo(){
+	int j,k,i,m, posicao_thread;
+	unsigned char thread_data[100];
+	receber_msg(thread_data, MSG_QLQR_PORTA);
+	
+	posicao_thread = thread_data[4];
+	m = thread_data[3];
+	k = thread_data[2]; 
+	j = thread_data[1];
+	i = thread_data[0];
+	
+	for(j=k+1;j<=TAM-1;j++)
+	{
+		a[i][j]=a[i][j]-(m*a[k][j]);
+	}
+
+	/*unsigned char msg[100];
+	int pid = obter_pid();
+	enviar_msg(1002, msg);
+	//printf("Sou a thread: %d\n", obter_pid());
+	
+	unsigned char buffer[10] = "_Sou: ";
+	strcat(buffer, itoa(obter_pid(), 10));
+	enviar_msg(1002, buffer);*/
+	enviar_msg_pid(thread_data[5], thread_data);
+	
+	sair();
+}
+	
+main(int argc, char ** args)
+{
+	int i, j, k, msg, pid_main_thread;
+	double t_inicial, t_final, delta_t;
+	int out =  abrir("/egauss.txt",'a');//arquivo 
+	//receber_msg(msg,MSG_QLQR_PORTA);
+	Relogio r;//relogio  ^^
+	pid_main_thread = obter_pid();
+	
+	for(i=0; i<TAM; i++)//alterar para carregar de um arquivo
+	{
+		a[i][TAM]=0;
+	   for(j=0; j<TAM; j++)
+	   {
+			a[i][j] = i+j+1;//(rand()%8 +1)*4;//alterar esta linha
+
+			teste= a[i][j];
+			aux= teste%3;
+
+			if(aux==0){
+				a[i][j] = a[i][j] *(-1);
+			}
+		}
+	}
+	
+	
+	for (i=0;i<TAM;i++)
+	{
+		for (j=0;j<TAM;j++)
+		{
+			a[i][TAM]= a[i][j]+ a[i][TAM];
+		}
+	}
+	
+	
+	
+	
+	
+	for (k=0;k<TAM-1;k++)
+	{
+		for (i=k+1; i < TAM; i++)
+		{
+			m = a[i][k] / a[k][k];
+			a[i][k] = 0;
+			
+			obter_relogio(r);
+			t_inicial = r.ms_dia;
+			
+			//PARALELIZACAO
+			for (int thread = 0;thread < QUANT_THREADS;thread++)
+			{
+				unsigned int pid=0,bits=0;
+				unsigned char thread_data[100];
+				bits = TAM / QUANT_THREADS;
+				thread_data[0] = i;
+				thread_data[1] = j;
+				thread_data[2] = k;
+				thread_data[3] = m;
+				thread_data[4] = bits * thread;//inicio da matriz para determinada onde a thread vai solucionar a questao fundamental
+				thread_data[5] = pid_main_thread;
+				pid = criar_thread(paralelo);
+				enviar_msg_pid(pid, thread_data);
+				//mande a mensagem para as threads dizendo qual o rank de cada. depois divida o tam e pega o range de cada uma
+				//nao esqueça de por um for escutando a porta o mesmo numero de threads para garantir que todas elas 
+				//executaram antes de dar continuidade a thread principal
+			}
+			for (int thread = 0;thread < QUANT_THREADS;thread++)
+				receber_msg(msg, MSG_QLQR_PORTA);
+			
+			a[i][TAM]= a[i][TAM]-(m*a[k][TAM]);
+		}
+	}
+		
+	obter_relogio(r);
+	t_final = r.ms_dia;
+	delta_t=t_final-t_inicial;
+	printf("Fim da execucao!");
+	
+	// resolução
+	char* string_buffer;
+	int string_lenght;          
+	int l;
+	
+	
+	x[TAM-1]= a[TAM-1][TAM]/a[TAM-1][TAM-1];
+	for(k=(TAM-1); k>=0;k--)
+	{
+		s=0;
+		for (j=k+1; j<TAM; j++)
+		{
+			s= s+(a[k][j]*x[j]);
+			x[k]= (a[k][TAM]-s)/a[k][k];
+		}
+	}
+	
+	escrever(out, "A - Matriz Gerada ----------\n\n",strlen("A - Matriz Gerada ----------\n\n"));  
+	for (k=0; k<TAM; k++)
+	{
+		for (l=0; l<TAM; l++)
+		{
+			/*string_lenght =*/string_buffer = itoa(a[k][l],10);
+			//printf("%s", string_buffer);
+			escrever(out,string_buffer,strlen(string_buffer));
+			escrever(out," ", 1);
+		}
+		escrever(out,"\n", 1);
+	} 
+
+	escrever(out,"Vetor B ----------\n\n", strlen("Vetor B ----------\n\n"));
+	for (k=0; k<TAM; k++)
+	{
+		/*string_lenght =*/string_buffer = itoa(a[k][TAM],10);
+		escrever(out,string_buffer,strlen(string_buffer));
+		escrever(out,"\n",1);
+	} 
+
+
+	escrever(out,"Resolução ----------\n\n", strlen("Resolução ----------\n\n"));
+	for (k=0; k<TAM; k++)
+	{	
+		/*string_lenght =*/string_buffer = itoa(x[k],10);
+		escrever(out,string_buffer,strlen(string_buffer));
+		
+		escrever(out,"\n", 1);
+	} 
+	
+	escrever(out,strcat("\nTempo = ", string_buffer) , strlen(strcat("\nTempo = ", string_buffer))); 
+	fechar(out);
+	printf("\nTempo = ");
+	printf("%f", delta_t);
+	unsigned char tecla;
+	getchar(&tecla);
+	sair();
+}
+

@@ -1,0 +1,9 @@
+<map id="Vfs" name="Vfs">
+<area shape="rect" id="node2" href="$classRecurso.html" title="Recurso" alt="" coords="46,96,117,123"/>
+<area shape="rect" id="node3" href="$classArvore.html" title="Arvore\&lt; Arquivo \&gt;" alt="" coords="84,472,212,499"/>
+<area shape="rect" id="node5" href="$classArquivo.html" title="Arquivo" alt="" coords="135,291,201,317"/>
+<area shape="rect" id="node6" href="$classLista.html" title="Lista\&lt; Bloco \&gt;" alt="" coords="144,201,251,228"/>
+<area shape="rect" id="node4" href="$classAvl.html" title="Avl\&lt; Arquivo \&gt;" alt="" coords="93,381,203,408"/>
+<area shape="rect" id="node7" href="$structItem.html" title="Item\&lt; Bloco \&gt;" alt="" coords="174,96,279,123"/>
+<area shape="rect" id="node8" href="$structBloco.html" title="Bloco" alt="" coords="297,5,351,32"/>
+</map>

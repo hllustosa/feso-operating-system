@@ -1,0 +1,12 @@
+<map id="Processo.h" name="Processo.h">
+<area shape="rect" id="node2" href="$kernel_2include_2Lista_8h.html" title="Lista.h" alt="" coords="139,229,200,256"/>
+<area shape="rect" id="node6" href="$kernel_2include_2Avl_8h.html" title="Avl.h" alt="" coords="210,155,262,181"/>
+<area shape="rect" id="node7" href="$Idt_8h.html" title="Idt.h" alt="" coords="5,229,53,256"/>
+<area shape="rect" id="node8" href="$Mensagem_8h.html" title="Mensagem.h" alt="" coords="37,80,134,107"/>
+<area shape="rect" id="node10" href="$Multiprocessamento_8h.html" title="Multiprocessamento.h" alt="" coords="261,80,411,107"/>
+<area shape="rect" id="node3" href="$Memoria_8h.html" title="Memoria.h" alt="" coords="275,304,357,331"/>
+<area shape="rect" id="node5" href="$kernel_2include_2Util_8h.html" title="Util.h" alt="" coords="203,379,256,405"/>
+<area shape="rect" id="node4" href="$Multiboot_8h.html" title="Multiboot.h" alt="" coords="281,379,367,405"/>
+<area shape="rect" id="node9" href="$Irq_8h.html" title="Irq.h" alt="" coords="36,155,84,181"/>
+<area shape="rect" id="node11" href="$Loader_8h.html" title="Loader.h" alt="" coords="287,155,359,181"/>
+</map>

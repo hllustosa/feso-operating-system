@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Referência do Arquivo Idt.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_cbd7f246bdf7dc0a50281a272327e6ed.html">kernel</a></li><li class="navelem"><a class="el" href="dir_1083f99974d515180cb874b65de1a4c1.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo Idt.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+Este grafo mostra quais arquivos estão direta ou indiretamente relacionados com este arquivo:</div>
+<div class="dyncontent">
+<div class="center"><img src="Idt_8h__dep__incl.png" border="0" usemap="#Idt_8hdep" alt=""/></div>
+<map name="Idt_8hdep" id="Idt_8hdep">
+<area shape="rect" id="node2" href="Irq_8h.html" title="Irq.h" alt="" coords="417,80,465,107"/>
+<area shape="rect" id="node4" href="Processo_8h.html" title="Processo.h" alt="" coords="701,229,789,256"/>
+<area shape="rect" id="node6" href="Main_8cpp.html" title="Main.cpp" alt="" coords="335,379,409,405"/>
+<area shape="rect" id="node8" href="Idt_8cpp.html" title="Idt.cpp" alt="" coords="215,304,278,331"/>
+<area shape="rect" id="node9" href="Mensagem_8cpp.html" title="Mensagem.cpp" alt="" coords="418,304,529,331"/>
+<area shape="rect" id="node10" href="Multiprocessamento_8cpp.html" title="Multiprocessamento.cpp" alt="" coords="971,304,1135,331"/>
+<area shape="rect" id="node12" href="Syscall_8cpp.html" title="Syscall.cpp" alt="" coords="303,304,393,331"/>
+<area shape="rect" id="node14" href="Irq_8cpp.html" title="Irq.cpp" alt="" coords="915,229,978,256"/>
+<area shape="rect" id="node15" href="Syscall_8h.html" title="Syscall.h" alt="" coords="145,229,221,256"/>
+<area shape="rect" id="node3" href="Mensagem_8h.html" title="Mensagem.h" alt="" coords="562,155,659,181"/>
+<area shape="rect" id="node5" href="Testes_8h.html" title="Testes.h" alt="" coords="874,304,947,331"/>
+<area shape="rect" id="node11" href="Processo_8cpp.html" title="Processo.cpp" alt="" coords="605,304,707,331"/>
+<area shape="rect" id="node13" href="Vfs_8cpp.html" title="Vfs.cpp" alt="" coords="783,304,849,331"/>
+<area shape="rect" id="node7" href="Testes_8cpp.html" title="Testes.cpp" alt="" coords="867,379,954,405"/>
+</map>
+</div>
+</div>
+<p><a href="Idt_8h_source.html">Vá para o código-fonte deste arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structREGISTRO__IDT.html">REGISTRO_IDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIDT__PTR.html">IDT_PTR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structREGS.html">REGS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIdt.html">Idt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a452906efbafa1cf8c6775bc538afdda0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structREGISTRO__IDT.html">REGISTRO_IDT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a452906efbafa1cf8c6775bc538afdda0">__attribute__</a> ((packed))</td></tr>
+<tr class="separator:a452906efbafa1cf8c6775bc538afdda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8698fa83ca3df5dabb1414eb75eda39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#ac8698fa83ca3df5dabb1414eb75eda39">carregar_idt</a> ()</td></tr>
+<tr class="separator:ac8698fa83ca3df5dabb1414eb75eda39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:ae4b82d5bd06e0cad3df76bcabedfe194"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#ae4b82d5bd06e0cad3df76bcabedfe194">base_low</a></td></tr>
+<tr class="separator:ae4b82d5bd06e0cad3df76bcabedfe194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ebd00a2a215d426cafeaf5ab40e7c88"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a6ebd00a2a215d426cafeaf5ab40e7c88">seg</a></td></tr>
+<tr class="separator:a6ebd00a2a215d426cafeaf5ab40e7c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afebc9def98379a29fcea31319656ed0b"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#afebc9def98379a29fcea31319656ed0b">sempre_zero</a></td></tr>
+<tr class="separator:afebc9def98379a29fcea31319656ed0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ac89a4a0f57ffa7c2ecf31749aa390"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a78ac89a4a0f57ffa7c2ecf31749aa390">flags</a></td></tr>
+<tr class="separator:a78ac89a4a0f57ffa7c2ecf31749aa390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad269091694d2e9aa05769af0754b8967"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#ad269091694d2e9aa05769af0754b8967">base_high</a></td></tr>
+<tr class="separator:ad269091694d2e9aa05769af0754b8967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041a413b2206852f055207dd0eb78b7d"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a041a413b2206852f055207dd0eb78b7d">limite</a></td></tr>
+<tr class="separator:a041a413b2206852f055207dd0eb78b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e013c2c6e8010c8116c6f56813df57b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a2e013c2c6e8010c8116c6f56813df57b">base</a></td></tr>
+<tr class="separator:a2e013c2c6e8010c8116c6f56813df57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbe564b6eaa9affe24c8fbed1a4c7ea"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a8fbe564b6eaa9affe24c8fbed1a4c7ea">gs</a></td></tr>
+<tr class="separator:a8fbe564b6eaa9affe24c8fbed1a4c7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d3d1b872b301364b825176981daf14"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a88d3d1b872b301364b825176981daf14">fs</a></td></tr>
+<tr class="separator:a88d3d1b872b301364b825176981daf14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4305a24abee1f4912083d877c499fcad"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a4305a24abee1f4912083d877c499fcad">es</a></td></tr>
+<tr class="separator:a4305a24abee1f4912083d877c499fcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d22b14f5b54c8488f5969c012000d7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a41d22b14f5b54c8488f5969c012000d7">ds</a></td></tr>
+<tr class="separator:a41d22b14f5b54c8488f5969c012000d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21967b2580b9725a17075b898ff3abc3"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a21967b2580b9725a17075b898ff3abc3">edi</a></td></tr>
+<tr class="separator:a21967b2580b9725a17075b898ff3abc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae508f942b3572ab3ab749fdc35a763da"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#ae508f942b3572ab3ab749fdc35a763da">esi</a></td></tr>
+<tr class="separator:ae508f942b3572ab3ab749fdc35a763da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680481bf6e093a04d619216bef02a2b2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a680481bf6e093a04d619216bef02a2b2">ebp</a></td></tr>
+<tr class="separator:a680481bf6e093a04d619216bef02a2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1425d6c20cbfa78828ab126434a1921"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#af1425d6c20cbfa78828ab126434a1921">esp</a></td></tr>
+<tr class="separator:af1425d6c20cbfa78828ab126434a1921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8996da18df84dface49e6d219a6fbde0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a8996da18df84dface49e6d219a6fbde0">ebx</a></td></tr>
+<tr class="separator:a8996da18df84dface49e6d219a6fbde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033ca834eb49bc602eb0e0b358a9a4f1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a033ca834eb49bc602eb0e0b358a9a4f1">edx</a></td></tr>
+<tr class="separator:a033ca834eb49bc602eb0e0b358a9a4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea7fea7f82c9647381548939843feaf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a0ea7fea7f82c9647381548939843feaf">ecx</a></td></tr>
+<tr class="separator:a0ea7fea7f82c9647381548939843feaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35a8540d25648fda11e3cccd6e4e10c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#aa35a8540d25648fda11e3cccd6e4e10c">eax</a></td></tr>
+<tr class="separator:aa35a8540d25648fda11e3cccd6e4e10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38ccce5c52c2ed5882fe54495b53b56"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#ac38ccce5c52c2ed5882fe54495b53b56">int_no</a></td></tr>
+<tr class="separator:ac38ccce5c52c2ed5882fe54495b53b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49bd5fbbbf89d957dd3ac1ce217f738"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#aa49bd5fbbbf89d957dd3ac1ce217f738">err_code</a></td></tr>
+<tr class="separator:aa49bd5fbbbf89d957dd3ac1ce217f738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39deae339e1220f3a094c493fbf468e7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a39deae339e1220f3a094c493fbf468e7">eip</a></td></tr>
+<tr class="separator:a39deae339e1220f3a094c493fbf468e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ed1336fc8e1441c0b7604555ef2a6b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a62ed1336fc8e1441c0b7604555ef2a6b">cs</a></td></tr>
+<tr class="separator:a62ed1336fc8e1441c0b7604555ef2a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a999c5a8c36bfad83716f3cb5560912"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a3a999c5a8c36bfad83716f3cb5560912">eflags</a></td></tr>
+<tr class="separator:a3a999c5a8c36bfad83716f3cb5560912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa577c00dec0db22f08d7a9b8a3dfc679"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#aa577c00dec0db22f08d7a9b8a3dfc679">useresp</a></td></tr>
+<tr class="separator:aa577c00dec0db22f08d7a9b8a3dfc679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed2c935d809c29ae771d1a8350a272f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a0ed2c935d809c29ae771d1a8350a272f">ss</a></td></tr>
+<tr class="separator:a0ed2c935d809c29ae771d1a8350a272f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae50c62b17eed62d56b531f690dd0fc5"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classIdt.html">Idt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#aae50c62b17eed62d56b531f690dd0fc5">__attribute__</a></td></tr>
+<tr class="separator:aae50c62b17eed62d56b531f690dd0fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93695694bfbfcc676755a9bc5d3f408e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIdt.html">Idt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8h.html#a93695694bfbfcc676755a9bc5d3f408e">idt</a></td></tr>
+<tr class="separator:a93695694bfbfcc676755a9bc5d3f408e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="a452906efbafa1cf8c6775bc538afdda0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structREGISTRO__IDT.html">REGISTRO_IDT</a> __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(packed)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8698fa83ca3df5dabb1414eb75eda39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void carregar_idt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a class="anchor" id="aae50c62b17eed62d56b531f690dd0fc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="classIdt.html">Idt</a> __attribute__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e013c2c6e8010c8116c6f56813df57b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad269091694d2e9aa05769af0754b8967"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short base_high</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4b82d5bd06e0cad3df76bcabedfe194"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short base_low</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62ed1336fc8e1441c0b7604555ef2a6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int cs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a41d22b14f5b54c8488f5969c012000d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>registradores de segmento, empilhados por último </p>
+
+</div>
+</div>
+<a class="anchor" id="aa35a8540d25648fda11e3cccd6e4e10c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int eax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>registradores empilhados pela instrução 'pusha' </p>
+
+</div>
+</div>
+<a class="anchor" id="a680481bf6e093a04d619216bef02a2b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ebp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8996da18df84dface49e6d219a6fbde0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ebx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ea7fea7f82c9647381548939843feaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ecx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21967b2580b9725a17075b898ff3abc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int edi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a033ca834eb49bc602eb0e0b358a9a4f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int edx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a999c5a8c36bfad83716f3cb5560912"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int eflags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39deae339e1220f3a094c493fbf468e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int eip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa49bd5fbbbf89d957dd3ac1ce217f738"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int err_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>número da interrupção, e código de erro </p>
+
+</div>
+</div>
+<a class="anchor" id="a4305a24abee1f4912083d877c499fcad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int es</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae508f942b3572ab3ab749fdc35a763da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int esi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af1425d6c20cbfa78828ab126434a1921"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int esp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a78ac89a4a0f57ffa7c2ecf31749aa390"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Valores do flag.</p>
+<p>Bit zero indica se o processador está reservado. </p>
+
+</div>
+</div>
+<a class="anchor" id="a88d3d1b872b301364b825176981daf14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int fs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8fbe564b6eaa9affe24c8fbed1a4c7ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int gs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a93695694bfbfcc676755a9bc5d3f408e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classIdt.html">Idt</a> idt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac38ccce5c52c2ed5882fe54495b53b56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int int_no</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a041a413b2206852f055207dd0eb78b7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short limite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ebd00a2a215d426cafeaf5ab40e7c88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short seg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Segmento de memória do kernel. </p>
+
+</div>
+</div>
+<a class="anchor" id="afebc9def98379a29fcea31319656ed0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char sempre_zero</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Valor deve ser sempre 0. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0ed2c935d809c29ae771d1a8350a272f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ss</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>valores empilhados automáticamente pelo processador </p>
+
+</div>
+</div>
+<a class="anchor" id="aa577c00dec0db22f08d7a9b8a3dfc679"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int useresp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

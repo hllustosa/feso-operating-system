@@ -1,0 +1,6 @@
+<map id="Arquivo" name="Arquivo">
+<area shape="rect" id="node2" href="$classRecurso.html" title="Recurso" alt="" coords="5,96,76,123"/>
+<area shape="rect" id="node3" href="$classLista.html" title="Lista\&lt; Bloco \&gt;" alt="" coords="78,201,185,228"/>
+<area shape="rect" id="node4" href="$structItem.html" title="Item\&lt; Bloco \&gt;" alt="" coords="100,96,205,123"/>
+<area shape="rect" id="node5" href="$structBloco.html" title="Bloco" alt="" coords="125,5,180,32"/>
+</map>

@@ -1,0 +1,741 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Referência do Arquivo Idt.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_cbd7f246bdf7dc0a50281a272327e6ed.html">kernel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo Idt.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="Idt_8h_source.html">include/Idt.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Syscall_8h_source.html">include/Syscall.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Memoria_8h_source.html">include/Memoria.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Processo_8h_source.html">include/Processo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Multiprocessamento_8h_source.html">include/Multiprocessamento.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Mensagem_8h_source.html">include/Mensagem.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="kernel_2include_2Util_8h_source.html">include/Util.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para Idt.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="Idt_8cpp__incl.png" border="0" usemap="#Idt_8cpp" alt=""/></div>
+<map name="Idt_8cpp" id="Idt_8cpp">
+<area shape="rect" id="node2" href="Idt_8h.html" title="include/Idt.h" alt="" coords="148,304,241,331"/>
+<area shape="rect" id="node3" href="Syscall_8h.html" title="include/Syscall.h" alt="" coords="44,80,166,107"/>
+<area shape="rect" id="node4" href="Memoria_8h.html" title="include/Memoria.h" alt="" coords="413,379,541,405"/>
+<area shape="rect" id="node6" href="kernel_2include_2Util_8h.html" title="Util.h" alt="" coords="548,453,601,480"/>
+<area shape="rect" id="node7" href="Processo_8h.html" title="include/Processo.h" alt="" coords="310,80,444,107"/>
+<area shape="rect" id="node10" href="Mensagem_8h.html" title="Mensagem.h" alt="" coords="202,155,299,181"/>
+<area shape="rect" id="node12" href="Multiprocessamento_8h.html" title="Multiprocessamento.h" alt="" coords="476,155,627,181"/>
+<area shape="rect" id="node5" href="Multiboot_8h.html" title="Multiboot.h" alt="" coords="434,453,520,480"/>
+<area shape="rect" id="node8" href="kernel_2include_2Lista_8h.html" title="Lista.h" alt="" coords="464,304,525,331"/>
+<area shape="rect" id="node9" href="kernel_2include_2Avl_8h.html" title="Avl.h" alt="" coords="375,229,427,256"/>
+<area shape="rect" id="node11" href="Irq_8h.html" title="Irq.h" alt="" coords="201,229,249,256"/>
+<area shape="rect" id="node13" href="Loader_8h.html" title="Loader.h" alt="" coords="502,229,574,256"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:af88eb8e98d943aa0461c01de3cb53493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#af88eb8e98d943aa0461c01de3cb53493">isr0</a> ()</td></tr>
+<tr class="separator:af88eb8e98d943aa0461c01de3cb53493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab0ed9ae661801c25f7dc9089c19f72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#aeab0ed9ae661801c25f7dc9089c19f72">isr1</a> ()</td></tr>
+<tr class="separator:aeab0ed9ae661801c25f7dc9089c19f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e457875cca040c3f7c77b61e960b53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a99e457875cca040c3f7c77b61e960b53">isr2</a> ()</td></tr>
+<tr class="separator:a99e457875cca040c3f7c77b61e960b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef268d2c16a7b318356451a05fd507b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a0ef268d2c16a7b318356451a05fd507b">isr3</a> ()</td></tr>
+<tr class="separator:a0ef268d2c16a7b318356451a05fd507b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09af768d636144aaeaddd76c92a0a2f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a09af768d636144aaeaddd76c92a0a2f5">isr4</a> ()</td></tr>
+<tr class="separator:a09af768d636144aaeaddd76c92a0a2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91d821a4bcafb44933d92945727b0df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#aa91d821a4bcafb44933d92945727b0df">isr5</a> ()</td></tr>
+<tr class="separator:aa91d821a4bcafb44933d92945727b0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fadb95f34937b1ded02c4171b4920ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a9fadb95f34937b1ded02c4171b4920ba">isr6</a> ()</td></tr>
+<tr class="separator:a9fadb95f34937b1ded02c4171b4920ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb6ec30db7077fb1c9c9d926a0fc407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a7eb6ec30db7077fb1c9c9d926a0fc407">isr7</a> ()</td></tr>
+<tr class="separator:a7eb6ec30db7077fb1c9c9d926a0fc407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86bc69345a3bb409665dbadb77a9d393"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a86bc69345a3bb409665dbadb77a9d393">isr8</a> ()</td></tr>
+<tr class="separator:a86bc69345a3bb409665dbadb77a9d393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb7c8490cbd623a3a2bf933ffedd131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#aacb7c8490cbd623a3a2bf933ffedd131">isr9</a> ()</td></tr>
+<tr class="separator:aacb7c8490cbd623a3a2bf933ffedd131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8cb1341cf756883a2e7dc317d5272d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a3c8cb1341cf756883a2e7dc317d5272d">isr10</a> ()</td></tr>
+<tr class="separator:a3c8cb1341cf756883a2e7dc317d5272d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8145cf6ee1ef7834f459ba777d323c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a0d8145cf6ee1ef7834f459ba777d323c">isr11</a> ()</td></tr>
+<tr class="separator:a0d8145cf6ee1ef7834f459ba777d323c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f00421039cb85f9dd9375995c784bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a00f00421039cb85f9dd9375995c784bd">isr12</a> ()</td></tr>
+<tr class="separator:a00f00421039cb85f9dd9375995c784bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af985dcf66872ee696e5f30d819ac16a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#af985dcf66872ee696e5f30d819ac16a1">isr13</a> ()</td></tr>
+<tr class="separator:af985dcf66872ee696e5f30d819ac16a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b63eaa37c03743718870964a3429ba8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a8b63eaa37c03743718870964a3429ba8">isr14</a> ()</td></tr>
+<tr class="separator:a8b63eaa37c03743718870964a3429ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9160f355325318a990c106ad5c3b8954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a9160f355325318a990c106ad5c3b8954">isr15</a> ()</td></tr>
+<tr class="separator:a9160f355325318a990c106ad5c3b8954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add0980c10028b377643da169e52e5be7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#add0980c10028b377643da169e52e5be7">isr16</a> ()</td></tr>
+<tr class="separator:add0980c10028b377643da169e52e5be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d1e81e585bc7c56b46280006402f9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#ac7d1e81e585bc7c56b46280006402f9e">isr17</a> ()</td></tr>
+<tr class="separator:ac7d1e81e585bc7c56b46280006402f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae685c5ca5ed9c9c5e7d297ad8d14de49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#ae685c5ca5ed9c9c5e7d297ad8d14de49">isr18</a> ()</td></tr>
+<tr class="separator:ae685c5ca5ed9c9c5e7d297ad8d14de49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16b5f77287df551e63d3f0c67f8f75d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#ad16b5f77287df551e63d3f0c67f8f75d">isr19</a> ()</td></tr>
+<tr class="separator:ad16b5f77287df551e63d3f0c67f8f75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552d2aedae97d97083d3f9caf6ad59a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a552d2aedae97d97083d3f9caf6ad59a5">isr20</a> ()</td></tr>
+<tr class="separator:a552d2aedae97d97083d3f9caf6ad59a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af106b9a26e06abf17eebb6f7ae54f905"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#af106b9a26e06abf17eebb6f7ae54f905">isr21</a> ()</td></tr>
+<tr class="separator:af106b9a26e06abf17eebb6f7ae54f905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b6f47f27ac3b31fc426f5c2a1a669c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#aa4b6f47f27ac3b31fc426f5c2a1a669c">isr22</a> ()</td></tr>
+<tr class="separator:aa4b6f47f27ac3b31fc426f5c2a1a669c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277e9cc418a637ae584c1ff6525eb2e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a277e9cc418a637ae584c1ff6525eb2e1">isr23</a> ()</td></tr>
+<tr class="separator:a277e9cc418a637ae584c1ff6525eb2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea113ad8536ca8311ab00d077ece7f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a2ea113ad8536ca8311ab00d077ece7f1">isr24</a> ()</td></tr>
+<tr class="separator:a2ea113ad8536ca8311ab00d077ece7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e919f327e846f72b99de088ae9b822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a73e919f327e846f72b99de088ae9b822">isr25</a> ()</td></tr>
+<tr class="separator:a73e919f327e846f72b99de088ae9b822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c118fd7e75c96d19da1bbaf87731e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a24c118fd7e75c96d19da1bbaf87731e4">isr26</a> ()</td></tr>
+<tr class="separator:a24c118fd7e75c96d19da1bbaf87731e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97e98084cbcdc21bf03ba314dc243e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#ad97e98084cbcdc21bf03ba314dc243e0">isr27</a> ()</td></tr>
+<tr class="separator:ad97e98084cbcdc21bf03ba314dc243e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a5fe4d3cf67be0c67db612aa757c5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#ab2a5fe4d3cf67be0c67db612aa757c5f">isr28</a> ()</td></tr>
+<tr class="separator:ab2a5fe4d3cf67be0c67db612aa757c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cce4d55d6a199607cd3a9e2a33241b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a8cce4d55d6a199607cd3a9e2a33241b2">isr29</a> ()</td></tr>
+<tr class="separator:a8cce4d55d6a199607cd3a9e2a33241b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af868664393aedd51c04e3ddd48b8f84f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#af868664393aedd51c04e3ddd48b8f84f">isr30</a> ()</td></tr>
+<tr class="separator:af868664393aedd51c04e3ddd48b8f84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ae10cea59f9bb2f79c13b8036d81f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#af4ae10cea59f9bb2f79c13b8036d81f1">isr31</a> ()</td></tr>
+<tr class="separator:af4ae10cea59f9bb2f79c13b8036d81f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ca6167bc65c48c2a1a893e7f4fae6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a21ca6167bc65c48c2a1a893e7f4fae6a">tratar_exception</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a21ca6167bc65c48c2a1a893e7f4fae6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a93695694bfbfcc676755a9bc5d3f408e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIdt.html">Idt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a93695694bfbfcc676755a9bc5d3f408e">idt</a></td></tr>
+<tr class="separator:a93695694bfbfcc676755a9bc5d3f408e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bcd594b7e3896cf20d398154de118b0"><td class="memItemLeft" align="right" valign="top">volatile struct <a class="el" href="structIDT__PTR.html">IDT_PTR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#a3bcd594b7e3896cf20d398154de118b0">idtp</a></td></tr>
+<tr class="separator:a3bcd594b7e3896cf20d398154de118b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace19cc8c9b1fab61426739e4ff6a58de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structREGISTRO__IDT.html">REGISTRO_IDT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Idt_8cpp.html#ace19cc8c9b1fab61426739e4ff6a58de">registros</a> [256]</td></tr>
+<tr class="separator:ace19cc8c9b1fab61426739e4ff6a58de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="af88eb8e98d943aa0461c01de3cb53493"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr0 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeab0ed9ae661801c25f7dc9089c19f72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c8cb1341cf756883a2e7dc317d5272d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr10 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d8145cf6ee1ef7834f459ba777d323c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr11 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a00f00421039cb85f9dd9375995c784bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr12 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af985dcf66872ee696e5f30d819ac16a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr13 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b63eaa37c03743718870964a3429ba8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr14 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9160f355325318a990c106ad5c3b8954"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr15 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add0980c10028b377643da169e52e5be7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr16 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac7d1e81e585bc7c56b46280006402f9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr17 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae685c5ca5ed9c9c5e7d297ad8d14de49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr18 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad16b5f77287df551e63d3f0c67f8f75d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr19 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a99e457875cca040c3f7c77b61e960b53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a552d2aedae97d97083d3f9caf6ad59a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr20 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af106b9a26e06abf17eebb6f7ae54f905"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr21 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4b6f47f27ac3b31fc426f5c2a1a669c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr22 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a277e9cc418a637ae584c1ff6525eb2e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr23 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ea113ad8536ca8311ab00d077ece7f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr24 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73e919f327e846f72b99de088ae9b822"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr25 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a24c118fd7e75c96d19da1bbaf87731e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr26 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad97e98084cbcdc21bf03ba314dc243e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr27 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab2a5fe4d3cf67be0c67db612aa757c5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr28 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8cce4d55d6a199607cd3a9e2a33241b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr29 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ef268d2c16a7b318356451a05fd507b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr3 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af868664393aedd51c04e3ddd48b8f84f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr30 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4ae10cea59f9bb2f79c13b8036d81f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr31 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09af768d636144aaeaddd76c92a0a2f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr4 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa91d821a4bcafb44933d92945727b0df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr5 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9fadb95f34937b1ded02c4171b4920ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr6 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7eb6ec30db7077fb1c9c9d926a0fc407"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr7 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86bc69345a3bb409665dbadb77a9d393"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr8 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aacb7c8490cbd623a3a2bf933ffedd131"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isr9 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21ca6167bc65c48c2a1a893e7f4fae6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tratar_exception </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a class="anchor" id="a93695694bfbfcc676755a9bc5d3f408e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classIdt.html">Idt</a> idt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3bcd594b7e3896cf20d398154de118b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile struct <a class="el" href="structIDT__PTR.html">IDT_PTR</a> idtp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ace19cc8c9b1fab61426739e4ff6a58de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structREGISTRO__IDT.html">REGISTRO_IDT</a> registros[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

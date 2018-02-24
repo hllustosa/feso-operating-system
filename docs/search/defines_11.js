@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['va_5farg',['va_arg',['../kernel_2include_2Stdarg_8h.html#afeb46f660b756eb161fb4aa8969925c7',1,'va_arg():&#160;Stdarg.h'],['../lib_2include_2Stdarg_8h.html#afeb46f660b756eb161fb4aa8969925c7',1,'va_arg():&#160;Stdarg.h']]],
+  ['va_5fend',['va_end',['../kernel_2include_2Stdarg_8h.html#acd9b3b9085ec072324c5fdac2b40304e',1,'va_end():&#160;Stdarg.h'],['../lib_2include_2Stdarg_8h.html#acd9b3b9085ec072324c5fdac2b40304e',1,'va_end():&#160;Stdarg.h']]],
+  ['va_5fstart',['va_start',['../kernel_2include_2Stdarg_8h.html#aab2fdb7b45868b2622028377c750dad9',1,'va_start():&#160;Stdarg.h'],['../lib_2include_2Stdarg_8h.html#a8754a3fcf3dbe468869b0311fb5394c5',1,'va_start():&#160;Stdarg.h']]],
+  ['vid_5fcolor_5fazl_5fclaro',['VID_COLOR_AZL_CLARO',['../Io_8h.html#ae4c4a79b5bdc47d825c10d8c0777b57b',1,'Io.h']]],
+  ['vid_5fcolor_5fazul',['VID_COLOR_AZUL',['../Io_8h.html#a914ab07c6260181e9245f91b94ebcd55',1,'Io.h']]],
+  ['vid_5fcolor_5fbranco',['VID_COLOR_BRANCO',['../Io_8h.html#a316f7f4f26e37804210c3a3a1422f9eb',1,'Io.h']]],
+  ['vid_5fcolor_5fcia_5fclaro',['VID_COLOR_CIA_CLARO',['../Io_8h.html#a2bfe42e5784e1c54d9909cbee8d9d463',1,'Io.h']]],
+  ['vid_5fcolor_5fciano',['VID_COLOR_CIANO',['../Io_8h.html#af6ba5005b403982f7ac72c4c4686375f',1,'Io.h']]],
+  ['vid_5fcolor_5fcza_5fclaro',['VID_COLOR_CZA_CLARO',['../Io_8h.html#a6c669a35ba076aa1fa0a1e55d564e12a',1,'Io.h']]],
+  ['vid_5fcolor_5fcza_5fescur',['VID_COLOR_CZA_ESCUR',['../Io_8h.html#aeebf7cac78caa360c0b9eec0dcb406ca',1,'Io.h']]],
+  ['vid_5fcolor_5fmar_5fclaro',['VID_COLOR_MAR_CLARO',['../Io_8h.html#aec162335fa9fdbe8eaa54a439709c078',1,'Io.h']]],
+  ['vid_5fcolor_5fmargenta',['VID_COLOR_MARGENTA',['../Io_8h.html#a93cdc8a1982f2566d5dcd616f5c710de',1,'Io.h']]],
+  ['vid_5fcolor_5fmarron',['VID_COLOR_MARRON',['../Io_8h.html#afb0cf2dea059769f2ac9dd2adfededfa',1,'Io.h']]],
+  ['vid_5fcolor_5fmro_5fclaro',['VID_COLOR_MRO_CLARO',['../Io_8h.html#a2299e3b4a47df1950245c37e4037e9af',1,'Io.h']]],
+  ['vid_5fcolor_5fpreto',['VID_COLOR_PRETO',['../Io_8h.html#a5ebca912f3a929b8b90a67b7a2bbe421',1,'Io.h']]],
+  ['vid_5fcolor_5fved_5fclaro',['VID_COLOR_VED_CLARO',['../Io_8h.html#a446c698fa5684f28f6c2361e62a06b74',1,'Io.h']]],
+  ['vid_5fcolor_5fver_5fclaro',['VID_COLOR_VER_CLARO',['../Io_8h.html#a7f3156f6dc34e11b0c7415c7deb9f556',1,'Io.h']]],
+  ['vid_5fcolor_5fverde',['VID_COLOR_VERDE',['../Io_8h.html#ac43011c7bc52d3f5bae91ba111fb1de0',1,'Io.h']]],
+  ['vid_5fcolor_5fvermelho',['VID_COLOR_VERMELHO',['../Io_8h.html#afaaa991c7380981c63312ade4d055d08',1,'Io.h']]]
+];

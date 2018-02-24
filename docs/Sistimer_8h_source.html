@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Código-Fonte de Sistimer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_a6de617209e7dfe1dba6aa99bb75c990.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Sistimer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Sistimer_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*   This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*    it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*    the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*    (at your option) any later version.</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*    This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*    GNU General Public License for more details.</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*    You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _SISTIMER</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _SISTIMER</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">struct </span><a class="code" href="structBloco__Timer.html">Bloco_Timer</a></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structBloco__Timer.html#ad0793aa3b5ea71fa13f764ed05dc8637">codigo</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structBloco__Timer.html#aa54f3479522a387d2080f4d07b801c9d">pid</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structBloco__Timer.html#a034eb327efbf42e23f2737e3264a905a">param1</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structBloco__Timer.html#ac93a625cb895779c0e1239176e1c71cc">param2</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">struct </span><a class="code" href="structRelogio.html">Relogio</a></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> hora;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> min;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="Idt_8h.html#a6ebd00a2a215d426cafeaf5ab40e7c88">seg</a>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms_dia;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> bcd;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> hora24;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Sistimer_8h.html#a8b88be7565bf666fd5414d85fc9619a1">esperar</a>(<span class="keywordtype">int</span> milisegundos);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Sistimer_8h.html#af31c253a3800f8a047fb2c95472dae33">obter_relogio</a>(<a class="code" href="structRelogio.html">Relogio</a>&amp;);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">int</span> <a class="code" href="Sistimer_8h.html#a20e50ab9d6b10af0e2940d9419448f42">rand</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structBloco__Timer_html_aa54f3479522a387d2080f4d07b801c9d"><div class="ttname"><a href="structBloco__Timer.html#aa54f3479522a387d2080f4d07b801c9d">Bloco_Timer::pid</a></div><div class="ttdeci">int pid</div><div class="ttdef"><b>Definition:</b> Timer.cpp:24</div></div>
+<div class="ttc" id="structRelogio_html"><div class="ttname"><a href="structRelogio.html">Relogio</a></div><div class="ttdef"><b>Definition:</b> Timer.cpp:29</div></div>
+<div class="ttc" id="structBloco__Timer_html_a034eb327efbf42e23f2737e3264a905a"><div class="ttname"><a href="structBloco__Timer.html#a034eb327efbf42e23f2737e3264a905a">Bloco_Timer::param1</a></div><div class="ttdeci">int param1</div><div class="ttdef"><b>Definition:</b> Timer.cpp:25</div></div>
+<div class="ttc" id="Sistimer_8h_html_a8b88be7565bf666fd5414d85fc9619a1"><div class="ttname"><a href="Sistimer_8h.html#a8b88be7565bf666fd5414d85fc9619a1">esperar</a></div><div class="ttdeci">void esperar(int milisegundos)</div></div>
+<div class="ttc" id="Sistimer_8h_html_af31c253a3800f8a047fb2c95472dae33"><div class="ttname"><a href="Sistimer_8h.html#af31c253a3800f8a047fb2c95472dae33">obter_relogio</a></div><div class="ttdeci">void obter_relogio(Relogio &amp;)</div></div>
+<div class="ttc" id="structBloco__Timer_html_ad0793aa3b5ea71fa13f764ed05dc8637"><div class="ttname"><a href="structBloco__Timer.html#ad0793aa3b5ea71fa13f764ed05dc8637">Bloco_Timer::codigo</a></div><div class="ttdeci">int codigo</div><div class="ttdef"><b>Definition:</b> Timer.cpp:23</div></div>
+<div class="ttc" id="structBloco__Timer_html"><div class="ttname"><a href="structBloco__Timer.html">Bloco_Timer</a></div><div class="ttdef"><b>Definition:</b> Timer.cpp:21</div></div>
+<div class="ttc" id="Idt_8h_html_a6ebd00a2a215d426cafeaf5ab40e7c88"><div class="ttname"><a href="Idt_8h.html#a6ebd00a2a215d426cafeaf5ab40e7c88">seg</a></div><div class="ttdeci">unsigned short seg</div><div class="ttdef"><b>Definition:</b> Idt.h:116</div></div>
+<div class="ttc" id="structBloco__Timer_html_ac93a625cb895779c0e1239176e1c71cc"><div class="ttname"><a href="structBloco__Timer.html#ac93a625cb895779c0e1239176e1c71cc">Bloco_Timer::param2</a></div><div class="ttdeci">int param2</div><div class="ttdef"><b>Definition:</b> Timer.cpp:26</div></div>
+<div class="ttc" id="Sistimer_8h_html_a20e50ab9d6b10af0e2940d9419448f42"><div class="ttname"><a href="Sistimer_8h.html#a20e50ab9d6b10af0e2940d9419448f42">rand</a></div><div class="ttdeci">int rand()</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

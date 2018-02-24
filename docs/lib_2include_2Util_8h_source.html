@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Código-Fonte de Util.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_a6de617209e7dfe1dba6aa99bb75c990.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">lib/include/Util.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lib_2include_2Util_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*   This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*    it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*    the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*    (at your option) any later version.</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*    This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*    GNU General Public License for more details.</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*    You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _UTILIDADES</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _UTILIDADES</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="lib_2include_2Util_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">   17</a></span>&#160;<span class="preprocessor">#define TRUE 1</span></div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="lib_2include_2Util_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">   18</a></span>&#160;<span class="preprocessor">#define NULL 0</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//biblioteca padr�o</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code" href="lib_2include_2Util_8h.html#a9177691ba6c9b9935962fabf798b0f17">memcpy</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*, <span class="keywordtype">int</span>);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code" href="lib_2include_2Util_8h.html#a46acf379dd72c5d24fd135ccd3d24c2e">memset</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>, <span class="keywordtype">int</span>);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *<a class="code" href="lib_2include_2Util_8h.html#ad0d07e229db236f407df966e0866c165">memsetw</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>, <span class="keywordtype">int</span>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lib_2include_2Util_8h.html#a11bd144d7d44914099a3aeddf1c8567d">strcmp</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *s1, <span class="keyword">const</span> <span class="keywordtype">char</span> *s2);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lib_2include_2Util_8h.html#a5e5172aa1be36b8210c6dfd86800b44c">strlen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="lib_2include_2Util_8h.html#a80f8fb5a529dbd4b3efb2575764d850e">strtok</a>(<span class="keywordtype">char</span> *<a class="code" href="Memoria_8cpp.html#ac83dcbf8edb01e4e7850a3643defb3fd">s</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> *delim);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="lib_2include_2Util_8h.html#a81383881e8c2d3a4107ce4eb2ac7652f">strcat</a>(<span class="keywordtype">char</span> *dest,  <span class="keywordtype">char</span> *src);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//memoria</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="lib_2include_2Util_8h.html#a5b8ba2871e67c700fb908cc8b1f231b3">malloc</a>(<span class="keywordtype">unsigned</span> nbytes);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lib_2include_2Util_8h.html#adebb229f063e66907017098087cbe791">free</a>(<span class="keywordtype">void</span> *ap);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//leitura de portas</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="lib_2include_2Util_8h.html#a362b3772452f3d12dbe4a75092518585">inportb</a> (<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lib_2include_2Util_8h.html#a58323e161bd786cfbf7b129583a69a1e">outportb</a> (<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lib_2include_2Util_8h.html#a060a10f38b9d5daedb7f109c95718770">outportw</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> port, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> val );</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="lib_2include_2Util_8h.html#ad1ac27b23d94c3106e36f2868359ae6e">inportw</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> port );</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lib_2include_2Util_8h.html#a2e2229e7777411153713a9744b0f251b">outportsw</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> port, <span class="keyword">const</span> <span class="keywordtype">void</span> *addr, <span class="keywordtype">int</span> cnt);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lib_2include_2Util_8h.html#af12d403e579bdfa84cc6d6e19781ad88">inportsw</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> port, <span class="keywordtype">void</span> *addr, <span class="keywordtype">int</span> cnt);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//convers�o de dados</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="lib_2include_2Util_8h.html#a72dfe178069c427454ca78e053c63a30">ftoa</a>(<span class="keywordtype">double</span> valor);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">double</span> <a class="code" href="lib_2include_2Util_8h.html#ab017280f95ea769b9422688105f02653">strtod</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *str, <span class="keywordtype">char</span> **endptr);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lib_2include_2Util_8h.html#ab578f2ac5d7ed024af73180f7187aacb">atoi</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *c );</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="lib_2include_2Util_8h.html#ac35cccd3bf024c062e3df84143b924eb">itoa</a>(<span class="keywordtype">int</span> val, <span class="keywordtype">int</span> <a class="code" href="Gdt_8h.html#a2e013c2c6e8010c8116c6f56813df57b">base</a>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="lib_2include_2Util_8h.html#ac8a3b0f31c06cf978d8ecb88e5438407">itoa2</a>(<span class="keywordtype">int</span> val, <span class="keywordtype">int</span> <a class="code" href="Gdt_8h.html#a2e013c2c6e8010c8116c6f56813df57b">base</a>, <span class="keywordtype">char</span> * <a class="code" href="Fat_8cpp.html#aa9d04f2a07ea7900ead79a4bcf6bce48">buf</a>);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//outras</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lib_2include_2Util_8h.html#a06179b27e27484ceb43d2a0486b3c328">obter_estado_bit</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> bloco, <span class="keywordtype">short</span> index);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lib_2include_2Util_8h.html#ab4a8d549dd494351e623011ede378d3d">setar_byte</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *bloco, <span class="keywordtype">short</span> index, <span class="keywordtype">short</span> val);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lib_2include_2Util_8h.html#aecc4da82a742758a04ac4b3559fbf834">MAIOR</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="lib_2include_2Util_8h_html_a81383881e8c2d3a4107ce4eb2ac7652f"><div class="ttname"><a href="lib_2include_2Util_8h.html#a81383881e8c2d3a4107ce4eb2ac7652f">strcat</a></div><div class="ttdeci">char * strcat(char *dest, char *src)</div><div class="ttdef"><b>Definition:</b> Util.cpp:168</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_adebb229f063e66907017098087cbe791"><div class="ttname"><a href="lib_2include_2Util_8h.html#adebb229f063e66907017098087cbe791">free</a></div><div class="ttdeci">void free(void *ap)</div><div class="ttdef"><b>Definition:</b> Memoria.cpp:642</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_af12d403e579bdfa84cc6d6e19781ad88"><div class="ttname"><a href="lib_2include_2Util_8h.html#af12d403e579bdfa84cc6d6e19781ad88">inportsw</a></div><div class="ttdeci">void inportsw(unsigned short port, void *addr, int cnt)</div><div class="ttdef"><b>Definition:</b> Util.cpp:213</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_ac35cccd3bf024c062e3df84143b924eb"><div class="ttname"><a href="lib_2include_2Util_8h.html#ac35cccd3bf024c062e3df84143b924eb">itoa</a></div><div class="ttdeci">char * itoa(int val, int base)</div><div class="ttdef"><b>Definition:</b> Util.cpp:234</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a11bd144d7d44914099a3aeddf1c8567d"><div class="ttname"><a href="lib_2include_2Util_8h.html#a11bd144d7d44914099a3aeddf1c8567d">strcmp</a></div><div class="ttdeci">int strcmp(const char *s1, const char *s2)</div><div class="ttdef"><b>Definition:</b> Util.cpp:85</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a5b8ba2871e67c700fb908cc8b1f231b3"><div class="ttname"><a href="lib_2include_2Util_8h.html#a5b8ba2871e67c700fb908cc8b1f231b3">malloc</a></div><div class="ttdeci">void * malloc(unsigned nbytes)</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_ab4a8d549dd494351e623011ede378d3d"><div class="ttname"><a href="lib_2include_2Util_8h.html#ab4a8d549dd494351e623011ede378d3d">setar_byte</a></div><div class="ttdeci">void setar_byte(unsigned char *bloco, short index, short val)</div><div class="ttdef"><b>Definition:</b> Util.cpp:477</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a80f8fb5a529dbd4b3efb2575764d850e"><div class="ttname"><a href="lib_2include_2Util_8h.html#a80f8fb5a529dbd4b3efb2575764d850e">strtok</a></div><div class="ttdeci">char * strtok(char *s, const char *delim)</div><div class="ttdef"><b>Definition:</b> Util.cpp:121</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_ab578f2ac5d7ed024af73180f7187aacb"><div class="ttname"><a href="lib_2include_2Util_8h.html#ab578f2ac5d7ed024af73180f7187aacb">atoi</a></div><div class="ttdeci">int atoi(const char *c)</div><div class="ttdef"><b>Definition:</b> Util.cpp:436</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a5e5172aa1be36b8210c6dfd86800b44c"><div class="ttname"><a href="lib_2include_2Util_8h.html#a5e5172aa1be36b8210c6dfd86800b44c">strlen</a></div><div class="ttdeci">int strlen(const char *)</div><div class="ttdef"><b>Definition:</b> Util.cpp:113</div></div>
+<div class="ttc" id="Fat_8cpp_html_aa9d04f2a07ea7900ead79a4bcf6bce48"><div class="ttname"><a href="Fat_8cpp.html#aa9d04f2a07ea7900ead79a4bcf6bce48">buf</a></div><div class="ttdeci">char buf[TAM_CLUSTER]</div><div class="ttdef"><b>Definition:</b> Fat.cpp:31</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_ab017280f95ea769b9422688105f02653"><div class="ttname"><a href="lib_2include_2Util_8h.html#ab017280f95ea769b9422688105f02653">strtod</a></div><div class="ttdeci">double strtod(const char *str, char **endptr)</div><div class="ttdef"><b>Definition:</b> Util.cpp:325</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a060a10f38b9d5daedb7f109c95718770"><div class="ttname"><a href="lib_2include_2Util_8h.html#a060a10f38b9d5daedb7f109c95718770">outportw</a></div><div class="ttdeci">void outportw(unsigned short port, unsigned short val)</div><div class="ttdef"><b>Definition:</b> Util.cpp:194</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a46acf379dd72c5d24fd135ccd3d24c2e"><div class="ttname"><a href="lib_2include_2Util_8h.html#a46acf379dd72c5d24fd135ccd3d24c2e">memset</a></div><div class="ttdeci">unsigned char * memset(unsigned char *, unsigned char, int)</div><div class="ttdef"><b>Definition:</b> Util.cpp:93</div></div>
+<div class="ttc" id="Gdt_8h_html_a2e013c2c6e8010c8116c6f56813df57b"><div class="ttname"><a href="Gdt_8h.html#a2e013c2c6e8010c8116c6f56813df57b">base</a></div><div class="ttdeci">unsigned int base</div><div class="ttdef"><b>Definition:</b> Gdt.h:354</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a2e2229e7777411153713a9744b0f251b"><div class="ttname"><a href="lib_2include_2Util_8h.html#a2e2229e7777411153713a9744b0f251b">outportsw</a></div><div class="ttdeci">void outportsw(unsigned short port, const void *addr, int cnt)</div><div class="ttdef"><b>Definition:</b> Util.cpp:208</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_aecc4da82a742758a04ac4b3559fbf834"><div class="ttname"><a href="lib_2include_2Util_8h.html#aecc4da82a742758a04ac4b3559fbf834">MAIOR</a></div><div class="ttdeci">int MAIOR(int a, int b)</div><div class="ttdef"><b>Definition:</b> Util.cpp:68</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a72dfe178069c427454ca78e053c63a30"><div class="ttname"><a href="lib_2include_2Util_8h.html#a72dfe178069c427454ca78e053c63a30">ftoa</a></div><div class="ttdeci">char * ftoa(double valor)</div><div class="ttdef"><b>Definition:</b> Util.cpp:296</div></div>
+<div class="ttc" id="Memoria_8cpp_html_ac83dcbf8edb01e4e7850a3643defb3fd"><div class="ttname"><a href="Memoria_8cpp.html#ac83dcbf8edb01e4e7850a3643defb3fd">s</a></div><div class="ttdeci">struct @2 s</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_ad1ac27b23d94c3106e36f2868359ae6e"><div class="ttname"><a href="lib_2include_2Util_8h.html#ad1ac27b23d94c3106e36f2868359ae6e">inportw</a></div><div class="ttdeci">unsigned short inportw(unsigned short port)</div><div class="ttdef"><b>Definition:</b> Util.cpp:200</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a362b3772452f3d12dbe4a75092518585"><div class="ttname"><a href="lib_2include_2Util_8h.html#a362b3772452f3d12dbe4a75092518585">inportb</a></div><div class="ttdeci">unsigned char inportb(unsigned short)</div><div class="ttdef"><b>Definition:</b> Util.cpp:182</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a9177691ba6c9b9935962fabf798b0f17"><div class="ttname"><a href="lib_2include_2Util_8h.html#a9177691ba6c9b9935962fabf798b0f17">memcpy</a></div><div class="ttdeci">unsigned char * memcpy(unsigned char *, unsigned char *, int)</div><div class="ttdef"><b>Definition:</b> Util.cpp:74</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a58323e161bd786cfbf7b129583a69a1e"><div class="ttname"><a href="lib_2include_2Util_8h.html#a58323e161bd786cfbf7b129583a69a1e">outportb</a></div><div class="ttdeci">void outportb(unsigned short, unsigned char)</div><div class="ttdef"><b>Definition:</b> Util.cpp:189</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_a06179b27e27484ceb43d2a0486b3c328"><div class="ttname"><a href="lib_2include_2Util_8h.html#a06179b27e27484ceb43d2a0486b3c328">obter_estado_bit</a></div><div class="ttdeci">int obter_estado_bit(unsigned char bloco, short index)</div><div class="ttdef"><b>Definition:</b> Util.cpp:460</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_ac8a3b0f31c06cf978d8ecb88e5438407"><div class="ttname"><a href="lib_2include_2Util_8h.html#ac8a3b0f31c06cf978d8ecb88e5438407">itoa2</a></div><div class="ttdeci">char * itoa2(int val, int base, char *buf)</div><div class="ttdef"><b>Definition:</b> Util.cpp:267</div></div>
+<div class="ttc" id="lib_2include_2Util_8h_html_ad0d07e229db236f407df966e0866c165"><div class="ttname"><a href="lib_2include_2Util_8h.html#ad0d07e229db236f407df966e0866c165">memsetw</a></div><div class="ttdeci">unsigned short * memsetw(unsigned short *, unsigned short, int)</div><div class="ttdef"><b>Definition:</b> Util.cpp:103</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>feSO: Referência da Classe Syscall</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">feSO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;Componentes</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;dos&#160;Componentes</span></a></li>
+      <li><a href="inherits.html"><span>Hierarquia&#160;de&#160;Classes</span></a></li>
+      <li><a href="functions.html"><span>Componentes&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="classSyscall-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe Syscall</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Syscall_8h_source.html">Syscall.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:a9d9270a5abd454bf3fc56106e9395e38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a9d9270a5abd454bf3fc56106e9395e38">inicializar</a> (<a class="el" href="classIdt.html">Idt</a> <a class="el" href="Idt_8cpp.html#a93695694bfbfcc676755a9bc5d3f408e">idt</a>)</td></tr>
+<tr class="separator:a9d9270a5abd454bf3fc56106e9395e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83189ab344d2d7b27549cce4f54c19e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#ae83189ab344d2d7b27549cce4f54c19e">chamar_systemcall</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:ae83189ab344d2d7b27549cce4f54c19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f0f2af891ee4e88b0bab8af6e8c27b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a08f0f2af891ee4e88b0bab8af6e8c27b">sbrk</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a08f0f2af891ee4e88b0bab8af6e8c27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554ddfdce1f2d0c718177a01496f40b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a554ddfdce1f2d0c718177a01496f40b5">obter_info_kernel</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a554ddfdce1f2d0c718177a01496f40b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667e2292279d930d6d276e0baa2f435c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a667e2292279d930d6d276e0baa2f435c">enviar_msg</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a667e2292279d930d6d276e0baa2f435c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff79937cd0c2fec2f7a25d447d07884"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#abff79937cd0c2fec2f7a25d447d07884">enviar_msg_pid</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:abff79937cd0c2fec2f7a25d447d07884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d16bd27486f82bbe7f6edc07e1c071"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#af9d16bd27486f82bbe7f6edc07e1c071">receber_msg</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:af9d16bd27486f82bbe7f6edc07e1c071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e26d952b2ce3abf63adabf37df06264"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a7e26d952b2ce3abf63adabf37df06264">escutar_porta</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a7e26d952b2ce3abf63adabf37df06264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d4d5e4931f26ac46ff33121ce665b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a48d4d5e4931f26ac46ff33121ce665b4">abrir_arquivo</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a48d4d5e4931f26ac46ff33121ce665b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850fc66205fd4914e795d9982e69b2ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a850fc66205fd4914e795d9982e69b2ae">ler_arquivo</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a850fc66205fd4914e795d9982e69b2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33df3c75884b88d36eb5b6b69eee9013"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a33df3c75884b88d36eb5b6b69eee9013">escrever_arquivo</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a33df3c75884b88d36eb5b6b69eee9013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa680968c593ddbdbac372b6aa12de6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a9fa680968c593ddbdbac372b6aa12de6">buscar_arquivo</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a9fa680968c593ddbdbac372b6aa12de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98fbfdd6d01e60f390702454efd7e6da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a98fbfdd6d01e60f390702454efd7e6da">excluir_arquivo</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a98fbfdd6d01e60f390702454efd7e6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d5a6ca37fa0ee64c1944345fc0ef73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a30d5a6ca37fa0ee64c1944345fc0ef73">fechar_arquivo</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a30d5a6ca37fa0ee64c1944345fc0ef73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74cb4d52b235789f33685793d21ea1bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a74cb4d52b235789f33685793d21ea1bc">executar</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a74cb4d52b235789f33685793d21ea1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a986953d2b8e5ab894473f744fb360"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a36a986953d2b8e5ab894473f744fb360">sair</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a36a986953d2b8e5ab894473f744fb360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38beb12c05bcc23933d5afe2cbf70db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#af38beb12c05bcc23933d5afe2cbf70db">finalizar_proceso</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:af38beb12c05bcc23933d5afe2cbf70db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ba689784ecd773ddfbd37387a5a047"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a29ba689784ecd773ddfbd37387a5a047">criar_thread</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a29ba689784ecd773ddfbd37387a5a047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93fd4a791ee8b2c21a966e85cb8164b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a93fd4a791ee8b2c21a966e85cb8164b4">obter_pid</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a93fd4a791ee8b2c21a966e85cb8164b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192c98980deced78f12a49ccdfa5571d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a192c98980deced78f12a49ccdfa5571d">obter_info_arquivo</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a192c98980deced78f12a49ccdfa5571d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fa1afba00a0ed4e3068d5dbcee2a1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#ae1fa1afba00a0ed4e3068d5dbcee2a1f">adicionar_no</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:ae1fa1afba00a0ed4e3068d5dbcee2a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f9c1c0c7585cf5ec1aed1974c8dc1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#aa6f9c1c0c7585cf5ec1aed1974c8dc1f">montar_no</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:aa6f9c1c0c7585cf5ec1aed1974c8dc1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029a296868169b502cdc1414d0fdc7e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a029a296868169b502cdc1414d0fdc7e3">remover_no</a> (struct <a class="el" href="structREGS.html">REGS</a> *r)</td></tr>
+<tr class="separator:a029a296868169b502cdc1414d0fdc7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a1d05ba4c1bf5a581947060dad6da8a9c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSyscall.html#a1d05ba4c1bf5a581947060dad6da8a9c">num</a></td></tr>
+<tr class="separator:a1d05ba4c1bf5a581947060dad6da8a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>Informações sobre as system calls no sistema feSO</p>
+<table class="doxtable">
+<tr>
+<th>Nome </th><th>Descrição </th><th>Parâmetros </th><th>Retorno </th><th>Principais métodos chamados  </th></tr>
+<tr>
+<td>sbk </td><td>Aumenta o heap do processo. </td><td>-EAX = 0 -EBX = Quantidade de memória </td><td>-EAX = Endereço do início do novo bloco alocado. </td><td>escalonador.obter_thread escalonador.obter_processo processo.aumentar_heap </td></tr>
+<tr>
+<td>obter_info_kernel </td><td>Armazena informações sobre o funcionamento de alguns componentes do Kernel em arquivos. </td><td>-EAX = 1 -EBX = Ponteiro para cadeia de caracteres com o nome do arquivo -ECX = código para definir sobre qual área do Kernel obter informações </td><td></td><td>escolandor.obter_info entregador.obter_info mem_fisica.obter_info </td></tr>
+<tr>
+<td>enviar_msg </td><td>Envia uma mensagem de forma síncrona para uma determinada porta. </td><td>-EAX =2 -EBX= Ponteiro para a mensagem. -ECX = porta -EDX =flag para sinalizar recebimento </td><td>EAX = retorno da função enviar_msg </td><td>entregador.tratar_envio escalonador.adicionar_mensagem escalonador.colocar_thread_atual_em_espera escalonador.executar_prox_thread </td></tr>
+<tr>
+<td>enviar_msg_pid </td><td>Envia uma mensagem de forma assíncrona para um determinado pid. </td><td>-EAX =3 -EBX= Ponteiro para a mensagem. -ECX = pid de destino </td><td>EAX = retorno da função enviar_msg_pid </td><td>entregador.tratar_envio_pid escalonador.adicionar_mensagem </td></tr>
+<tr>
+<td>receber_msg </td><td>Verifica se há mensagens para a thread vindos de uma determinada porta. Caso haja, retorna o processo, senão, o coloca em estado de espera. </td><td>-EAX =4 -EBX= Ponteiro para a mensagem. -ECX = porta </td><td>EAX = retorno da função receber_msg </td><td>entregador.tratar_recebimento escalonador.obter_mensagem escalonador.acordar_thread escalonador.colocar_thread_atual_em_espera escalonador.executar_prox_thread </td></tr>
+<tr>
+<td>escutar_porta </td><td>Aloca uma porta para uma thread. De forma que as mensagens enviadas para porta são encaminhadas à thread. </td><td>-EAX =5 -EBX= porta </td><td>EAX = retorno da função receber_msg </td><td>entregador.adicionar_listerner entregador.notificar_evento </td></tr>
+<tr>
+<td>abrir_arquivo </td><td>Abre um arquivo para edição, ou cria o arquivo caso ele não exista. Comportamento condicionada por parâmetros. </td><td>-EAX =6 -EBX= caminho do arquivo -ECX = modo de abertura -EDX = ponteiro para onde ficará armazenado o pid do servidor </td><td>-EAX = retorno da função vfs.abrir -EBX = descritor do arquivo </td><td>vfs.abrir entregador.notificar_evento </td></tr>
+<tr>
+<td>ler_arquivo </td><td>Realiza a leitura do arquivo, e copia os dados lidos para uma posição de memória especificada. </td><td>-EAX =7 -EBX= descritor do arquivo -ECX = ponteiro para o buffer de memória -EDX = quantidade de bytes a serem lidos </td><td>-EAX = retorno da função vfs.ler </td><td><a class="el" href="classVfs.html#a3355091c0168e8050ca9b6cbe07bcd93">Vfs.ler</a> entregador.notificar_evento </td></tr>
+<tr>
+<td>escrever_arquivo </td><td>Realiza a escrita do arquivo, armazenando os dados especificados dentro do arquivo. </td><td>-EAX =8 -EBX= descritor do arquivo -ECX = ponteiro para o buffer de memória -EDX = quantidade de bytes a serem escritos </td><td>-EAX = retorno da função vfs.escrever </td><td>vfs.escrever entregador.notificar_evento </td></tr>
+<tr>
+<td>buscar_arquivo </td><td>Altera o valor do variável indicador de posição dentro do arquivo. Depois dessa chamada, todas as leituras e escritas de dados no arquivo são feitas a partir da posição especificada. </td><td>-EAX =9 -EBX= descritor do arquivo -ECX = nova posição </td><td>-EAX = retorno da função vfs.buscar </td><td>vfs.buscar </td></tr>
+<tr>
+<td>excluir_arquivo </td><td>Remove um nó de arquivo do VFS. </td><td>-EAX = 10 -EBX = descritor do arquivo. </td><td>-EAX = retorno da função vfs.excluir </td><td>vfs.excluir entregador.notificar_evento </td></tr>
+<tr>
+<td>fechar_arquivo </td><td>Altera o estado do arquivo para fechado, não permitindo operações de escrita e leitura. Coloca o indicador da posição em 0. </td><td>-EAX = 11 -EBX = descritor do arquivo. </td><td>-EAX = retorno da função vfs.fechar </td><td>vfs.fechar entregador.notificar_evento </td></tr>
+<tr>
+<td>obter_info_arquivo </td><td>Retorna informações sobre um nó do vfs. </td><td>-EAX = 15 -EBX = descritor do arquivo. -ECX = ponteiro para posição de memória onde os dados devem ser armazenados </td><td>-EAX = retorno da função obter_info_arquivo </td><td><a class="el" href="classVfs.html#a55f649e6d6aefd6a22a5477cbd9b3cab">Vfs.obter_info_arquivo</a> </td></tr>
+<tr>
+<td>adicionar_no </td><td>Adiciona um nó de um sistema de arquivo externo no vfs. </td><td>-EAX = 16 -EBX = ponteiro para string com o caminho do novo nó -ECX = tamanho do arquivo no sistema de arquivos externo -EDX = ponteiro para inteiro onde será armazenado o novo descritor do arquivo. -ESI = número da porta para a qual devem ser encaminhadas as solicitações de abertura, fechamento e exclusão dos arquivos. </td><td>-EAX = retorno da função vfs.adicionar_no. </td><td>vfs.adicionar_no vfs.abrir </td></tr>
+<tr>
+<td>montar_no </td><td>Chamada utilizada para que sistemas de arquivos externos possam controlar o acesso a arquivos. Quando uma solicitação de abertura a um arquivo externo é feita, o servidor é informado, e ele então carrega os dados do arquivo na memória, e usa essa chamada para alterar o estado do arquivo permitindo o seu acesso por outros processos. </td><td>-EAX = 17 -EBX = descritor do arquivo </td><td>-EAX = retorno da função vfs.montar_no </td><td>vfs.montar_no </td></tr>
+<tr>
+<td>remover_no </td><td>Torna um nó no vfs inacessível aos outros processos. </td><td>-EAX = 19 -EBX = descritor do arquivo </td><td>-EAX = retorno da função remover_no </td><td>vfs.remover_no </td></tr>
+<tr>
+<td>executar </td><td>Cria e executa um novo processo a partir de um arquivo executável no formato ELF. </td><td>-EAX = 12 -EBX = nome do novo processo -EDX = ponteiro para string com parâmetros -ESI = descritor do arquivo executável </td><td>-EAX = retorno da função adicionar_processo </td><td>vfs.obter_imagem escalonador.adicionar_processo processo.criar_processo entregador.notificar_evento </td></tr>
+<tr>
+<td>sair </td><td>Elimina a thread que realizou a chamada. Caso está seja a thread principal, todo o processo é eliminado </td><td>-EAX = 13 </td><td></td><td>escalonador.obter_thread escalonador.obter_processo escalonador.eliminar_processo escalonador.executar_prox_thread entregador.notificar_evento </td></tr>
+<tr>
+<td>obter_pid </td><td>Obtém o pid da thread em execução, ou o pid do processo de alguma outra thread. </td><td>-EAX = 14 -EBX = pid da thread para a qual se quer saber o id do processo. Caso 0 retorna pid da thread em execução. </td><td>-EAX = pid solicitado </td><td>escalonador.obter_pid_em_execucao escalonador.obter_thread </td></tr>
+<tr>
+<td>finalizar_processo </td><td>Elimina o processo especificado. Está chamado só pode ser realizado para um processo pai tentando eliminar um processo filho. </td><td>-EAX = 19 -EBX = pid do processo a ser a eliminado. </td><td></td><td>escalonador.obter_pid_em_execucao escalonador.eliminar_processo entregador.notificar_evento </td></tr>
+<tr>
+<td>criar_thread </td><td>Cria uma nova thread para processo que comece a executar a partir de um ponto de entrada. </td><td>-EAX = 20 -EBX = ponto de entrada da nova thread </td><td>EAX = Retorno da função adicionar_thread. </td><td>escalonador.obter_thread escalonador.obter_processo escalonador.adicionar_thread </td></tr>
+</table>
+</div><h2 class="groupheader">Métodos</h2>
+<a class="anchor" id="a48d4d5e4931f26ac46ff33121ce665b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::abrir_arquivo </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae1fa1afba00a0ed4e3068d5dbcee2a1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::adicionar_no </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9fa680968c593ddbdbac372b6aa12de6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::buscar_arquivo </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae83189ab344d2d7b27549cce4f54c19e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::chamar_systemcall </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29ba689784ecd773ddfbd37387a5a047"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::criar_thread </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a667e2292279d930d6d276e0baa2f435c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::enviar_msg </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abff79937cd0c2fec2f7a25d447d07884"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::enviar_msg_pid </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a33df3c75884b88d36eb5b6b69eee9013"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::escrever_arquivo </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e26d952b2ce3abf63adabf37df06264"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::escutar_porta </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a98fbfdd6d01e60f390702454efd7e6da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::excluir_arquivo </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a74cb4d52b235789f33685793d21ea1bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::executar </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a30d5a6ca37fa0ee64c1944345fc0ef73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::fechar_arquivo </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af38beb12c05bcc23933d5afe2cbf70db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::finalizar_proceso </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d9270a5abd454bf3fc56106e9395e38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::inicializar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIdt.html">Idt</a>&#160;</td>
+          <td class="paramname"><em>idt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a850fc66205fd4914e795d9982e69b2ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::ler_arquivo </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa6f9c1c0c7585cf5ec1aed1974c8dc1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::montar_no </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a192c98980deced78f12a49ccdfa5571d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::obter_info_arquivo </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a554ddfdce1f2d0c718177a01496f40b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::obter_info_kernel </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a93fd4a791ee8b2c21a966e85cb8164b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::obter_pid </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af9d16bd27486f82bbe7f6edc07e1c071"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::receber_msg </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a029a296868169b502cdc1414d0fdc7e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::remover_no </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36a986953d2b8e5ab894473f744fb360"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::sair </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a08f0f2af891ee4e88b0bab8af6e8c27b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Syscall::sbrk </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structREGS.html">REGS</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a class="anchor" id="a1d05ba4c1bf5a581947060dad6da8a9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Syscall::num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes arquivos:<ul>
+<li><a class="el" href="Syscall_8h_source.html">Syscall.h</a></li>
+<li><a class="el" href="Syscall_8cpp.html">Syscall.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

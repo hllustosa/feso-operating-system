@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['dados',['dados',['../structEvento.html#a5af1052afa7d51c97237d8cd241b1c9e',1,'Evento::dados()'],['../structBloco.html#a04a9130dfde59bb66aaad3d850c46d21',1,'Bloco::dados()'],['../Fat_8cpp.html#a0aa5f75dd49eb77a60e5bfd62098cc34',1,'dados():&#160;Fat.cpp']]],
+  ['data',['data',['../Fat_8cpp.html#adc6d9f8f602e5f6d0953eb7fdc1a775c',1,'Fat.cpp']]],
+  ['descritor',['descritor',['../classArquivo.html#ad123bc768d4b7595dde61580b4b6414d',1,'Arquivo::descritor()'],['../structArqInfo.html#a60799248e036df2888d7d40876f96a45',1,'ArqInfo::descritor()'],['../structBloco__Vfs.html#a47826d21f3b862f47f6cae807d4d1f59',1,'Bloco_Vfs::descritor()'],['../structArqInfoL.html#a6fe7dda7c220378ef282f3c1d55d572c',1,'ArqInfoL::descritor()'],['../structBlocoVfs.html#a5ddc314aec6841a3713111150fae79e9',1,'BlocoVfs::descritor()'],['../Vfs_8h.html#a01ec6e2d7b6ff47d86506c35d59fbb2e',1,'descritor():&#160;Vfs.h'],['../Sistema_8h.html#a01ec6e2d7b6ff47d86506c35d59fbb2e',1,'descritor():&#160;Sistema.h']]],
+  ['dir',['dir',['../classAvl.html#a1222f075431fd93841864c9c5ad8c888',1,'Avl::dir()'],['../classVfs.html#afc2c62b76efbcf89d5f8ac4ed2f84f5b',1,'Vfs::DIR()']]],
+  ['dir_5ffinal',['dir_final',['../Fat_8cpp.html#ac98c1a19dbfab6bb4b0c10a06e18760f',1,'Fat.cpp']]],
+  ['diretorio_5fraiz',['diretorio_raiz',['../Fat_8cpp.html#a0d3d77f203416326a2b459c1d8ccf7cb',1,'Fat.cpp']]],
+  ['diretorios_5fexpandir',['diretorios_expandir',['../Iso9660_8cpp.html#ab2e18ca48125cb5283ca69d0fd93c807',1,'Iso9660.cpp']]],
+  ['diretorios_5fexpandir_5fcaminho',['diretorios_expandir_caminho',['../Iso9660_8cpp.html#a415d454bf4ac52829daeddf4a37fe13c',1,'Iso9660.cpp']]],
+  ['disco_5finfo',['disco_info',['../Iso9660_8cpp.html#abcc11308c8dbbf440cc5324e29f9a84f',1,'Iso9660.cpp']]],
+  ['disk_5fsize',['disk_size',['../structELF__SEG.html#a0fc1c04a522e9965d22789a2ded0482e',1,'ELF_SEG::disk_size()'],['../Loader_8h.html#acc71a694b86e7fd53643be5f473e65eb',1,'disk_size():&#160;Loader.h']]],
+  ['double_5fbuffer',['double_buffer',['../Video_8cpp.html#a3a37e8dc82c325d2ec4e6ebf38f4c59c',1,'Video.cpp']]],
+  ['driver',['DRIVER',['../classProcesso.html#a309ee0f8719b971261cc5be413c78b9f',1,'Processo']]],
+  ['driver_5fata',['driver_ata',['../Hdd_8cpp.html#a29e98a6eacbeb37e5017396b01eb4580',1,'driver_ata():&#160;Hdd.cpp'],['../Ide_8cpp.html#a29e98a6eacbeb37e5017396b01eb4580',1,'driver_ata():&#160;Ide.cpp']]],
+  ['driver_5fatapi',['driver_atapi',['../Hdd_8cpp.html#a16850a1ffca2d191bdf34db1176530f8',1,'driver_atapi():&#160;Hdd.cpp'],['../Ide_8cpp.html#a16850a1ffca2d191bdf34db1176530f8',1,'driver_atapi():&#160;Ide.cpp']]],
+  ['drivers_5fprontos',['drivers_prontos',['../classEscalonador.html#a12467445b830fd96f2ed96e41035bcfb',1,'Escalonador']]],
+  ['ds',['ds',['../structTSS.html#a679bd5f504eb021f3437d2097b6079c5',1,'TSS::ds()'],['../structREGS.html#a75a9fdabe7e1b4518583c8063a15d4aa',1,'REGS::ds()'],['../Gdt_8h.html#a3b1648d63f4f79274a3ca54631f5bfe0',1,'ds():&#160;Gdt.h'],['../Idt_8h.html#a41d22b14f5b54c8488f5969c012000d7',1,'ds():&#160;Idt.h']]],
+  ['ds_5fh',['ds_h',['../structTSS.html#a13539de9069bfd34a784602d615f4d2a',1,'TSS::ds_h()'],['../Gdt_8h.html#a926836eb94c519460243ab5b4ca920de',1,'ds_h():&#160;Gdt.h']]]
+];

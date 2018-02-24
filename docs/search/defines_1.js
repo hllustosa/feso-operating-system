@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['agudo',['AGUDO',['../Io_8h.html#a6272ab02dbe92bdd7003dff85c2f0fa1',1,'Io.h']]],
+  ['alt',['ALT',['../Io_8h.html#a9d8a33b1a8b82b9913a0ba70438d45be',1,'Io.h']]],
+  ['alt_5fgr',['ALT_GR',['../Io_8h.html#a9f442ea8e152fb4fd33cf2e3223a0530',1,'Io.h']]],
+  ['ata',['ATA',['../Hdd_8cpp.html#a2c51f8df39130923660818986234711f',1,'ATA():&#160;Hdd.cpp'],['../Ide_8cpp.html#a2c51f8df39130923660818986234711f',1,'ATA():&#160;Ide.cpp']]],
+  ['ata_5fbus_5fprim',['ATA_BUS_PRIM',['../Hdd_8cpp.html#a9b7e3377828f39a5a28e9743dd889b7c',1,'ATA_BUS_PRIM():&#160;Hdd.cpp'],['../Ide_8cpp.html#a9b7e3377828f39a5a28e9743dd889b7c',1,'ATA_BUS_PRIM():&#160;Ide.cpp']]],
+  ['ata_5fbus_5fsec',['ATA_BUS_SEC',['../Hdd_8cpp.html#ad3524c0b215cb30fc3acadb6c7af9288',1,'ATA_BUS_SEC():&#160;Hdd.cpp'],['../Ide_8cpp.html#ad3524c0b215cb30fc3acadb6c7af9288',1,'ATA_BUS_SEC():&#160;Ide.cpp']]],
+  ['ata_5fcmd',['ATA_CMD',['../Hdd_8cpp.html#a64d3f0a280bf7d48b9c15d624e874af8',1,'ATA_CMD():&#160;Hdd.cpp'],['../Ide_8cpp.html#a64d3f0a280bf7d48b9c15d624e874af8',1,'ATA_CMD():&#160;Ide.cpp']]],
+  ['ata_5fdados',['ATA_DADOS',['../Hdd_8cpp.html#a4ebb83464394d4326878299043510c72',1,'ATA_DADOS():&#160;Hdd.cpp'],['../Ide_8cpp.html#a4ebb83464394d4326878299043510c72',1,'ATA_DADOS():&#160;Ide.cpp']]],
+  ['ata_5fdcr',['ATA_DCR',['../Hdd_8cpp.html#a9e0e65e3058a4522f0241087a724bbc8',1,'ATA_DCR():&#160;Hdd.cpp'],['../Ide_8cpp.html#a9e0e65e3058a4522f0241087a724bbc8',1,'ATA_DCR():&#160;Ide.cpp']]],
+  ['ata_5fdrive_5fmaster',['ATA_DRIVE_MASTER',['../Hdd_8cpp.html#a495f54d8fd2effc55504473837d21d3d',1,'ATA_DRIVE_MASTER():&#160;Hdd.cpp'],['../Ide_8cpp.html#a495f54d8fd2effc55504473837d21d3d',1,'ATA_DRIVE_MASTER():&#160;Ide.cpp']]],
+  ['ata_5fdrive_5fsel',['ATA_DRIVE_SEL',['../Hdd_8cpp.html#af4bfbb94dac57a7952a814051afecaf2',1,'ATA_DRIVE_SEL():&#160;Hdd.cpp'],['../Ide_8cpp.html#af4bfbb94dac57a7952a814051afecaf2',1,'ATA_DRIVE_SEL():&#160;Ide.cpp']]],
+  ['ata_5fdrive_5fslave',['ATA_DRIVE_SLAVE',['../Hdd_8cpp.html#a6d9ddb2eef8146c3f08813a89130500c',1,'ATA_DRIVE_SLAVE():&#160;Hdd.cpp'],['../Ide_8cpp.html#a6d9ddb2eef8146c3f08813a89130500c',1,'ATA_DRIVE_SLAVE():&#160;Ide.cpp']]],
+  ['ata_5fend1',['ATA_END1',['../Hdd_8cpp.html#ad0f4b4f0270316aa0c4bf54a92a09454',1,'ATA_END1():&#160;Hdd.cpp'],['../Ide_8cpp.html#ad0f4b4f0270316aa0c4bf54a92a09454',1,'ATA_END1():&#160;Ide.cpp']]],
+  ['ata_5fend2',['ATA_END2',['../Hdd_8cpp.html#a22aa564a0ff4bbda02e2265cb3b0171e',1,'ATA_END2():&#160;Hdd.cpp'],['../Ide_8cpp.html#a22aa564a0ff4bbda02e2265cb3b0171e',1,'ATA_END2():&#160;Ide.cpp']]],
+  ['ata_5fend3',['ATA_END3',['../Hdd_8cpp.html#a3db8bf05f503e746f11887a14d81ea3d',1,'ATA_END3():&#160;Hdd.cpp'],['../Ide_8cpp.html#a3db8bf05f503e746f11887a14d81ea3d',1,'ATA_END3():&#160;Ide.cpp']]],
+  ['ata_5ffeatures',['ATA_FEATURES',['../Hdd_8cpp.html#a4a15b3f228ef47bb8c2a3e2dabf17fb5',1,'ATA_FEATURES():&#160;Hdd.cpp'],['../Ide_8cpp.html#a4a15b3f228ef47bb8c2a3e2dabf17fb5',1,'ATA_FEATURES():&#160;Ide.cpp']]],
+  ['ata_5firq_5fprim',['ATA_IRQ_PRIM',['../Hdd_8cpp.html#a3dcfe966b38a07589903df964a205faa',1,'ATA_IRQ_PRIM():&#160;Hdd.cpp'],['../Ide_8cpp.html#a3dcfe966b38a07589903df964a205faa',1,'ATA_IRQ_PRIM():&#160;Ide.cpp']]],
+  ['ata_5firq_5fsec',['ATA_IRQ_SEC',['../Hdd_8cpp.html#ad131490ce979cc8c51bd467776cd8bb2',1,'ATA_IRQ_SEC():&#160;Hdd.cpp'],['../Ide_8cpp.html#ad131490ce979cc8c51bd467776cd8bb2',1,'ATA_IRQ_SEC():&#160;Ide.cpp']]],
+  ['ata_5fsel_5fdelay',['ATA_SEL_DELAY',['../Hdd_8cpp.html#a3aeff3e0ff2c023cc056cee3b4ddf11b',1,'ATA_SEL_DELAY():&#160;Hdd.cpp'],['../Ide_8cpp.html#a3aeff3e0ff2c023cc056cee3b4ddf11b',1,'ATA_SEL_DELAY():&#160;Ide.cpp']]],
+  ['ata_5fsetor_5fcount',['ATA_SETOR_COUNT',['../Hdd_8cpp.html#a5866a864cbd42f00cfa66ec098c8e276',1,'ATA_SETOR_COUNT():&#160;Hdd.cpp'],['../Ide_8cpp.html#a5866a864cbd42f00cfa66ec098c8e276',1,'ATA_SETOR_COUNT():&#160;Ide.cpp']]],
+  ['ata_5ftam_5fsetor',['ATA_TAM_SETOR',['../Hdd_8cpp.html#ae9a093a4f7adceebd95c22932709ce1f',1,'ATA_TAM_SETOR():&#160;Hdd.cpp'],['../Ide_8cpp.html#ae9a093a4f7adceebd95c22932709ce1f',1,'ATA_TAM_SETOR():&#160;Ide.cpp']]],
+  ['ata_5fverificar_5ftimeout',['ATA_VERIFICAR_TIMEOUT',['../Hdd_8cpp.html#ac341d0bc1fc724014c4babacc6d72347',1,'ATA_VERIFICAR_TIMEOUT():&#160;Hdd.cpp'],['../Ide_8cpp.html#ac341d0bc1fc724014c4babacc6d72347',1,'ATA_VERIFICAR_TIMEOUT():&#160;Ide.cpp']]],
+  ['atapi',['ATAPI',['../Hdd_8cpp.html#a778d9640b39e2b257a82485065fe726d',1,'ATAPI():&#160;Hdd.cpp'],['../Ide_8cpp.html#a778d9640b39e2b257a82485065fe726d',1,'ATAPI():&#160;Ide.cpp']]],
+  ['atapi_5ftam_5fsetor',['ATAPI_TAM_SETOR',['../Hdd_8cpp.html#a09014af362317a25726325800379c9ce',1,'ATAPI_TAM_SETOR():&#160;Hdd.cpp'],['../Ide_8cpp.html#a09014af362317a25726325800379c9ce',1,'ATAPI_TAM_SETOR():&#160;Ide.cpp']]]
+];

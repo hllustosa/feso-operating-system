@@ -1,0 +1,9 @@
+<map id="Mensagem.h" name="Mensagem.h">
+<area shape="rect" id="node2" href="$kernel_2include_2Avl_8h.html" title="Avl.h" alt="" coords="118,80,170,107"/>
+<area shape="rect" id="node6" href="$Irq_8h.html" title="Irq.h" alt="" coords="195,80,243,107"/>
+<area shape="rect" id="node8" href="$kernel_2include_2Lista_8h.html" title="Lista.h" alt="" coords="32,80,93,107"/>
+<area shape="rect" id="node3" href="$Memoria_8h.html" title="Memoria.h" alt="" coords="31,155,113,181"/>
+<area shape="rect" id="node5" href="$kernel_2include_2Util_8h.html" title="Util.h" alt="" coords="5,229,59,256"/>
+<area shape="rect" id="node4" href="$Multiboot_8h.html" title="Multiboot.h" alt="" coords="83,229,170,256"/>
+<area shape="rect" id="node7" href="$Idt_8h.html" title="Idt.h" alt="" coords="195,155,243,181"/>
+</map>
