@@ -71,4 +71,4 @@ make
 cd ../../..
 cp src/app/Tetris/bin/tetris.o isofiles/app
 
-mkisofs -R -b boot/grub/stage2_eltorito -no-emul-boot -boot-load-size 4 -boot-info-table -o  bin-image/feso.iso isofiles
+mkisofs -R -b boot/grub/stage2_eltorito -no-emul-boot -boot-load-size 4 -boot-info-table -o  feso.iso isofiles
