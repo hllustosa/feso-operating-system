@@ -1,7 +1,7 @@
 
 # Sistema Operacional feSO
 
-O sistema operacional feSO (Feso é um Sistema Operacional) foi desenvolvido para servir como uma ferramenta de aprendizado de sistemas operacionais. Para um visão geral do funcionamento do sistema, consultar a [monografia dos autores](https://hllustosa.github.io/feso-operating-system/feso-mono.pdf) ou o [artigo no REIC.](http://seer.ufrgs.br/index.php/reic/article/view/79913).
+O sistema operacional feSO (Feso é um Sistema Operacional) foi desenvolvido para servir como uma ferramenta de aprendizado de sistemas operacionais. Para um visão geral do funcionamento do sistema, consultar a [monografia dos autores](https://hllustosa.github.io/feso-operating-system/feso-mono.pdf) ou o [artigo no REIC](http://seer.ufrgs.br/index.php/reic/article/view/79913). Além destes, é possível ter acesso a [documentação do código](https://hllustosa.github.io/feso-operating-system/) para referências.
 
 ## Compilando e Executando
 
